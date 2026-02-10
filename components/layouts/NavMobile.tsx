@@ -1,13 +1,15 @@
 "use client";
 
-import { mainMenu } from "@/lib/content";
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
+import useMenu from "@/hooks/useMenu";
 
 export default function NavMobile() {
+  const { mainMenu } = useMenu();
+
   return (
     <div className="flex lg:hidden justify-end">
       <Sheet>
