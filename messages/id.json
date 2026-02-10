@@ -1,0 +1,140 @@
+{
+  "main_menu": {
+    "home": { "label": "Home", "url": "/" },
+    "about": { "label": "Tentang", "url": "/about" },
+    "services": { "label": "Layanan", "url": "/services" },
+    "contact": { "label": "Kontak", "url": "/contact" }
+  },
+  "metadata": {
+    "home": {
+      "title": "Vryce - Agensi Pemasaran Digital Terdepan di Indonesia",
+      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis."
+    }
+  },
+  "buttons": {
+    "pricing": "Lihat Harga",
+    "contact": "Hubungi Kami",
+    "our_services": "Layanan Kami",
+    "about_us": "Tentang Kami",
+    "view_details": "Lihat Selengkapnya",
+    "view_more_services": "Lihat Layanan Lainnya"
+  },
+  "labels": {
+    "purpose": "Tujuan",
+    "benefits": "Yang Didapatkan"
+  },
+  "home": {
+    "hero": {
+      "title": "Agensi Pemasaran Digital",
+      "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
+      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu bisnis Anda tumbuh melalui solusi pemasaran digital yang inovatif dan efektif."
+    },
+    "about": {
+      "title": "Kami Memaksimalkan Pertumbuhan Lewat Data, Performa, dan Hasil Nyata.",
+      "paragraph_1": "Kami percaya bahwa digital marketing tidak cukup hanya dengan menjalankan campaign. Oleh karena itu, Vryce mengelola seluruh ekosistem marketing sebagai satu sistem terintegrasi, yang dirancang untuk memastikan setiap channel memberikan kontribusi nyata terhadap tujuan bisnis klien.",
+      "paragraph_2": "Vryce memberi layanan; performance ads, SEO & SEM, KOL marketing, affiliate marketing, social media strategy, landing page development, marketing automation, hingga AI-based digital marketing untuk menciptakan pertumbuhan brand yang berkelanjutan untuk memaksimalkan tujuan pemasaran digital yang dibutuhkan."
+    },
+    "services": {
+      "title": "Paket Layanan & Harga",
+      "tagline": "Scale Your Brand",
+      "description": "Pilih mitra strategis yang dirancang untuk mempercepat pertumbuhan Anda. Paket berbasis performa kami disesuaikan untuk memberikan dampak terukur dan hasil bisnis yang berkelanjutan."
+    },
+    "why": {
+      "tagline": "Beyond Marketing",
+      "title": "Mengapa Memilih Vryce?",
+      "description": "Kami menggabungkan presisi berbasis data dengan keunggulan kreatif untuk mengubah biaya pemasaran Anda menjadi pertumbuhan bisnis yang terukur melalui pendekatan berorientasi hasil.",
+      "points": "Fokus pada performa dan hasil bisnis | Strategi marketing berbasis data | Talent & creator management yang berkualitas | Affiliate marketing sebagai growth engine | Fleksibel: retainer, project-based, hingga performance-based"
+    }
+  },
+  "about": {
+    "title": "Tentang Vryce",
+    "sub_headline": "Mitra Terintegrasi untuk Pertumbuhan Digital Berbasis Hasil",
+    "paragraph_1": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu brand dan bisnis tidak hanya tampil di dunia digital, tetapi bertumbuh secara terukur—mulai dari brand awareness, traffic, leads, hingga konversi dan penjualan.",
+    "paragraph_2": "Kami percaya bahwa digital marketing tidak cukup hanya dengan menjalankan campaign. Oleh karena itu, Vryce mengelola seluruh ekosistem marketing sebagai satu sistem terintegrasi, yang dirancang untuk memastikan setiap channel memberikan kontribusi nyata terhadap tujuan bisnis klien.",
+    "paragraph_3": "Vryce memberi layanan; performance ads, SEO & SEM, KOL marketing, affiliate marketing, social media strategy, landing page development, marketing automation, hingga AI-based digital marketing untuk menciptakan pertumbuhan brand yang berkelanjutan untuk memaksimalkan tujuan pemasaran digital yang dibutuhkan.",
+    "talent": {
+      "title": "Vryce Talent & Creator Management",
+      "paragraph_1": "Sebagai bagian dari diferensiasi layanan, Vryce juga memiliki Talent & Creator Management yang secara khusus berfokus pada industri fashion, skincare, dan makeup.",
+      "paragraph_2": "Talent di bawah manajemen Vryce tidak hanya berperan sebagai content creator, tetapi sebagai performance-driven talent yang dioptimalkan untuk:",
+      "p2_list": "Mendukung penjualan produk fashion & beauty | Menjadi bagian dari campaign performance ads | Berfungsi sebagai KOL dan | Meningkatkan trust, credibility, dan conversion brand",
+      "paragraph_3": "Talent kami dipilih berdasarkan:",
+      "p3_list": "Kesesuaian niche (fashion, skincare, makeup) | Engagement & audience quality | Kemampuan menghasilkan impact pada campaign dan penjualan",
+      "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur."
+    }
+  },
+  "services": {
+    "title": "Paket Layanan & Harga Vryce",
+    "service_1": {
+      "title": "Vryce Service Packages & Pricing",
+      "price": "Rp 2,8 juta",
+      "priceFor": "bulan",
+      "priceNote": "(Di luar budget iklan)",
+      "purpose": "Menghasilkan leads, inquiry, atau penjualan secara cepat melalui iklan berbayar berbasis data.",
+      "benefits": "Platform iklan (Meta / Google / TikTok) | Strategy & funnel planning | Setup dan optimasi campaign | Ads copy & creative direction | Weekly optimization | Monthly performance report"
+    },
+    "service_2": {
+      "title": "Vryce SEO & SEM Package",
+      "price": "Rp 3 juta",
+      "priceFor": "bulan | min. 4-6 bulan",
+      "priceNote": "(Di luar budget iklan)",
+      "purpose": "Meningkatkan visibilitas brand di Google dan mendatangkan traffic dan pelanggan berkualitas jangka menengah–panjang.",
+      "benefits": "Website & keyword audit | On-page & technical SEO | Google Search Ads (SEM) | Funnel & keyword strategy | Optimization mingguan | Tracking & analytics | Monitoring ranking & search performance | Monthly report"
+    },
+    "service_3": {
+      "title": "Vryce KOL Marketing Package",
+      "price": "Rp 5 – 12 juta",
+      "priceFor": "campaign",
+      "priceNote": "",
+      "purpose": "Meningkatkan awareness, trust, dan penjualan melalui talent dan KOL.",
+      "benefits": "Talent & KOL | Campaign planning & briefing | Konten sales-driven | Performance tracking & report"
+    },
+    "service_4": {
+      "title": "Vryce Affiliate Marketing Package",
+      "price": "Rp 5-15 juta",
+      "priceFor": "bulan + opsional komisi 5-15%",
+      "priceNote": "",
+      "purpose": "Membangun channel penjualan tambahan berbasis komisi.",
+      "benefits": "Setup sistem affiliate | Rekrut & onboarding affiliator / talent | Campaign & promo management | Tracking & payout reporting"
+    },
+    "service_5": {
+      "title": "Vryce Social Media Management",
+      "price": "Rp 2,5 juta",
+      "priceFor": "bulan",
+      "priceNote": "",
+      "purpose": "Mengelola akun media sosial secara konsisten untuk membangun brand dan mendukung campaign.",
+      "benefits": "Content planning & calendar | Pembuatan konten posting (feed, carousel, reels) | Caption & hashtag | Scheduling & publishing | Monitoring & monthly report"
+    },
+    "service_6": {
+      "title": "Vryce Marketing Automation & AI Package",
+      "price": "Rp 6 – 12 juta",
+      "priceFor": "bulan",
+      "priceNote": "",
+      "purpose": "Mengotomatiskan proses marketing dan meningkatkan efisiensi tim.",
+      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
+    },
+    "service_7": {
+      "title": "Vryce Web Development",
+      "price": "Rp 3,5 juta",
+      "priceFor": "project",
+      "priceNote": "",
+      "purpose": "Membangun website profesional untuk meningkatkan kredibilitas brand dan kepercayaan customer",
+      "benefits": "Company profile / brand website | Desain modern & user-friendly | Basic SEO setup | Domain & hosting setup assistance"
+    },
+    "service_8": {
+      "title": "Vryce Landing Page Development",
+      "price": "Rp 2,5 juta",
+      "priceFor": "project",
+      "priceNote": "",
+      "purpose": "Menyediakan landing page yang dirancang untuk meningkatkan kredibilitas brand serta mengoptimalkan konversi dari berbagai channel.",
+      "benefits": "Landing page | Struktur copywriting berbasis funnel | CTA & form lead terintegrasi | Basic SEO & tracking"
+    },
+    "service_9": {
+      "title": "Vryce Marketplace Optimization & Promotion",
+      "price": "Rp 3,5 juta",
+      "priceFor": "project",
+      "priceNote": "",
+      "purpose": "Mengoptimalkan dan mempromosikan toko marketplace agar dikelola secara profesional, mudah ditemukan oleh calon pembeli, serta meningkatkan performa penjualan.",
+      "benefits": "Manajemen Marketplace Seller Center | Optimasi tampilan toko marketplace (profil, banner, dan branding) | Optimasi judul produk, deskripsi, dan keyword marketplace | Optimasi foto & tampilan produk (guideline / penyesuaian layout) | Setup promo dasar (diskon, voucher, dan campaign marketplace) | Basic marketplace ads setup (Shopee Ads / Tokopedia Ads) | Monitoring performa & rekomendasi strategi peningkatan penjualan"
+    }
+  }
+}
