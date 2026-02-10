@@ -15,7 +15,7 @@ export default function HomeAbout() {
   const description = [paragraph1, paragraph2];
 
   return (
-    <section className="py-12 md:py-16 bg-primary/5">
+    <section className="py-12 md:py-16">
       {/* <section className="py-12 md:py-16 bg-slate-100/80"> */}
       <div className="container flex flex-col md:flex-row gap-8">
         <div className="w-full md:w-1/3 order-2 md:order-1 flex items-center justify-center">

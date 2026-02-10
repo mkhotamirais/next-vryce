@@ -1,10 +1,11 @@
 "use client";
 
 import { mainMenu } from "@/lib/content";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import Logo from "../Logo";
 
 export default function NavMobile() {
   return (
@@ -17,14 +18,22 @@ export default function NavMobile() {
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
-            <SheetTitle>Title</SheetTitle>
+            <SheetTitle>
+              <SheetClose>
+                <Logo />
+              </SheetClose>
+            </SheetTitle>
             <SheetDescription className="sr-only">Mobile Menu</SheetDescription>
           </SheetHeader>
-          <nav>
+          <nav className="px-2">
             <ul>
               {mainMenu.map((item, i) => (
                 <li key={i}>
-                  <Link href={item.url}>{item.label}</Link>
+                  <SheetClose asChild>
+                    <Button asChild className="block mb-1" variant={"ghost"}>
+                      <Link href={item.url}>{item.label}</Link>
+                    </Button>
+                  </SheetClose>
                 </li>
               ))}
             </ul>

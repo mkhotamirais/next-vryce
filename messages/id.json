@@ -1,9 +1,30 @@
 {
   "main_menu": {
-    "home": { "label": "Home", "url": "/" },
-    "about": { "label": "Tentang", "url": "/about" },
+    "home": { "label": "Beranda", "url": "/" },
     "services": { "label": "Layanan", "url": "/services" },
-    "contact": { "label": "Kontak", "url": "/contact" }
+    "digital_core": { "label": "Solusi Digital", "url": "digital-core" },
+    "talent": { "label": "Talenta", "url": "/talent" },
+    "blog": { "label": "Blog", "url": "/blog" }
+  },
+  "footer": {
+    "tagline": "Strategi yang didorong oleh tujuan Anda, dirancang untuk memberikan hasil.",
+    "menu_1": {
+      "title": "Layanan Vryce",
+      "menu": {
+        "layanan1": { "label": "Vryce Performance Ads Package", "url": "/services" },
+        "layanan2": { "label": "Vryce SEO & SEM Package", "url": "/services" },
+        "layanan3": { "label": "Vryce KOL & Talent Campaign", "url": "/services" },
+        "layanan4": { "label": "Vryce Affiliate Marketing Package", "url": "/services" },
+        "layanan5": { "label": "Vryce Social Media Management", "url": "/services" }
+      }
+    },
+    "menu_2": {
+      "title": "Agensi Vryce",
+      "menu": {
+        "about": { "label": "Tentang", "url": "/about" },
+        "blog": { "label": "Blog", "url": "/blog" }
+      }
+    }
   },
   "metadata": {
     "home": {
@@ -29,6 +50,7 @@
       "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
       "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu bisnis Anda tumbuh melalui solusi pemasaran digital yang inovatif dan efektif."
     },
+    "our_clients_label": "Dipercaya oleh berbagai perusahaan hingga saat ini.",
     "about": {
       "title": "Kami Memaksimalkan Pertumbuhan Lewat Data, Performa, dan Hasil Nyata.",
       "paragraph_1": "Kami percaya bahwa digital marketing tidak cukup hanya dengan menjalankan campaign. Oleh karena itu, Vryce mengelola seluruh ekosistem marketing sebagai satu sistem terintegrasi, yang dirancang untuk memastikan setiap channel memberikan kontribusi nyata terhadap tujuan bisnis klien.",
@@ -62,10 +84,21 @@
       "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur."
     }
   },
+  "digital_core": {
+    "title": "Solusi Digital Vryce",
+    "sub_headline": "Fondasi Teknologi di Balik Dominasi Digital Anda"
+  },
+  "talent": {
+    "title": "Talenta Vryce",
+    "sub_headline": "Menghubungkan Brand Visioner dengan Talenta Luar Biasa"
+  },
+  "blog": {
+    "title": "Blog & Artikel Vryce"
+  },
   "services": {
     "title": "Paket Layanan & Harga Vryce",
     "service_1": {
-      "title": "Vryce Service Packages & Pricing",
+      "title": "Vryce Performance Ads Package",
       "price": "Rp 2,8 juta",
       "priceFor": "bulan",
       "priceNote": "(Di luar budget iklan)",

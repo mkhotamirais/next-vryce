@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 // import Link from "next/link";
 import { useTranslations } from "next-intl";
+import HomeHeroClients from "./HomeHeroClients";
 
 export default function HomeHero() {
   const t = useTranslations("home.hero");
@@ -13,9 +14,9 @@ export default function HomeHero() {
   const ourServices = b("our_services");
 
   return (
-    <section className="py-12 md:py-28">
+    <section className="py-12 md:pt-28 md:pb-16">
       <div className="container relative">
-        <div className="text-[400px] blur-2xl text-primary/30 font-medium absolute top-0 leading-none">V</div>
+        <div className="-z-50 text-[400px] blur-2xl text-primary/30 font-medium absolute top-0 leading-none">V</div>
         <div className="flex flex-col items-start sm:items-center text-left sm:text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl lg:text-6xl font-bold">{title}</h1>
           <div className="flex flex-col items-center">
@@ -34,6 +35,7 @@ export default function HomeHero() {
           </div>
           <div className="w-full md:w-1/3 h-full"></div>
         </div>
+        <HomeHeroClients />
       </div>
     </section>
   );

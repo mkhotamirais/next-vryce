@@ -1,9 +1,30 @@
 {
   "main_menu": {
     "home": { "label": "Home", "url": "/" },
-    "about": { "label": "About", "url": "/about" },
     "services": { "label": "Services", "url": "/services" },
-    "contact": { "label": "Contact", "url": "/contact" }
+    "digital_core": { "label": "Digital Core", "url": "digital-core" },
+    "talent": { "label": "Talent", "url": "/talent" },
+    "blog": { "label": "Blog", "url": "/blog" }
+  },
+  "footer": {
+    "tagline": "strategies driven by your purpose, designed to perform.",
+    "menu_1": {
+      "title": "Vryce Services",
+      "menu": {
+        "layanan1": { "label": "Vryce Performance Ads Package", "url": "/services" },
+        "layanan2": { "label": "Vryce SEO & SEM Package", "url": "/services" },
+        "layanan3": { "label": "Vryce KOL & Talent Campaign", "url": "/services" },
+        "layanan4": { "label": "Vryce Affiliate Marketing Package", "url": "/services" },
+        "layanan5": { "label": "Vryce Social Media Management", "url": "/services" }
+      }
+    },
+    "menu_2": {
+      "title": "Vryce Agency",
+      "menu": {
+        "about": { "label": "About", "url": "/about" },
+        "blog": { "label": "Blog", "url": "/blog" }
+      }
+    }
   },
   "metadata": {
     "home": {
@@ -29,6 +50,7 @@
       "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
       "description": "Vryce is a digital marketing agency specializing in performance-driven, data-focused, and result-oriented strategies. We help your business scale through innovative and effective digital marketing solutions."
     },
+    "our_clients_label": "Trusted by these companies so far.",
     "about": {
       "title": "Maximizing Growth Through Data, Performance, and Real Results.",
       "paragraph_1": "We believe effective digital marketing goes beyond just running campaigns. Therefore, Vryce manages the entire marketing ecosystem as an integrated system, ensuring every channel contributes significantly to our clients' business goals.",
@@ -61,6 +83,17 @@
       "p3_list": "Niche relevance (fashion, skincare, makeup) | Engagement & audience quality | Ability to drive campaign impact and sales",
       "paragraph_4": "Through this model, Vryce bridges brands, talent, and performance marketing systems into a single ecosystem—ensuring campaigns are not only visually engaging but deliver measurable results."
     }
+  },
+  "digital_core": {
+    "title": "Vryce Digital Core",
+    "sub_headline": "The Tech Stack Behind Your Digital Dominance"
+  },
+  "talent": {
+    "title": "Vryce Talent",
+    "sub_headline": "Connecting Visionary Brands with Exceptional Talent"
+  },
+  "blog": {
+    "title": "The Vryce Insights"
   },
   "services": {
     "title": "Vryce Service Packages & Pricing",
