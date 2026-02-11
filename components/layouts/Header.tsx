@@ -6,13 +6,12 @@ import NavMobile from "./NavMobile";
 
 export default function Header() {
   return (
-    <header className="h-16 sticky top-0 bg-white/70 z-30 backdrop-blur-xl">
+    <header className="h-16 sticky top-0 bg-white z-30">
       <div className="container flex gap-8 items-center justify-between">
         <Logo />
         <div className="flex-1">
           <NavDesktop />
           <NavMobile />
-          {/* <NavMobile2 /> */}
         </div>
       </div>
     </header>
