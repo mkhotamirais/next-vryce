@@ -44,12 +44,11 @@ export default async function RootLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <body className={`${montserrat.variable} font-montserrat antialiased`}>
+    <html lang={locale} className="">
+      <body className={`${montserrat.variable} font-montserrat`}>
         <NextIntlClientProvider>
           <Header />
           <main className="min-h-screen">{children}</main>
-          {/* <Footer /> */}
           <Footer2 />
           <ButtonEdge />
         </NextIntlClientProvider>

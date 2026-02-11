@@ -12,16 +12,16 @@ export default function Footer2() {
 
   const tagline = f("tagline");
 
-  const title1 = f("menu_1.title");
+  // const title1 = f("menu_1.title");
   const title2 = f("menu_2.title");
   const title3 = f("menu_3.title");
   const title4 = f("menu_4.title");
-  const { footerMenu1, footerMenu2 } = useMenu();
+  const { footerMenu2 } = useMenu();
 
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container pt-12 pb-8">
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div>
               <Logo />
