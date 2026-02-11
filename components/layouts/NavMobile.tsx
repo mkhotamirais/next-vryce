@@ -6,6 +6,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
+import SwitchLangButton from "../SwitchLangButton";
 
 export default function NavMobile() {
   const { mainMenu } = useMenu();
@@ -20,10 +21,13 @@ export default function NavMobile() {
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
-            <SheetTitle>
+            <SheetTitle className="flex items-center justify-between">
               <SheetClose>
                 <Logo />
               </SheetClose>
+              <div>
+                <SwitchLangButton />
+              </div>
             </SheetTitle>
             <SheetDescription className="sr-only">Mobile Menu</SheetDescription>
           </SheetHeader>
