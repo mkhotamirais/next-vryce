@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../Logo";
-import FooterMenu from "./FooterMenu";
+// import FooterMenu from "./FooterMenu";
 import { useTranslations } from "next-intl";
-import useMenu from "@/hooks/useMenu";
+// import useMenu from "@/hooks/useMenu";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
 import { links as l } from "@/lib/common";
@@ -13,10 +13,10 @@ export default function Footer2() {
   const tagline = f("tagline");
 
   // const title1 = f("menu_1.title");
-  const title2 = f("menu_2.title");
+  // const title2 = f("menu_2.title");
   const title3 = f("menu_3.title");
   const title4 = f("menu_4.title");
-  const { footerMenu2 } = useMenu();
+  // const { footerMenu2 } = useMenu();
 
   return (
     <footer className="bg-gray-800 text-white">
@@ -35,7 +35,13 @@ export default function Footer2() {
             {/* <PricingButton /> */}
           </div>
           {/* <FooterMenu title={title1} list={footerMenu1} /> */}
-          <FooterMenu title={title2} list={footerMenu2} />
+          {/* <FooterMenu title={title2} list={footerMenu2} /> */}
+          <div>
+            <h4 className="font-semibold text-xl mb-4">Address</h4>
+            <address className="text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum!
+            </address>
+          </div>
           <div>
             <h4 className="font-semibold text-xl mb-4">{title3}</h4>
             <div>

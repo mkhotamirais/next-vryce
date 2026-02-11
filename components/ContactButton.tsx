@@ -10,7 +10,7 @@ export default function ContactButton() {
   const contact = t("contact");
 
   return (
-    <Button className="" size={"lg"}>
+    <Button variant={"outline"} className="border" size={"lg"}>
       <Link href="/services" className="flex items-center gap-2">
         <Phone />
         {contact}
