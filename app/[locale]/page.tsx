@@ -1,6 +1,7 @@
-import HomeAbout from "@/components/home/HomeAbout";
+// import HomeAbout from "@/components/home/HomeAbout";
 import HomeContactUs from "@/components/home/HomeContactUs";
 import HomeHero from "@/components/home/HomeHero";
+import HomeOurClients from "@/components/home/HomeOurClients";
 import HomeOurService from "@/components/home/HomeServices";
 import HomeWhyVrice from "@/components/home/HomeWhyVrice";
 
@@ -9,8 +10,9 @@ export default function Home() {
     <>
       <HomeHero />
       <HomeWhyVrice />
-      <HomeAbout />
+      {/* <HomeAbout /> */}
       <HomeOurService />
+      <HomeOurClients />
       <HomeContactUs />
     </>
   );

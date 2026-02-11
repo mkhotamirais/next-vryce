@@ -7,7 +7,7 @@ import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
 import { links as l } from "@/lib/common";
 
-export default function Footer() {
+export default function Footer2() {
   const f = useTranslations("footer");
 
   const tagline = f("tagline");
@@ -34,27 +34,25 @@ export default function Footer() {
             </div> */}
             {/* <PricingButton /> */}
           </div>
-          <FooterMenu title={title1} list={footerMenu1} />
+          {/* <FooterMenu title={title1} list={footerMenu1} /> */}
           <FooterMenu title={title2} list={footerMenu2} />
           <div>
-            <div className="mb-8">
-              <h4 className="font-semibold text-xl mb-4">{title3}</h4>
-              <div>
-                <a href={l.email.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
-                  <Mail className="size-5" />
-                  {l.email.label}
-                </a>
-                <a href={l.wa.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
-                  <Phone className="size-5" />
-                  {l.wa.label}
-                </a>
-              </div>
-            </div>
+            <h4 className="font-semibold text-xl mb-4">{title3}</h4>
             <div>
-              <h4 className="font-semibold text-xl mb-4">{title4}</h4>
-              <div className="text-xl text-gray-400">
-                <FaInstagram />
-              </div>
+              <a href={l.email.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
+                <Mail className="size-5" />
+                {l.email.label}
+              </a>
+              <a href={l.wa.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
+                <Phone className="size-5" />
+                {l.wa.label}
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-semibold text-xl mb-4">{title4}</h4>
+            <div className="text-xl text-gray-400">
+              <FaInstagram />
             </div>
           </div>
         </div>

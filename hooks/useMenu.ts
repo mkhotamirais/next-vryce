@@ -22,6 +22,8 @@ export default function useMenu() {
 
   const footerMenu2 = [
     { label: f("menu_2.menu.about.label"), url: f("menu_2.menu.about.url") },
+    { label: f("menu_2.menu.talent.label"), url: f("menu_2.menu.talent.url") },
+    { label: f("menu_2.menu.digital_core.label"), url: f("menu_2.menu.digital_core.url") },
     { label: f("menu_2.menu.blog.label"), url: f("menu_2.menu.blog.url") },
   ];
 

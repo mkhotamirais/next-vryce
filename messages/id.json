@@ -2,14 +2,14 @@
   "main_menu": {
     "home": { "label": "Beranda", "url": "/" },
     "services": { "label": "Layanan", "url": "/services" },
-    "digital_core": { "label": "Solusi Digital", "url": "digital-core" },
+    "digital_core": { "label": "Solusi Digital", "url": "/digital-core" },
     "talent": { "label": "Talenta", "url": "/talent" },
     "blog": { "label": "Blog", "url": "/blog" }
   },
   "footer": {
     "tagline": "Strategi yang didorong oleh tujuan Anda, dirancang untuk memberikan hasil.",
     "menu_1": {
-      "title": "Layanan Vryce",
+      "title": "Layanan",
       "menu": {
         "layanan1": { "label": "Vryce Performance Ads Package", "url": "/services" },
         "layanan2": { "label": "Vryce SEO & SEM Package", "url": "/services" },
@@ -19,12 +19,16 @@
       }
     },
     "menu_2": {
-      "title": "Agensi Vryce",
+      "title": "Agensi",
       "menu": {
         "about": { "label": "Tentang", "url": "/about" },
+        "talent": { "label": "Talenta", "url": "/talent" },
+        "digital_core": { "label": "Solusi Digital", "url": "/digital-core" },
         "blog": { "label": "Blog", "url": "/blog" }
       }
-    }
+    },
+    "menu_3": { "title": "Kontak" },
+    "menu_4": { "title": "Sosial Media" }
   },
   "metadata": {
     "home": {
@@ -50,7 +54,6 @@
       "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
       "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu bisnis Anda tumbuh melalui solusi pemasaran digital yang inovatif dan efektif."
     },
-    "our_clients_label": "Dipercaya oleh berbagai perusahaan hingga saat ini.",
     "about": {
       "title": "Kami Memaksimalkan Pertumbuhan Lewat Data, Performa, dan Hasil Nyata.",
       "paragraph_1": "Kami percaya bahwa digital marketing tidak cukup hanya dengan menjalankan campaign. Oleh karena itu, Vryce mengelola seluruh ekosistem marketing sebagai satu sistem terintegrasi, yang dirancang untuk memastikan setiap channel memberikan kontribusi nyata terhadap tujuan bisnis klien.",
@@ -66,6 +69,14 @@
       "title": "Mengapa Memilih Vryce?",
       "description": "Kami menggabungkan presisi berbasis data dengan keunggulan kreatif untuk mengubah biaya pemasaran Anda menjadi pertumbuhan bisnis yang terukur melalui pendekatan berorientasi hasil.",
       "points": "Fokus pada performa dan hasil bisnis | Strategi marketing berbasis data | Talent & creator management yang berkualitas | Affiliate marketing sebagai growth engine | Fleksibel: retainer, project-based, hingga performance-based"
+    },
+    "our_clients": {
+      "title": "Klien Kami",
+      "description": "Dipercaya oleh berbagai perusahaan hingga saat ini."
+    },
+    "contact": {
+      "title": "Mari Bangun Sesuatu yang Luar Biasa Bersama",
+      "description": "Sedang mencari mitra untuk proyek selanjutnya atau butuh konsultasi? Mari kita wujudkan ide kamu menjadi nyata."
     }
   },
   "about": {

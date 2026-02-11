@@ -1,11 +1,13 @@
 import { Montserrat } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/layouts/Header";
-import Footer from "@/components/layouts/Footer";
+// import Footer from "@/components/layouts/Footer";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/dist/client/components/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import Footer2 from "@/components/layouts/Footer2";
+import ButtonEdge from "@/components/ButtonEdge";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -47,7 +49,9 @@ export default async function RootLayout({ children, params }: Props) {
         <NextIntlClientProvider>
           <Header />
           <main className="min-h-screen">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
+          <Footer2 />
+          <ButtonEdge />
         </NextIntlClientProvider>
       </body>
     </html>

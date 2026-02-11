@@ -5,17 +5,21 @@ export const routing = defineRouting({
   defaultLocale: "id",
   pathnames: {
     "/": "/",
-    "/about": {
-      en: "/about",
-      id: "/tentang",
-    },
     "/services": {
       en: "/services",
       id: "/layanan",
     },
-    "/contact": {
-      en: "/contact",
-      id: "/kontak",
+    "/digital-core": {
+      en: "/digital-core",
+      id: "/solusi-digital",
+    },
+    "/talent": {
+      en: "/talent",
+      id: "/talenta",
+    },
+    "/blog": {
+      en: "/blog",
+      id: "/blog",
     },
   },
 });

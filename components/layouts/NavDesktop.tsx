@@ -22,7 +22,7 @@ export default function NavDesktop() {
               (item.url === "/" && (pathname === "/en" || pathname === "/id"));
             return (
               <li key={item.label}>
-                <Button variant={isActive ? "secondary" : "ghost"} asChild className="">
+                <Button variant={"ghost"} asChild className={`${isActive ? "font-semibold" : ""}`}>
                   <Link href={item.url}>{item.label}</Link>
                 </Button>
               </li>

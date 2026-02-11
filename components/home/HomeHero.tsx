@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-// import Link from "next/link";
 import { useTranslations } from "next-intl";
-import HomeHeroClients from "./HomeHeroClients";
 
 export default function HomeHero() {
   const t = useTranslations("home.hero");
@@ -21,21 +19,14 @@ export default function HomeHero() {
           <h1 className="text-5xl md:text-6xl font-bold">{title}</h1>
           <div className="flex flex-col items-center">
             <p className="text-xl md:text-2xl font-medium text-primary">{tagline}</p>
-            {/* <Separator className="max-w-32 bg-primary mt-2 min-h-1 rounded" /> */}
           </div>
           <p className="text-base lg:text-lg text-muted-foreground">{description}</p>
           <div className="flex gap-2">
             <Button size={"lg"} className="w-48 py-8 px-12 text-lg rounded-full" asChild>
-              {/* <Link href="#services">{ourServices}</Link> */}
               <a href="#services">{ourServices}</a>
             </Button>
-            {/* <Button variant={"outline"} size={"lg"} asChild>
-              <Link href="/contact">Hubungi Kami</Link>
-            </Button> */}
           </div>
-          <div className="w-full md:w-1/3 h-full"></div>
         </div>
-        <HomeHeroClients />
       </div>
     </section>
   );

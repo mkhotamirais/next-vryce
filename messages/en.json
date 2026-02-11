@@ -2,14 +2,14 @@
   "main_menu": {
     "home": { "label": "Home", "url": "/" },
     "services": { "label": "Services", "url": "/services" },
-    "digital_core": { "label": "Digital Core", "url": "digital-core" },
+    "digital_core": { "label": "Digital Core", "url": "/digital-core" },
     "talent": { "label": "Talent", "url": "/talent" },
     "blog": { "label": "Blog", "url": "/blog" }
   },
   "footer": {
-    "tagline": "strategies driven by your purpose, designed to perform.",
+    "tagline": "Strategies driven by your purpose, designed to perform.",
     "menu_1": {
-      "title": "Vryce Services",
+      "title": "Services",
       "menu": {
         "layanan1": { "label": "Vryce Performance Ads Package", "url": "/services" },
         "layanan2": { "label": "Vryce SEO & SEM Package", "url": "/services" },
@@ -19,12 +19,16 @@
       }
     },
     "menu_2": {
-      "title": "Vryce Agency",
+      "title": "Agency",
       "menu": {
         "about": { "label": "About", "url": "/about" },
+        "talent": { "label": "Talent", "url": "/talent" },
+        "digital_core": { "label": "Digital Core", "url": "/digital-core" },
         "blog": { "label": "Blog", "url": "/blog" }
       }
-    }
+    },
+    "menu_3": { "title": "Contact" },
+    "menu_4": { "title": "Socials" }
   },
   "metadata": {
     "home": {
@@ -50,7 +54,6 @@
       "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
       "description": "Vryce is a digital marketing agency specializing in performance-driven, data-focused, and result-oriented strategies. We help your business scale through innovative and effective digital marketing solutions."
     },
-    "our_clients_label": "Trusted by these companies so far.",
     "about": {
       "title": "Maximizing Growth Through Data, Performance, and Real Results.",
       "paragraph_1": "We believe effective digital marketing goes beyond just running campaigns. Therefore, Vryce manages the entire marketing ecosystem as an integrated system, ensuring every channel contributes significantly to our clients' business goals.",
@@ -66,6 +69,14 @@
       "title": "Why Choose Vryce?",
       "description": "We combine data-driven precision with creative excellence to turn your marketing spend into measurable business growth through a results-oriented approach.",
       "points": "Focus on performance and business results | Data-driven marketing strategies | Quality talent & creator management | Affiliate marketing as a growth engine | Flexible: retainer, project-based, or performance-based"
+    },
+    "our_clients": {
+      "title": "Our Clients",
+      "description": "Trusted by these companies so far."
+    },
+    "contact": {
+      "title": "Let’s Build Something Great Together",
+      "description": "Looking for a partner for your next project or in need of a consultation? Let’s turn your ideas into reality."
     }
   },
   "about": {
