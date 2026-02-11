@@ -2,7 +2,7 @@
 
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
@@ -28,6 +28,11 @@ export default function NavMobile() {
               <div>
                 <SwitchLangButton />
               </div>
+              <SheetClose asChild>
+                <Button variant={"ghost"} size={"icon"}>
+                  <X className="size-5" />
+                </Button>
+              </SheetClose>
             </SheetTitle>
             <SheetDescription className="sr-only">Mobile Menu</SheetDescription>
           </SheetHeader>

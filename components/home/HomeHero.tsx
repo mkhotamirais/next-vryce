@@ -16,7 +16,7 @@ export default function HomeHero() {
       <div className="container relative">
         <div className="-z-50 text-[400px] blur-2xl text-primary/30 font-medium absolute top-0 leading-none">V</div>
         <div className="flex flex-col items-start sm:items-center text-left sm:text-center max-w-4xl mx-auto space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold">{title}</h1>
+          <h1 className="text-4xl md:text-6xl font-bold">{title}</h1>
           <div className="flex flex-col items-center">
             <p className="text-xl md:text-2xl font-medium text-primary">{tagline}</p>
           </div>

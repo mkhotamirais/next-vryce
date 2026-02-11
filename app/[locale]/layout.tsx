@@ -44,7 +44,7 @@ export default async function RootLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale} className="">
+    <html lang={locale} className="scroll-smooth">
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextIntlClientProvider>
           <Header />
