@@ -32,8 +32,32 @@
   },
   "metadata": {
     "home": {
-      "title": "Vryce - Agensi Pemasaran Digital Terdepan di Indonesia",
-      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis."
+      "title": "Vryce - Agensi Digital Marketing Terkemuka di Indonesia",
+      "description": "Vryce adalah agensi digital marketing berbasis performa yang fokus pada strategi berbasis data dan hasil bisnis nyata."
+    },
+    "about": {
+      "title": "Tentang Vryce - Misi Kami dan Tim Ahli",
+      "description": "Kenali para visioner di balik Vryce. Kami menggabungkan kreativitas dan data untuk membantu bisnis berkembang di era digital."
+    },
+    "services": {
+      "title": "Solusi Digital & Layanan Pemasaran | Vryce",
+      "description": "Jelajahi layanan lengkap kami mulai dari SEO dan SEM hingga Manajemen Media Sosial yang dirancang untuk memperkuat kehadiran digital brand Anda."
+    },
+    "talent": {
+      "title": "Vryce Talent - Manajemen Kreator Profesional",
+      "description": "Terhubung dengan kreator dan influencer papan atas. Kami mengelola talenta yang mendorong interaksi dan cerita brand yang autentik."
+    },
+    "digital_core": {
+      "title": "Digital Core - Infrastruktur Teknologi Tangguh dari Vryce",
+      "description": "Perkuat fondasi bisnis Anda dengan layanan Digital Core kami, berfokus pada pengembangan web, integrasi CRM, dan teknologi pendukung."
+    },
+    "blog": {
+      "title": "Vryce Insights - Tren & Tips Digital Marketing",
+      "description": "Dapatkan informasi terbaru seputar tren pemasaran digital, studi kasus, dan wawasan ahli agar bisnis Anda tetap unggul."
+    },
+    "contact": {
+      "title": "Kontak Vryce - Mari Bangun Kesuksesan Bersama",
+      "description": "Siap untuk berkembang? Hubungi kami untuk konsultasi, kemitraan, atau pertanyaan. Tim kami siap membantu meningkatkan skala bisnis Anda."
     }
   },
   "buttons": {
@@ -180,5 +204,11 @@
       "purpose": "Mengoptimalkan dan mempromosikan toko marketplace agar dikelola secara profesional, mudah ditemukan oleh calon pembeli, serta meningkatkan performa penjualan.",
       "benefits": "Manajemen Marketplace Seller Center | Optimasi tampilan toko marketplace (profil, banner, dan branding) | Optimasi judul produk, deskripsi, dan keyword marketplace | Optimasi foto & tampilan produk (guideline / penyesuaian layout) | Setup promo dasar (diskon, voucher, dan campaign marketplace) | Basic marketplace ads setup (Shopee Ads / Tokopedia Ads) | Monitoring performa & rekomendasi strategi peningkatan penjualan"
     }
+  },
+  "not_found": {
+    "title": "404",
+    "sub_headline": "Not Found",
+    "description": "Halaman yang Anda cari tidak ditemukan.",
+    "button": "Kembali ke Beranda"
   }
 }

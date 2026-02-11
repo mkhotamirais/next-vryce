@@ -34,6 +34,30 @@
     "home": {
       "title": "Vryce - Leading Digital Marketing Agency in Indonesia",
       "description": "Vryce is a performance-driven digital marketing agency focusing on data-backed strategies and real business results."
+    },
+    "about": {
+      "title": "About Vryce - Our Mission and Expert Team",
+      "description": "Learn about the visionaries behind Vryce. We combine creativity and data to help businesses scale in the digital era."
+    },
+    "services": {
+      "title": "Digital Solutions & Marketing Services | Vryce",
+      "description": "Explore our comprehensive services from SEO and SEM to Social Media Management tailored to grow your brand's digital presence."
+    },
+    "talent": {
+      "title": "Vryce Talent - Professional Creator Management",
+      "description": "Connect with top-tier creators and influencers. We manage talent that drives engagement and authentic brand storytelling."
+    },
+    "digital_core": {
+      "title": "Digital Core - Robust Tech Infrastructure by Vryce",
+      "description": "Strengthen your business foundation with our Digital Core services, focusing on web development, CRM integration, and tech stacks."
+    },
+    "blog": {
+      "title": "Vryce Insights - Digital Marketing Trends & Tips",
+      "description": "Stay updated with the latest digital marketing trends, case studies, and expert insights to keep your business ahead of the curve."
+    },
+    "contact": {
+      "title": "Contact Vryce - Let's Build Your Success Together",
+      "description": "Ready to grow? Contact us for consultations, partnerships, or inquiries. Our team is here to help you scale your business."
     }
   },
   "buttons": {
@@ -180,5 +204,11 @@
       "purpose": "Optimize and promote marketplace stores to be professionally managed, easily discoverable by potential buyers, and boost sales performance.",
       "benefits": "Marketplace Seller Center management | Storefront optimization (Profile, Banner, Branding) | Product title, description, and keyword optimization | Product image & layout optimization | Basic promo setup (Discounts, Vouchers, Campaigns) | Basic marketplace ads setup (Shopee/Tokopedia Ads) | Performance monitoring & sales growth strategy"
     }
+  },
+  "not_found": {
+    "title": "404",
+    "sub_headline": "Not Found",
+    "description": "The page you are looking for does not exist.",
+    "button": "Back to Home"
   }
 }
