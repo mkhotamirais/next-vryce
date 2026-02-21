@@ -12,10 +12,10 @@ import {
 } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
 import SwitchLangButton from "../SwitchLangButton";
+import { Link } from "@/i18n/navigation";
 // import AuthBtn from "./AuthBtn";
 
 export default function NavMobile() {
