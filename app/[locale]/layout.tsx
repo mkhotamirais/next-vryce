@@ -1,7 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/layouts/Header";
-// import Footer from "@/components/layouts/Footer";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/dist/client/components/navigation";
 import { routing } from "@/i18n/routing";
@@ -9,9 +8,9 @@ import { getTranslations } from "next-intl/server";
 import Footer2 from "@/components/layouts/Footer2";
 import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
-// import ClientProvider from "@/components/providers/ClientProvider";
+import ClientProvider from "@/components/providers/ClientProvider";
 import { Toaster } from "sonner";
-// import { TooltipProvider } from "@/components/ui/tooltip";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -51,17 +50,17 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale} className="scroll-smooth">
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextAuthProvider>
-          {/* <ClientProvider> */}
-          {/* <TooltipProvider> */}
-          <NextIntlClientProvider>
-            <Toaster position="top-center" richColors />
-            <Header />
-            <main className="min-h-screen">{children}</main>
-            <Footer2 />
-            <ButtonEdge />
-          </NextIntlClientProvider>
-          {/* </TooltipProvider> */}
-          {/* </ClientProvider> */}
+          <ClientProvider>
+            <TooltipProvider>
+              <NextIntlClientProvider>
+                <Toaster position="top-center" richColors />
+                <Header />
+                <main className="min-h-screen">{children}</main>
+                <Footer2 />
+                <ButtonEdge />
+              </NextIntlClientProvider>
+            </TooltipProvider>
+          </ClientProvider>
         </NextAuthProvider>
       </body>
     </html>
