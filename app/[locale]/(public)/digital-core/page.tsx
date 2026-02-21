@@ -24,7 +24,7 @@ export default function DigitalCore() {
   const t = useTranslations("digital_core");
   const title = t("title");
   return (
-    <div>
+    <div className="scroll-mt-20">
       <HeroWrapper title={title} />
       <section className="py-12">
         <div className="container">Content layanan web, landing page, sama ai </div>

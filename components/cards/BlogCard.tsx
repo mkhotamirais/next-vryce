@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { BlogProps } from "@/types/blog";
-import { diffForHumans, smartTrim } from "@/lib/utils";
+import { diffForHumans, smartTrim, stripHtml } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowRight, Calendar, ImageIcon } from "lucide-react";
 import { Badge } from "../ui/badge";
@@ -37,7 +37,10 @@ export default function BlogCard({ blog }: Props) {
             {smartTrim(blog.title, 60)}
           </h3>
         </Link>
-        <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: smartTrim(blog.content, 120) }}></div>
+        <div
+          className="text-muted-foreground"
+          dangerouslySetInnerHTML={{ __html: stripHtml(smartTrim(blog.content, 250)) }}
+        ></div>
         <div className="flex items-center gap-1 text-sm text-muted-foreground">
           <Calendar className="size-4" />
           <span>{diffForHumans(blog.createdAt)}</span>

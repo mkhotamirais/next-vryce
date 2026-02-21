@@ -1,6 +1,6 @@
 import { getBlogBySlug, getBlogs } from "@/actions/blog";
 import ShareSocialGroup from "@/components/ShareSocialGroup";
-import { baseUrl, blogLimit } from "@/lib/common";
+import { baseUrl } from "@/lib/common";
 import { diffForHumans, smartTrim } from "@/lib/utils";
 import { ArrowLeft, Calendar, Folder, ImageIcon } from "lucide-react";
 import Image from "next/image";
@@ -15,7 +15,7 @@ export const generateMetadata = async ({ params }: { params: Promise<{ slug: str
 };
 
 export const generateStaticParams = async () => {
-  const { blogs } = await getBlogs({ limit: blogLimit });
+  const { blogs } = await getBlogs();
   return blogs.map((blog) => ({ slug: blog.slug }));
 };
 
@@ -63,6 +63,7 @@ export default async function BlogDetail({ params }: { params: Promise<{ slug: s
                 width={1000}
                 height={600}
                 className="h-full w-full object-cover object-center"
+                priority
               />
             ) : (
               <div className="flex items-center justify-center h-full">

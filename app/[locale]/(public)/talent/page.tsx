@@ -24,11 +24,11 @@ export default function Talent() {
   const t = useTranslations("talent");
   const title = t("title");
   return (
-    <div>
+    <>
       <HeroWrapper title={title} />
       <section className="py-12">
         <div className="container">Content</div>
       </section>
-    </div>
+    </>
   );
 }
