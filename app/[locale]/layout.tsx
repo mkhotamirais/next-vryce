@@ -45,27 +45,26 @@ type Props = {
 
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
+  setRequestLocale(locale);
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
-  setRequestLocale(locale);
-
   return (
     <html lang={locale} className="scroll-smooth">
       <body className={`${montserrat.variable} font-montserrat`}>
-        <NextIntlClientProvider>
-          <NextAuthProvider>
-            <TooltipProvider>
+        <NextAuthProvider>
+          <TooltipProvider>
+            <NextIntlClientProvider>
               <Toaster position="top-center" richColors />
               <Header />
               <main className="min-h-screen">{children}</main>
               <Footer2 />
               <ButtonEdge />
-            </TooltipProvider>
-          </NextAuthProvider>
-        </NextIntlClientProvider>
+            </NextIntlClientProvider>
+          </TooltipProvider>
+        </NextAuthProvider>
       </body>
     </html>
   );

@@ -4,15 +4,21 @@ import HomeHero from "@/components/home/HomeHero";
 import HomeOurClients from "@/components/home/HomeOurClients";
 import HomeOurService from "@/components/home/HomeServices";
 import HomeWhyVrice from "@/components/home/HomeWhyVrice";
+import { setRequestLocale } from "next-intl/server";
+import { use } from "react";
 
-export default function Home() {
+export default function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = use(params);
+
+  // Enable static rendering
+  setRequestLocale(locale);
   return (
     <>
       <HomeHero />
-      {/* <HomeWhyVrice />
+      <HomeWhyVrice />
       <HomeOurService />
       <HomeOurClients />
-      <HomeContactUs /> */}
+      <HomeContactUs />
     </>
   );
 }

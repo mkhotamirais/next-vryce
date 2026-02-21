@@ -1,4 +1,4 @@
-import HeroWrapper from "@/components/HeroWrapper";
+// import HeroWrapper from "@/components/HeroWrapper";
 import { useTranslations } from "next-intl";
 // import { getTranslations } from "next-intl/server";
 
@@ -21,8 +21,8 @@ import { useTranslations } from "next-intl";
 // }
 
 export default function DigitalCore() {
-  const t = useTranslations("DigitalCore");
-  const title = t("Title");
+  const t = useTranslations("digital_core");
+  const title = t("title");
   return (
     <div className="scroll-mt-20">
       <p>digital core {title}</p>
