@@ -28,7 +28,7 @@ export default function ButtonEdge() {
     <div className="fixed bottom-8 sm:bottom-10 right-8 sm:right-16 flex items-center gap-2">
       {isVisible && (
         <Button variant={"outline"} asChild className="size-12 animate-in rounded-full text-primary">
-          <a href="#top" aria-label="scroll to top">
+          <a href={"#top"} aria-label="scroll to top">
             <FaChevronUp className="size-5" />
           </a>
         </Button>

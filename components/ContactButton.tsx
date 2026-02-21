@@ -1,8 +1,10 @@
 import React from "react";
 import { Button } from "./ui/button";
-import Link from "next/link";
 import { Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { links as l } from "@/lib/common";
+
+const wa = l.wa;
 
 export default function ContactButton() {
   const t = useTranslations("buttons");
@@ -11,10 +13,10 @@ export default function ContactButton() {
 
   return (
     <Button variant={"outline"} className="border">
-      <Link href="/services" className="flex items-center gap-2">
+      <a href={wa.url} className="flex items-center gap-2">
         <Phone />
         {contact}
-      </Link>
+      </a>
     </Button>
   );
 }

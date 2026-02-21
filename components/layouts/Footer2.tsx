@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 // import useMenu from "@/hooks/useMenu";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
-import { links as l } from "@/lib/common";
+import { address, links as l } from "@/lib/common";
 
 export default function Footer2() {
   const f = useTranslations("footer");
@@ -38,9 +38,7 @@ export default function Footer2() {
           {/* <FooterMenu title={title2} list={footerMenu2} /> */}
           <div>
             <h4 className="font-semibold text-xl mb-4">Address</h4>
-            <address className="text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum!
-            </address>
+            <address className="text-gray-400">{address}</address>
           </div>
           <div>
             <h4 className="font-semibold text-xl mb-4">{title3}</h4>

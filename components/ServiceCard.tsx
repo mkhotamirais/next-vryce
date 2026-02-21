@@ -22,8 +22,8 @@ export default function ServiceCard({ item }: { item: IService }) {
     <div
       className={`bg-white flex flex-col space-y-4 shadow hover:shadow-md p-6 rounded-lg transition-all ${isServicesPage ? "" : "text-center items-center"} `}
     >
-      <h3 className="text-xl font-bold max-w-64">{item.title}</h3>
-      <div>
+      <h3 className="text-xl font-bold h-auto md:h-16">{item.title}</h3>
+      <div className="h-auto md:h-12">
         <p className="text-2xl font-semibold mb-1 space-x-1 leading-none">
           <span className="text-primary">{item.price.replace("juta", "jt").replace("Million", "M")}</span>
           <span className="text-sm">/</span>
@@ -31,7 +31,7 @@ export default function ServiceCard({ item }: { item: IService }) {
         </p>
         <p className="text-sm">{item.priceNote}</p>
       </div>
-      <p className="text-muted-foreground text-sm leading-relaxed">
+      <p className="h-auto md:h-20 text-muted-foreground text-sm leading-relaxed">
         <span className="font-semibold">{purposeLabel}: </span>
         {item.purpose}
       </p>

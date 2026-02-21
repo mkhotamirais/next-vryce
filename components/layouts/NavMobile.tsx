@@ -14,7 +14,6 @@ import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
-import SwitchLangButton from "../SwitchLangButton";
 import { Link } from "@/i18n/navigation";
 import AuthBtn from "./AuthBtn";
 
@@ -35,9 +34,7 @@ export default function NavMobile() {
               <SheetClose>
                 <Logo />
               </SheetClose>
-              <div>
-                <SwitchLangButton />
-              </div>
+
               <SheetClose asChild>
                 <Button variant={"ghost"} size={"icon"}>
                   <X className="size-5" />

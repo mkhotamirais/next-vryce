@@ -9,6 +9,8 @@ export const adminMenu = [
   { label: "Blog Category", url: "/admin/blog-category" },
 ];
 
+export const address = "Denpasar, Bali, Indonesia";
+
 export const blogLimit = 12;
 
 const isProd = process.env.NODE_ENV === "development";

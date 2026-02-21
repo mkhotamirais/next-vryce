@@ -7,7 +7,7 @@
     "blog": { "label": "Blog", "url": "/blog" }
   },
   "footer": {
-    "tagline": "Strategi yang didorong oleh tujuan Anda, dirancang untuk memberikan hasil.",
+    "tagline": "Strategi yang didorong oleh tujuan anda, dirancang untuk memberikan hasil.",
     "menu_1": {
       "title": "Layanan",
       "menu": {
@@ -41,7 +41,7 @@
     },
     "services": {
       "title": "Solusi Digital & Layanan Pemasaran | Vryce",
-      "description": "Jelajahi layanan lengkap kami mulai dari SEO dan SEM hingga Manajemen Media Sosial yang dirancang untuk memperkuat kehadiran digital brand Anda."
+      "description": "Jelajahi layanan lengkap kami mulai dari SEO dan SEM hingga Manajemen Media Sosial yang dirancang untuk memperkuat kehadiran digital brand anda."
     },
     "talent": {
       "title": "Vryce Talent - Manajemen Kreator Profesional",
@@ -49,15 +49,15 @@
     },
     "digital_core": {
       "title": "Digital Core - Infrastruktur Teknologi Tangguh dari Vryce",
-      "description": "Perkuat fondasi bisnis Anda dengan layanan Digital Core kami, berfokus pada pengembangan web, integrasi CRM, dan teknologi pendukung."
+      "description": "Perkuat fondasi bisnis anda dengan layanan Digital Core kami, berfokus pada pengembangan web, integrasi CRM, dan teknologi pendukung."
     },
     "blog": {
       "title": "Vryce Insights - Tren & Tips Digital Marketing",
-      "description": "Dapatkan informasi terbaru seputar tren pemasaran digital, studi kasus, dan wawasan ahli agar bisnis Anda tetap unggul."
+      "description": "Dapatkan informasi terbaru seputar tren pemasaran digital, studi kasus, dan wawasan ahli agar bisnis anda tetap unggul."
     },
     "contact": {
       "title": "Kontak Vryce - Mari Bangun Kesuksesan Bersama",
-      "description": "Siap untuk berkembang? Hubungi kami untuk konsultasi, kemitraan, atau pertanyaan. Tim kami siap membantu meningkatkan skala bisnis Anda."
+      "description": "Siap untuk berkembang? Hubungi kami untuk konsultasi, kemitraan, atau pertanyaan. Tim kami siap membantu meningkatkan skala bisnis anda."
     }
   },
   "buttons": {
@@ -76,7 +76,7 @@
     "hero": {
       "title": "Agensi Pemasaran Digital",
       "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
-      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu bisnis Anda tumbuh melalui solusi pemasaran digital yang inovatif dan efektif."
+      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu bisnis anda tumbuh melalui solusi pemasaran digital yang inovatif dan efektif."
     },
     "about": {
       "title": "Kami Memaksimalkan Pertumbuhan Lewat Data, Performa, dan Hasil Nyata.",
@@ -86,12 +86,12 @@
     "services": {
       "title": "Paket Layanan & Harga",
       "tagline": "Scale Your Brand",
-      "description": "Pilih mitra strategis yang dirancang untuk mempercepat pertumbuhan Anda. Paket berbasis performa kami disesuaikan untuk memberikan dampak terukur dan hasil bisnis yang berkelanjutan."
+      "description": "Temukan layanan digital marketing yang dirancang untuk menghadirkan pertumbuhan bisnis yang nyata, terukur, dan berkelanjutan"
     },
     "why": {
       "tagline": "Beyond Marketing",
       "title": "Mengapa Memilih Vryce?",
-      "description": "Kami menggabungkan presisi berbasis data dengan keunggulan kreatif untuk mengubah biaya pemasaran Anda menjadi pertumbuhan bisnis yang terukur melalui pendekatan berorientasi hasil.",
+      "description": "Kami menggabungkan presisi berbasis data dengan keunggulan kreatif untuk mengubah biaya pemasaran menjadi pertumbuhan bisnis yang terukur melalui pendekatan berorientasi hasil",
       "points": "Fokus pada performa dan hasil bisnis | Strategi marketing berbasis data | Talent & creator management yang berkualitas | Affiliate marketing sebagai growth engine | Fleksibel: retainer, project-based, hingga performance-based"
     },
     "our_clients": {
@@ -121,7 +121,7 @@
   },
   "digital_core": {
     "title": "Solusi Digital Vryce",
-    "sub_headline": "Fondasi Teknologi di Balik Dominasi Digital Anda"
+    "sub_headline": "Fondasi Teknologi di Balik Dominasi Digital anda"
   },
   "talent": {
     "title": "Talenta Vryce",
@@ -208,14 +208,14 @@
   "not_found": {
     "title": "404",
     "sub_headline": "Not Found",
-    "description": "Halaman yang Anda cari tidak ditemukan.",
+    "description": "Halaman yang anda cari tidak ditemukan.",
     "button": "Kembali ke Beranda"
   },
   "auth": {
     "account_0": "Belum punya akun?",
     "account_1": "Sudah punya akun?",
-    "login_title": "Login ke akun Anda",
-    "register_title": "Daftar akun Anda"
+    "login_title": "Login ke akun anda",
+    "register_title": "Daftar akun anda"
   },
   "validate": {
     "common": {

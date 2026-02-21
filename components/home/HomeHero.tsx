@@ -1,15 +1,16 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function HomeHero() {
   const t = useTranslations("home.hero");
-  // const b = useTranslations("buttons");
+  const b = useTranslations("buttons");
 
   const title = t("title");
   const tagline = t("tagline");
   const description = t("description");
-  // const ourServices = b("our_services");
+  const ourServices = b("our_services");
 
   return (
     <section className="py-12 md:pt-28 md:pb-16">
@@ -22,9 +23,9 @@ export default function HomeHero() {
           </div>
           <p className="text-base lg:text-lg text-muted-foreground">{description}</p>
           <div className="flex gap-2">
-            {/* <Button size={"lg"} className="w-48 py-8 px-12 text-lg rounded-full" asChild>
-              <a href="#services">{ourServices}</a>
-            </Button> */}
+            <Button size={"lg"} className="w-48 py-8 px-12 text-lg rounded-full" asChild>
+              <Link href="/services">{ourServices}</Link>
+            </Button>
           </div>
         </div>
       </div>
