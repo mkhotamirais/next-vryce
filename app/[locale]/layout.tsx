@@ -55,17 +55,17 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale} className="scroll-smooth">
       <body className={`${montserrat.variable} font-montserrat`}>
-        <NextAuthProvider>
-          <TooltipProvider>
-            <NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <NextAuthProvider>
+            <TooltipProvider>
               <Toaster position="top-center" richColors />
               <Header />
               <main className="min-h-screen">{children}</main>
               <Footer2 />
               <ButtonEdge />
-            </NextIntlClientProvider>
-          </TooltipProvider>
-        </NextAuthProvider>
+            </TooltipProvider>
+          </NextAuthProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
