@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import EditBlogForm from "./EditBlogForm";
-import { getBlogBySlug } from "@/actions/blog";
 import { getBlogCategories } from "@/actions/blogCategory";
 import { redirect } from "next/navigation";
+import { getBlogBySlug } from "@/actions/getData";
 
 export default async function EditBlog({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
