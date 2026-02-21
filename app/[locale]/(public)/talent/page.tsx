@@ -1,6 +1,7 @@
 import HeroWrapper from "@/components/HeroWrapper";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { use } from "react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -20,8 +21,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Talent() {
-  const t = useTranslations("talent");
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Talent({ params }: Props) {
+  const { locale } = await params;
+
+  setRequestLocale(locale);
+  const t = await getTranslations("talent");
   const title = t("title");
   return (
     <>

@@ -7,10 +7,13 @@ import HomeWhyVrice from "@/components/home/HomeWhyVrice";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
-export default function Home({ params }: { params: Promise<{ locale: string }> }) {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default function Home({ params }: Props) {
   const { locale } = use(params);
 
-  // Enable static rendering
   setRequestLocale(locale);
   return (
     <>
