@@ -25,8 +25,8 @@ export default function DigitalCore() {
   const title = t("title");
   return (
     <div className="scroll-mt-20">
-      <p>digital core</p>
-      <HeroWrapper title={title} />
+      <p>digital core {title}</p>
+      {/* <HeroWrapper title={title} /> */}
       {/* <section className="py-12">
         <div className="container">Content layanan web, landing page, sama ai </div>
       </section> */}
