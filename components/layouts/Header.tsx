@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "../Logo";
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
-// import NavMobile2 from "./NavMobile2";
 
 export default function Header() {
   return (

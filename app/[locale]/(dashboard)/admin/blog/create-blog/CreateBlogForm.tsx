@@ -14,15 +14,13 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { blogSchema } from "@/lib/schemas/blog";
-import { useBlogCategory } from "@/hooks/tanstack-hooks/useBlogCategory";
 import TiptapEditor from "@/components/ui/custom/tiptap/TiptapEditor";
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { createBlog } from "@/actions/blog";
 
 type inferSchema = z.infer<typeof blogSchema>;
 
-export default function CreateBlogForm() {
-  const { data: blogCategories }: { data: BlogCategory[] | undefined } = useBlogCategory();
+export default function CreateBlogForm({ blogCategories }: { blogCategories: BlogCategory[] }) {
   const defaultCategory = blogCategories?.find((category) => category.isDefault);
 
   const form = useForm<inferSchema>({
@@ -103,103 +101,101 @@ export default function CreateBlogForm() {
   };
 
   return (
-    <>
-      <form id="blog-category-form" onSubmit={form.handleSubmit(onSubmit)}>
-        <FieldGroup>
-          <Controller
-            name="image"
-            control={form.control}
-            render={({ field, fieldState }) => (
-              <Field data-invalid={fieldState.invalid}>
-                <FieldLabel htmlFor="image">Image</FieldLabel>
-                <div className="space-y-2">
-                  <Input
-                    id="image"
-                    type="file"
-                    accept="image/*"
-                    ref={(e) => {
-                      field.ref(e);
-                      fileInputRef.current = e;
-                    }}
-                    onChange={(e) => handleFileChange(e, field.onChange)}
-                  />
+    <form id="blog-category-form" onSubmit={form.handleSubmit(onSubmit)}>
+      <FieldGroup>
+        <Controller
+          name="image"
+          control={form.control}
+          render={({ field, fieldState }) => (
+            <Field data-invalid={fieldState.invalid}>
+              <FieldLabel htmlFor="image">Image</FieldLabel>
+              <div className="space-y-2">
+                <Input
+                  id="image"
+                  type="file"
+                  accept="image/*"
+                  ref={(e) => {
+                    field.ref(e);
+                    fileInputRef.current = e;
+                  }}
+                  onChange={(e) => handleFileChange(e, field.onChange)}
+                />
 
-                  {imagePreview && (
-                    <div className="relative mt-2">
-                      <Image
-                        src={imagePreview}
-                        alt="preview"
-                        width={500}
-                        height={300}
-                        className="w-full h-56 object-contain rounded border"
-                      />
-                      <Button
-                        type="button"
-                        variant="destructive"
-                        size="icon"
-                        onClick={() => handleRemoveImage(field.onChange)}
-                        className="absolute right-3 top-3"
-                      >
-                        <FaTrash />
-                      </Button>
-                    </div>
-                  )}
-                </div>
-                {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-              </Field>
-            )}
-          />
+                {imagePreview && (
+                  <div className="relative mt-2">
+                    <Image
+                      src={imagePreview}
+                      alt="preview"
+                      width={500}
+                      height={300}
+                      className="w-full h-56 object-contain rounded border"
+                    />
+                    <Button
+                      type="button"
+                      variant="destructive"
+                      size="icon"
+                      onClick={() => handleRemoveImage(field.onChange)}
+                      className="absolute right-3 top-3"
+                    >
+                      <FaTrash />
+                    </Button>
+                  </div>
+                )}
+              </div>
+              {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+            </Field>
+          )}
+        />
 
-          <Controller
-            name="title"
-            control={form.control}
-            render={({ field, fieldState }) => (
-              <Field data-invalid={fieldState.invalid}>
-                <FieldLabel htmlFor="title">Title</FieldLabel>
-                <Input {...field} id="title" aria-invalid={fieldState.invalid} placeholder="Blog title" />
-                {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-              </Field>
-            )}
-          />
-          <Controller
-            name="content"
-            control={form.control}
-            render={({ field, fieldState }) => (
-              <Field data-invalid={fieldState.invalid}>
-                <FieldLabel htmlFor="content">Content</FieldLabel>
-                <TiptapEditor value={field.value} onChange={field.onChange} />
-                {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-              </Field>
-            )}
-          />
-          <Controller
-            name="categoryId"
-            control={form.control}
-            render={({ field, fieldState }) => (
-              <Field data-invalid={fieldState.invalid}>
-                <FieldLabel htmlFor="categoryId">Category</FieldLabel>
-                <Select value={field.value || defaultCategory?.id || ""} onValueChange={field.onChange}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Pilih category" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {blogCategoriesOptions?.map((item) => (
-                      <SelectItem key={item.value} value={item.value}>
-                        {item.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>{" "}
-                {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-              </Field>
-            )}
-          />
-        </FieldGroup>
-        <Button type="submit" className="mt-4" disabled={pending}>
-          {pending && <Spinner />}
-          Create
-        </Button>
-      </form>
-    </>
+        <Controller
+          name="title"
+          control={form.control}
+          render={({ field, fieldState }) => (
+            <Field data-invalid={fieldState.invalid}>
+              <FieldLabel htmlFor="title">Title</FieldLabel>
+              <Input {...field} id="title" aria-invalid={fieldState.invalid} placeholder="Blog title" />
+              {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+            </Field>
+          )}
+        />
+        <Controller
+          name="content"
+          control={form.control}
+          render={({ field, fieldState }) => (
+            <Field data-invalid={fieldState.invalid}>
+              <FieldLabel htmlFor="content">Content</FieldLabel>
+              <TiptapEditor value={field.value} onChange={field.onChange} />
+              {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+            </Field>
+          )}
+        />
+        <Controller
+          name="categoryId"
+          control={form.control}
+          render={({ field, fieldState }) => (
+            <Field data-invalid={fieldState.invalid}>
+              <FieldLabel htmlFor="categoryId">Category</FieldLabel>
+              <Select value={field.value || defaultCategory?.id || ""} onValueChange={field.onChange}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Pilih category" />
+                </SelectTrigger>
+                <SelectContent>
+                  {blogCategoriesOptions?.map((item) => (
+                    <SelectItem key={item.value} value={item.value}>
+                      {item.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>{" "}
+              {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+            </Field>
+          )}
+        />
+      </FieldGroup>
+      <Button type="submit" className="mt-4" disabled={pending}>
+        {pending && <Spinner />}
+        Create
+      </Button>
+    </form>
   );
 }

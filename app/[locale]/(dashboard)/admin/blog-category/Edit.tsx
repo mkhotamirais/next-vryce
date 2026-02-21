@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { BlogCategory } from "@/lib/generated/prisma";
@@ -28,7 +30,6 @@ export default function Edit({ category, setIsEdit }: EditProps) {
   const pending = form.formState.isSubmitting;
 
   const onSubmit = async (data: inferSchema) => {
-    // const res = await updateCategory({ id: category.id, name: data.name });
     const res = await updateBlogCategory({ id: category.id, name: data.name });
     if (!res?.ok) {
       toast.error(res?.message || "error");

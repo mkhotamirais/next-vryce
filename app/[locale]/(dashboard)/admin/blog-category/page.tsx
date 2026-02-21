@@ -1,4 +1,4 @@
-import React from "react";
+import { Suspense } from "react";
 import List from "./List";
 import Create from "./Create";
 import { getBlogCategories } from "@/actions/blogCategory";
@@ -10,8 +10,12 @@ export default async function BlogCategory() {
     <div>
       <h1 className="text-2xl font-semibold mb-6">Blog Category</h1>
       <div className="space-y-4">
-        <Create />
-        {blogCategories && blogCategories.length > 0 && <List blogCategories={blogCategories} />}
+        <Suspense fallback={<div className="p-4 text-center">Loading</div>}>
+          <Create />
+        </Suspense>
+        <Suspense fallback={<div className="p-4 text-center">Loading</div>}>
+          {blogCategories && blogCategories.length > 0 && <List blogCategories={blogCategories} />}
+        </Suspense>
       </div>
     </div>
   );

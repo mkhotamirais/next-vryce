@@ -24,11 +24,9 @@ interface DeleteProps {
 export default function Delete({ category }: DeleteProps) {
   const [open, setOpen] = useState(false);
   const [pending, setPending] = useState(false);
-  // const { deleteCategory, isDeleting: pending } = useBlogCategory();
 
   const handleDelete = async () => {
     setPending(true);
-    // const result = await deleteCategory(category.id);
     const result = await deleteBlogCategory(category.id);
     if (!result?.ok) {
       toast.error(result?.message);

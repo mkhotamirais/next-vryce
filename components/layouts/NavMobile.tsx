@@ -16,7 +16,7 @@ import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
 import SwitchLangButton from "../SwitchLangButton";
 import { Link } from "@/i18n/navigation";
-// import AuthBtn from "./AuthBtn";
+import AuthBtn from "./AuthBtn";
 
 export default function NavMobile() {
   const { mainMenu } = useMenu();
@@ -65,7 +65,7 @@ export default function NavMobile() {
             </ul>
           </nav>
           <SheetFooter>
-            {/* <AuthBtn /> */}
+            <AuthBtn />
 
             {/* <Button asChild className="text-center" size={"lg"}>
               <Link href="/login">

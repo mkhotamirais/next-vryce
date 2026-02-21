@@ -20,10 +20,7 @@ export default function Create() {
   });
   const pending = form.formState.isSubmitting;
 
-  // const { createCategory, isCreating: pending } = useBlogCategory();
-
   const onSubmit = async (data: inferSchema) => {
-    // const res = await createCategory(data.name);
     const res = await createBlogCategory({ name: data.name });
     if (!res?.ok) {
       toast.error(res?.message || "error");

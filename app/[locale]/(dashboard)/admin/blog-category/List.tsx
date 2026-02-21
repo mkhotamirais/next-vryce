@@ -65,20 +65,6 @@ export default function List({ blogCategories }: { blogCategories: BlogCategory[
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          {/* {isEdit !== category.id ? (
-            <div className="flex items-center gap-2">
-              <Button
-                size="icon"
-                type="button"
-                aria-label="Edit"
-                onClick={() => setIsEdit(category?.id)}
-                disabled={category.isDefault}
-              >
-                <FaPenToSquare />
-              </Button>
-              <Delete category={category} />
-            </div>
-          ) : null} */}
         </div>
       ))}
     </div>

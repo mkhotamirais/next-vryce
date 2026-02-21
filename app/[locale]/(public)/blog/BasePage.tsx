@@ -1,4 +1,3 @@
-import React from "react";
 import List from "./List";
 import Hero from "./Hero";
 import { getBlogs } from "@/actions/getData";
