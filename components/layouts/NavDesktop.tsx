@@ -5,7 +5,7 @@ import SwitchLangButton from "../SwitchLangButton";
 import useMenu from "@/hooks/useMenu";
 import { usePathname } from "next/navigation";
 import ContactButton from "../ContactButton";
-import AuthBtn from "./AuthBtn";
+// import AuthBtn from "./AuthBtn";
 import { Link } from "@/i18n/navigation";
 
 export default function NavDesktop() {

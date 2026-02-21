@@ -16,7 +16,7 @@ import Link from "next/link";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
 import SwitchLangButton from "../SwitchLangButton";
-import AuthBtn from "./AuthBtn";
+// import AuthBtn from "./AuthBtn";
 
 export default function NavMobile() {
   const { mainMenu } = useMenu();
