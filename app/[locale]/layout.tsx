@@ -11,7 +11,7 @@ import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
 // import ClientProvider from "@/components/providers/ClientProvider";
 import { Toaster } from "sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+// import { TooltipProvider } from "@/components/ui/tooltip";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -52,15 +52,15 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextAuthProvider>
           {/* <ClientProvider> */}
-          <TooltipProvider>
-            <NextIntlClientProvider>
-              <Toaster position="top-center" richColors />
-              <Header />
-              <main className="min-h-screen">{children}</main>
-              <Footer2 />
-              <ButtonEdge />
-            </NextIntlClientProvider>
-          </TooltipProvider>
+          {/* <TooltipProvider> */}
+          <NextIntlClientProvider>
+            <Toaster position="top-center" richColors />
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            <Footer2 />
+            <ButtonEdge />
+          </NextIntlClientProvider>
+          {/* </TooltipProvider> */}
           {/* </ClientProvider> */}
         </NextAuthProvider>
       </body>
