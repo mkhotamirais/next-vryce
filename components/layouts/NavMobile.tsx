@@ -65,7 +65,7 @@ export default function NavMobile() {
             </ul>
           </nav>
           <SheetFooter>
-            <AuthBtn />
+            {/* <AuthBtn /> */}
 
             {/* <Button asChild className="text-center" size={"lg"}>
               <Link href="/login">

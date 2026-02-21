@@ -33,7 +33,7 @@ export default function NavDesktop() {
       </nav>
       <div className="flex items-center gap-3">
         <ContactButton />
-        <AuthBtn />
+        {/* <AuthBtn /> */}
         <SwitchLangButton />
       </div>
     </div>
