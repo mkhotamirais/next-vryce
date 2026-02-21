@@ -3,7 +3,7 @@
     "home": { "label": "Beranda", "url": "/" },
     "services": { "label": "Layanan", "url": "/services" },
     "digital_core": { "label": "Solusi Digital", "url": "/digital-core" },
-    "talent": { "label": "Talenta", "url": "/talent" },
+    "talent": { "label": "Talent", "url": "/talent" },
     "blog": { "label": "Blog", "url": "/blog" }
   },
   "footer": {

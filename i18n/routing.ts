@@ -13,13 +13,7 @@ export const routing = defineRouting({
       en: "/digital-core",
       id: "/solusi-digital",
     },
-    "/talent": {
-      en: "/talent",
-      id: "/talenta",
-    },
-    "/blog": {
-      en: "/blog",
-      id: "/blog",
-    },
+    "/talent": "/talent",
+    "/blog": "/blog",
   },
 });

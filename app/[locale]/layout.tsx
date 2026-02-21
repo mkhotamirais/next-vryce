@@ -4,7 +4,7 @@ import Header from "@/components/layouts/Header";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/dist/client/components/navigation";
 import { routing } from "@/i18n/routing";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import Footer2 from "@/components/layouts/Footer2";
 import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
@@ -16,23 +16,23 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.home" });
+// export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+//   const { locale } = await params;
+//   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
-  return {
-    title: t("title"),
-    description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
-    },
-  };
-}
+//   return {
+//     title: t("title"),
+//     description: t("description"),
+//     // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
+//     alternates: {
+//       canonical: `/${locale}`,
+//       languages: {
+//         en: "/en",
+//         id: "/id",
+//       },
+//     },
+//   };
+// }
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
