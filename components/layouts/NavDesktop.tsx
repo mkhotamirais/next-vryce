@@ -1,13 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "../ui/button";
 import SwitchLangButton from "../SwitchLangButton";
 import useMenu from "@/hooks/useMenu";
 import { usePathname } from "next/navigation";
 import ContactButton from "../ContactButton";
 import AuthBtn from "./AuthBtn";
-// import { LogIn } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export default function NavDesktop() {
   const { mainMenu } = useMenu();

@@ -1,4 +1,8 @@
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { ComponentProps } from "react";
+
+type SafeHref = ComponentProps<typeof Link>["href"];
 
 export default function useMenu() {
   const t = useTranslations("main_menu");
@@ -10,7 +14,7 @@ export default function useMenu() {
     { label: t("digital_core.label"), url: t("digital_core.url") },
     { label: t("talent.label"), url: t("talent.url") },
     { label: t("blog.label"), url: t("blog.url") },
-  ];
+  ] as { label: string; url: SafeHref }[];
 
   const footerMenu1 = [
     { label: f("menu_1.menu.layanan1.label"), url: f("menu_1.menu.layanan1.url") },
