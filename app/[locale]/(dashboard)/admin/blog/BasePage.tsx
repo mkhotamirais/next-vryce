@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import List from "./List";
-import { getBlogs } from "@/actions/blog";
+import { getBlogs } from "@/actions/getData";
 
 interface Props {
   page: number;

@@ -1,4 +1,4 @@
-import { getBlogBySlug, getBlogs } from "@/actions/blog";
+import { getBlogBySlug, getBlogs } from "@/actions/getData";
 import ShareSocialGroup from "@/components/ShareSocialGroup";
 import { baseUrl } from "@/lib/common";
 import { diffForHumans, smartTrim } from "@/lib/utils";

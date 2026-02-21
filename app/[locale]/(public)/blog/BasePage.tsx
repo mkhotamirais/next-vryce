@@ -1,7 +1,7 @@
 import React from "react";
 import List from "./List";
 import Hero from "./Hero";
-import { getBlogs } from "@/actions/blog";
+import { getBlogs } from "@/actions/getData";
 
 interface Props {
   page: number;
