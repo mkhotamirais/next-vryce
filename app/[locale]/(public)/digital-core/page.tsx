@@ -1,5 +1,5 @@
-// import HeroWrapper from "@/components/HeroWrapper";
-// import { useTranslations } from "next-intl";
+import HeroWrapper from "@/components/HeroWrapper";
+import { useTranslations } from "next-intl";
 // import { getTranslations } from "next-intl/server";
 
 // export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -21,13 +21,13 @@
 // }
 
 export default function DigitalCore() {
-  // const t = useTranslations("digital_core");
-  // const title = t("title");
+  const t = useTranslations("digital_core");
+  const title = t("title");
   return (
     <div className="scroll-mt-20">
       <p>digital core</p>
-      {/* <HeroWrapper title={title} />
-      <section className="py-12">
+      <HeroWrapper title={title} />
+      {/* <section className="py-12">
         <div className="container">Content layanan web, landing page, sama ai </div>
       </section> */}
     </div>
