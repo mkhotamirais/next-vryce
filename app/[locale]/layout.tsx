@@ -8,7 +8,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Footer2 from "@/components/layouts/Footer2";
 import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
-import ClientProvider from "@/components/providers/ClientProvider";
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
@@ -57,17 +56,15 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale} className="scroll-smooth">
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextAuthProvider>
-          <ClientProvider>
-            <TooltipProvider>
-              <NextIntlClientProvider>
-                <Toaster position="top-center" richColors />
-                <Header />
-                <main className="min-h-screen">{children}</main>
-                <Footer2 />
-                <ButtonEdge />
-              </NextIntlClientProvider>
-            </TooltipProvider>
-          </ClientProvider>
+          <TooltipProvider>
+            <NextIntlClientProvider>
+              <Toaster position="top-center" richColors />
+              <Header />
+              <main className="min-h-screen">{children}</main>
+              <Footer2 />
+              <ButtonEdge />
+            </NextIntlClientProvider>
+          </TooltipProvider>
         </NextAuthProvider>
       </body>
     </html>

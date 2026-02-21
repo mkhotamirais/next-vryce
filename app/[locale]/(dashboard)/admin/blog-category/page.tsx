@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import List from "./List";
 import Create from "./Create";
 import { getBlogCategories } from "@/actions/blogCategory";

@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import List from "./List";
 import { getBlogs } from "@/actions/getData";
-import { Suspense } from "react";
 
 interface Props {
   page: number;
