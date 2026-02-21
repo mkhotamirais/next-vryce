@@ -21,8 +21,8 @@ import { useTranslations } from "next-intl";
 // }
 
 export default function DigitalCore() {
-  const t = useTranslations("digital_core");
-  const title = t("title");
+  const t = useTranslations("DigitalCore");
+  const title = t("Title");
   return (
     <div className="scroll-mt-20">
       <p>digital core {title}</p>
