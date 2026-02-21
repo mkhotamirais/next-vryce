@@ -21,16 +21,14 @@ export default async function BasePage({ page, limit, keyword }: Props) {
           <Link href="/admin/blog/create-blog">Create Blog</Link>
         </Button>
       </div>
-      <Suspense fallback="loading">
-        <List
-          blogs={blogs}
-          page={page}
-          totalPages={totalPages}
-          totalBlogsCount={totalBlogsCount}
-          limit={limit}
-          keyword={keyword}
-        />
-      </Suspense>
+      <List
+        blogs={blogs}
+        page={page}
+        totalPages={totalPages}
+        totalBlogsCount={totalBlogsCount}
+        limit={limit}
+        keyword={keyword}
+      />
     </>
   );
 }

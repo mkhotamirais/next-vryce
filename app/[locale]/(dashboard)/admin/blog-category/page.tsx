@@ -10,12 +10,8 @@ export default async function BlogCategory() {
     <div>
       <h1 className="text-2xl font-semibold mb-6">Blog Category</h1>
       <div className="space-y-4">
-        <Suspense fallback={<div className="p-4 text-center">Loading</div>}>
-          <Create />
-        </Suspense>
-        <Suspense fallback={<div className="p-4 text-center">Loading</div>}>
-          {blogCategories && blogCategories.length > 0 && <List blogCategories={blogCategories} />}
-        </Suspense>
+        <Create />
+        {blogCategories && blogCategories.length > 0 && <List blogCategories={blogCategories} />}
       </div>
     </div>
   );
