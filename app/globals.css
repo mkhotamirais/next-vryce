@@ -2,6 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@plugin "@tailwindcss/typography";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -137,7 +139,11 @@
 }
 
 .btn {
-  @apply border;
+  @apply border rounded;
+}
+
+.h1 {
+  @apply text-3xl lg:text-5xl font-bold mb-4;
 }
 
 .h2 {

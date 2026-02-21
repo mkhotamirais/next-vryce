@@ -6,6 +6,8 @@ import SwitchLangButton from "../SwitchLangButton";
 import useMenu from "@/hooks/useMenu";
 import { usePathname } from "next/navigation";
 import ContactButton from "../ContactButton";
+import AuthBtn from "./AuthBtn";
+// import { LogIn } from "lucide-react";
 
 export default function NavDesktop() {
   const { mainMenu } = useMenu();
@@ -30,8 +32,9 @@ export default function NavDesktop() {
           })}
         </ul>
       </nav>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
         <ContactButton />
+        <AuthBtn />
         <SwitchLangButton />
       </div>
     </div>

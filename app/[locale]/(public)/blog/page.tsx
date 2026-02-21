@@ -1,6 +1,6 @@
-import HeroWrapper from "@/components/HeroWrapper";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import BasePage from "./BasePage";
+import { blogLimit } from "@/lib/common";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -9,7 +9,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -20,15 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Blog() {
-  const t = useTranslations("blog");
-  const title = t("title");
-  return (
-    <div>
-      <HeroWrapper title={title} />
-      <section className="py-12">
-        <div className="container">Content blog</div>
-      </section>
-    </div>
-  );
+interface Props {
+  params: Promise<{ page: string }>;
+  searchParams: Promise<{ keyword: string }>;
+}
+
+export default async function Blog({ params, searchParams }: Props) {
+  const page = Number((await params).page) || 1;
+  const keyword = (await searchParams).keyword || "";
+
+  return <BasePage page={page} limit={blogLimit} keyword={keyword} />;
 }

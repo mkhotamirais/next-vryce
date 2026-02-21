@@ -210,5 +210,23 @@
     "sub_headline": "Not Found",
     "description": "Halaman yang Anda cari tidak ditemukan.",
     "button": "Kembali ke Beranda"
+  },
+  "auth": {
+    "account_0": "Belum punya akun?",
+    "account_1": "Sudah punya akun?",
+    "login_title": "Login ke akun Anda",
+    "register_title": "Daftar akun Anda"
+  },
+  "validate": {
+    "common": {
+      "required": "{field} wajib diisi.",
+      "invalid": "{field} tidak valid.",
+      "min": "{field} harus memiliki panjang minimal {min} karakter.",
+      "max": "{field} harus memiliki panjang maksimal {max} karakter.",
+      "mismatch": "Konfirmasi password tidak cocok."
+    },
+    "email": {
+      "invalid": "Silakan masukkan alamat email yang valid."
+    }
   }
 }

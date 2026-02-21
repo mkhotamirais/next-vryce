@@ -1,0 +1,96 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model User {
+  id    String  @id @default(cuid())
+  name  String?
+  email String  @unique
+
+  emailVerified                DateTime?
+  image                        String?
+  accounts                     Account[]
+  pendingEmail                 String?   @unique
+  password                     String?
+  role                         Role      @default(USER)
+  phone                        String?
+  emailChangeVerificationToken String?   @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  PasswordResetToken PasswordResetToken?
+  Blog               Blog[]
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+}
+
+model PasswordResetToken {
+  id      String   @id @default(cuid())
+  userId  String   @unique // Kunci unik ke model User
+  token   String   @unique // Token unik yang dikirim via email
+  expires DateTime // Kapan token akan kedaluwarsa
+
+  User User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model BlogCategory {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Blogs     Blog[]
+}
+
+model Blog {
+  id           String       @id @default(cuid())
+  title        String
+  slug         String       @unique
+  content      String
+  imageUrl     String?
+  BlogCategory BlogCategory @relation(fields: [categoryId], references: [id])
+  categoryId   String
+  User         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId       String
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}

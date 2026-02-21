@@ -1,12 +1,22 @@
 "use client";
 
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
 import SwitchLangButton from "../SwitchLangButton";
+import AuthBtn from "./AuthBtn";
 
 export default function NavMobile() {
   const { mainMenu } = useMenu();
@@ -41,14 +51,29 @@ export default function NavMobile() {
               {mainMenu.map((item, i) => (
                 <li key={i}>
                   <SheetClose asChild>
-                    <Button asChild className="block mb-1" variant={"ghost"}>
+                    <Button asChild className="block mb-1 border-b" variant={"ghost"}>
                       <Link href={item.url}>{item.label}</Link>
                     </Button>
                   </SheetClose>
                 </li>
               ))}
+              {/* <li>
+                <Button asChild className="block mb-1 text-center">
+                  <Link href="/login">Login</Link>
+                </Button>
+              </li> */}
             </ul>
           </nav>
+          <SheetFooter>
+            <AuthBtn />
+
+            {/* <Button asChild className="text-center" size={"lg"}>
+              <Link href="/login">
+                Login
+                <LogIn />
+              </Link>
+            </Button> */}
+          </SheetFooter>
         </SheetContent>
       </Sheet>
     </div>

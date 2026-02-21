@@ -210,5 +210,23 @@
     "sub_headline": "Not Found",
     "description": "The page you are looking for does not exist.",
     "button": "Back to Home"
+  },
+  "auth": {
+    "account_0": "Don't have an account?",
+    "account_1": "Already have an account?",
+    "login_title": "Login to your account",
+    "register_title": "Register your account"
+  },
+  "validate": {
+    "common": {
+      "required": "{field} is required.",
+      "invalid": "{field} is invalid.",
+      "min": "{field} must be at least {min} characters long.",
+      "max": "{field} must be at most {max} characters long.",
+      "mismatch": "Passwords don't match."
+    },
+    "email": {
+      "invalid": "Please enter a valid email address."
+    }
   }
 }
