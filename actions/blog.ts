@@ -10,10 +10,8 @@ import z from "zod";
 
 const revalidateBlog = () => {
   revalidatePath("/");
-  revalidatePath("/blog");
-  revalidatePath("/blog/page/[page]", "page");
-  revalidatePath("/admin/blog");
-  revalidatePath("/admin/blog/page/[page]", "page");
+  revalidatePath("/blog", "layout");
+  revalidatePath("/admin/blog", "layout");
 };
 
 interface GetBlogParams {
