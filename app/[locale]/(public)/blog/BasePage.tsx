@@ -1,7 +1,7 @@
 import List from "./List";
-import { getBlogs } from "@/actions/getData";
 import { getTranslations } from "next-intl/server";
 import HeroWrapper from "@/components/HeroWrapper";
+import { getBlogs } from "@/actions/blog";
 
 interface Props {
   page: number;

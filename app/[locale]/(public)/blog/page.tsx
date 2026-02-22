@@ -21,16 +21,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 interface Props {
   params: Promise<{ locale: string; page: string }>;
-  searchParams: Promise<{ keyword: string }>;
 }
 
-export default async function Blog({ params, searchParams }: Props) {
+export default async function Blog({ params }: Props) {
   const { locale } = await params;
 
   setRequestLocale(locale);
 
   const page = Number((await params).page) || 1;
-  const keyword = (await searchParams).keyword || "";
 
-  return <BasePage page={page} limit={blogLimit} keyword={keyword} />;
+  return <BasePage page={page} limit={blogLimit} />;
 }

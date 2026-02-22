@@ -3,7 +3,7 @@ import Link from "next/link";
 import EditBlogForm from "./EditBlogForm";
 import { getBlogCategories } from "@/actions/blogCategory";
 import { redirect } from "next/navigation";
-import { getBlogBySlug } from "@/actions/getData";
+import { getBlogBySlug } from "@/actions/blog";
 
 export default async function EditBlog({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
