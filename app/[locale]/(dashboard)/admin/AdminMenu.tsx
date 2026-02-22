@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 export default function AdminMenu() {
   const pathname = usePathname();
   return (
-    <div className="sticky top-16 flex items-center overflow-y-scroll gap-1 [&::-webkit-scrollbar]:hidden z-30 mb-3 bg-white">
+    <div className="sticky top-16 flex items-center overflow-y-scroll gap-1 [&::-webkit-scrollbar]:hidden z-20 mb-3 bg-white">
       <div className="sticky left-0 bg-white">
         <RefreshData />
       </div>
