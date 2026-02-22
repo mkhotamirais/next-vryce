@@ -178,12 +178,12 @@
       "benefits": "Content planning & calendar | Pembuatan konten posting (feed, carousel, reels) | Caption & hashtag | Scheduling & publishing | Monitoring & monthly report"
     },
     "service_6": {
-      "title": "Vryce Marketing Automation & AI Package",
-      "price": "Rp 6 – 12 juta",
-      "priceFor": "bulan",
+      "title": "Vryce Marketplace Optimization & Promotion",
+      "price": "Rp 3,5 juta",
+      "priceFor": "project",
       "priceNote": "",
-      "purpose": "Mengotomatiskan proses marketing dan meningkatkan efisiensi tim.",
-      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
+      "purpose": "Optimasi dan promosi marketplace agar dikelola profesional, mudah ditemukan pembeli, serta meningkatkan performa penjualan",
+      "benefits": "Manajemen Marketplace Seller Center | Optimasi tampilan toko marketplace (profil, banner, dan branding) | Optimasi judul produk, deskripsi, dan keyword marketplace | Optimasi foto & tampilan produk (guideline / penyesuaian layout) | Setup promo dasar (diskon, voucher, dan campaign marketplace) | Basic marketplace ads setup (Shopee Ads / Tokopedia Ads) | Monitoring performa & rekomendasi strategi peningkatan penjualan"
     },
     "service_7": {
       "title": "Vryce Web Development",
@@ -202,12 +202,12 @@
       "benefits": "Landing page | Struktur copywriting berbasis funnel | CTA & form lead terintegrasi | Basic SEO & tracking"
     },
     "service_9": {
-      "title": "Vryce Marketplace Optimization & Promotion",
-      "price": "Rp 3,5 juta",
-      "priceFor": "project",
+      "title": "Vryce Marketing Automation & AI Package",
+      "price": "Rp 6 – 12 juta",
+      "priceFor": "bulan",
       "priceNote": "",
-      "purpose": "Optimasi dan promosi marketplace agar dikelola profesional, mudah ditemukan pembeli, serta meningkatkan performa penjualan",
-      "benefits": "Manajemen Marketplace Seller Center | Optimasi tampilan toko marketplace (profil, banner, dan branding) | Optimasi judul produk, deskripsi, dan keyword marketplace | Optimasi foto & tampilan produk (guideline / penyesuaian layout) | Setup promo dasar (diskon, voucher, dan campaign marketplace) | Basic marketplace ads setup (Shopee Ads / Tokopedia Ads) | Monitoring performa & rekomendasi strategi peningkatan penjualan"
+      "purpose": "Mengotomatiskan proses marketing dan meningkatkan efisiensi tim.",
+      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
     }
   },
   "not_found": {

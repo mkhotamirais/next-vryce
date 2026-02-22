@@ -178,13 +178,14 @@
       "benefits": "Content planning & calendar | Social media content creation (Feed, Carousel, Reels) | Captions & hashtags | Scheduling & publishing | Monitoring & monthly report"
     },
     "service_6": {
-      "title": "Vryce Marketing Automation & AI Package",
-      "price": "IDR 6 – 12 Million",
-      "priceFor": "month",
+      "title": "Vryce Marketplace Optimization & Promotion",
+      "price": "IDR 3.5 Million",
+      "priceFor": "project",
       "priceNote": "",
-      "purpose": "Automate marketing processes and enhance team efficiency.",
-      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
+      "purpose": "Optimize and promote marketplace stores to be professionally managed, easily discoverable by potential buyers, and boost sales performance.",
+      "benefits": "Marketplace Seller Center management | Storefront optimization (Profile, Banner, Branding) | Product title, description, and keyword optimization | Product image & layout optimization | Basic promo setup (Discounts, Vouchers, Campaigns) | Basic marketplace ads setup (Shopee/Tokopedia Ads) | Performance monitoring & sales growth strategy"
     },
+
     "service_7": {
       "title": "Vryce Web Development",
       "price": "IDR 3.5 Million",
@@ -202,12 +203,12 @@
       "benefits": "Landing page | Funnel-based copywriting structure | Integrated CTA & lead forms | Basic SEO & tracking"
     },
     "service_9": {
-      "title": "Vryce Marketplace Optimization & Promotion",
-      "price": "IDR 3.5 Million",
-      "priceFor": "project",
+      "title": "Vryce Marketing Automation & AI Package",
+      "price": "IDR 6 – 12 Million",
+      "priceFor": "month",
       "priceNote": "",
-      "purpose": "Optimize and promote marketplace stores to be professionally managed, easily discoverable by potential buyers, and boost sales performance.",
-      "benefits": "Marketplace Seller Center management | Storefront optimization (Profile, Banner, Branding) | Product title, description, and keyword optimization | Product image & layout optimization | Basic promo setup (Discounts, Vouchers, Campaigns) | Basic marketplace ads setup (Shopee/Tokopedia Ads) | Performance monitoring & sales growth strategy"
+      "purpose": "Automate marketing processes and enhance team efficiency.",
+      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
     }
   },
   "not_found": {
