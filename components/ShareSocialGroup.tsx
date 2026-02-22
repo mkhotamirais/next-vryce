@@ -11,13 +11,20 @@ import {
   LineIcon,
 } from "next-share";
 import { Button } from "./ui/button";
-import { Copy, Share2 } from "lucide-react";
+import { Check, Copy, Share2 } from "lucide-react";
 import { useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
-export default function ShareSocialGroup({ url = "vryce.id", title = "vryce" }: { url: string; title: string }) {
+type Props = {
+  url: string;
+  title: string;
+};
+
+export default function ShareSocialGroup({ url = "https://vryce.id", title = "vryce" }: Props) {
   const [open, setOpen] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
+  const [isOpenCopy, setIsOpenCopy] = useState(false);
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
@@ -30,20 +37,24 @@ export default function ShareSocialGroup({ url = "vryce.id", title = "vryce" }: 
       <DropdownMenuContent align="end" className="rounded-xl">
         <div className="flex py-2 px-3 gap-3">
           <div>
-            <Tooltip>
+            <Tooltip open={isOpenCopy || isCopied} onOpenChange={setIsOpenCopy}>
               <TooltipTrigger asChild>
                 <Button
                   aria-label="copy link"
                   variant={"outline"}
                   size={"icon"}
                   className="rounded-full"
-                  onClick={() => navigator.clipboard.writeText(url)}
+                  onClick={() => {
+                    navigator.clipboard.writeText(url);
+                    setIsCopied(true);
+                    setTimeout(() => setIsCopied(false), 1500);
+                  }}
                 >
-                  <Copy />
+                  {isCopied ? <Check className="text-primary" /> : <Copy />}
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Copy Link</p>
+                <p>{isCopied ? "Copied!" : "Copy Link"}</p>
               </TooltipContent>
             </Tooltip>
           </div>
@@ -51,6 +62,9 @@ export default function ShareSocialGroup({ url = "vryce.id", title = "vryce" }: 
           <WhatsappShareButton url={url} title={title} separator=":: ">
             <WhatsappIcon size={32} round />
           </WhatsappShareButton>
+          {/* <a href={url} title={title} target="_blank" rel="noopener noreferrer">
+            <WhatsappIcon size={32} round />
+          </a> */}
 
           {/* Facebook */}
           <FacebookShareButton url={url} quote={title} hashtag={"#nextjs"}>

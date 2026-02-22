@@ -23,7 +23,7 @@ export default function HomeServices() {
       tagline={tagline}
       title={title}
       description={description}
-      className="bg-linear-to-b from-primary/10 to-primary/5"
+      className="bg-linear-to-b from-primary/6 to-primary/5"
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {services.slice(0, 3).map((item, i) => (

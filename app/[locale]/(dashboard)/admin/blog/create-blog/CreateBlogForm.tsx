@@ -114,12 +114,15 @@ export default function CreateBlogForm({ blogCategories }: { blogCategories: Blo
                   id="image"
                   type="file"
                   accept="image/*"
+                  aria-invalid={fieldState.invalid}
                   ref={(e) => {
                     field.ref(e);
                     fileInputRef.current = e;
                   }}
                   onChange={(e) => handleFileChange(e, field.onChange)}
                 />
+
+                {/* {fieldState.invalid && <FieldError errors={[fieldState.error]} />} */}
 
                 {imagePreview && (
                   <div className="relative mt-2">

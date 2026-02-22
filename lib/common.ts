@@ -13,5 +13,5 @@ export const address = "Denpasar, Bali, Indonesia";
 
 export const blogLimit = 12;
 
-const isProd = process.env.NODE_ENV === "development";
+const isProd = process.env.NODE_ENV === "production";
 export const baseUrl = isProd ? "https://vryce.id" : "http://localhost:3000";
