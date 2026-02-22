@@ -105,33 +105,38 @@
   },
   "about": {
     "title": "About Vryce",
-    "sub_headline": "Solusi Terintegrasi untuk Digital Marketing Performa Tinggi",
+    "headline": "Integrated digital marketing solutions designed for high performance and measurable business growth",
     "paragraph_1": "Vryce is a digital marketing agency focused on performance-driven, data-led strategies that deliver real business results. We help brands not only establish a digital presence but achieve measurable growth—from brand awareness and traffic to leads, conversions, and sales.",
     "paragraph_2": "We believe effective digital marketing goes beyond just running campaigns. Therefore, Vryce manages the entire marketing ecosystem as an integrated system, ensuring every channel contributes significantly to our clients' business goals.",
-    "paragraph_3": "Vryce offers a comprehensive suite of services, including performance ads, SEO & SEM, KOL and affiliate marketing, social media strategy, landing page development, marketing automation, and AI-based digital marketing. Our mission is to drive sustainable brand growth and maximize your digital marketing objectives.",
-    "talent": {
-      "title": "Vryce Talent & Creator Management",
-      "paragraph_1": "As a service differentiator, Vryce also features Talent & Creator Management, specifically focusing on the fashion, skincare, and makeup industries.",
-      "paragraph_2": "Talent under Vryce management serve not only as content creators but as performance-driven talent optimized for:",
-      "p2_list": "Supporting fashion & beauty product sales | Supporting performance ads campaigns | Serving as KOLs and affiliates | Enhancing brand trust, credibility, and conversion",
-      "paragraph_3": "Our talent is selected based on:",
-      "p3_list": "Niche relevance (fashion, skincare, makeup) | Engagement & audience quality | Ability to drive campaign impact and sales",
-      "paragraph_4": "Through this model, Vryce bridges brands, talent, and performance marketing systems into a single ecosystem—ensuring campaigns are not only visually engaging but deliver measurable results."
-    }
+    "paragraph_3": "Vryce offers a comprehensive suite of services, including performance ads, SEO & SEM, KOL and affiliate marketing, social media strategy, landing page development, marketing automation, and AI-based digital marketing. Our mission is to drive sustainable brand growth and maximize your digital marketing objectives."
   },
   "digital_core": {
     "title": "Vryce Digital Core",
-    "sub_headline": "The Tech Stack Behind Your Digital Dominance"
+    "headline": "Empowering your brand through advanced technology for global digital dominance and growth"
   },
   "talent": {
     "title": "Vryce Talent",
-    "sub_headline": "Connecting Visionary Brands with Exceptional Talent"
+    "headline": "Expert talents providing specialized digital marketing services to support your business goals",
+    "welcome": "Sealmat datang di",
+    "sub_title_1": "Vryce Talent & Creator Management",
+    "paragraph_1": "As a service differentiator, Vryce also features Talent & Creator Management, specifically focusing on the fashion, skincare, and makeup industries.",
+    "paragraph_2": "Talent under Vryce management serve not only as content creators but as performance-driven talent optimized for:",
+    "p2_list": "Supporting fashion & beauty product sales | Supporting performance ads campaigns | Serving as KOLs and affiliates | Enhancing brand trust, credibility, and conversion",
+    "sub_title_2": "Our talent is selected based on",
+    "p3_list": "Niche relevance (fashion, skincare, makeup) | Engagement & audience quality | Ability to drive campaign impact and sales",
+    "paragraph_4": "Through this model, Vryce bridges brands, talent, and performance marketing systems into a single ecosystem—ensuring campaigns are not only visually engaging but deliver measurable results."
   },
   "blog": {
-    "title": "The Vryce Insights"
+    "title": "The Vryce Insights",
+    "headline": "Master Digital Marketing with Professional Insights and Proven Growth Strategies"
+  },
+  "contact": {
+    "title": "Vryce Contact",
+    "headline": "Let’s Connect and Elevate Your Brand Presence Through Strategic Collaboration"
   },
   "services": {
     "title": "Vryce Service Packages & Pricing",
+    "headline": "Discover digital marketing services designed to deliver real, measurable, and sustainable business growth",
     "service_1": {
       "title": "Vryce Performance Ads Package",
       "price": "IDR 2.8 Million",

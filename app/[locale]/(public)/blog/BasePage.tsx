@@ -1,6 +1,7 @@
 import List from "./List";
-import Hero from "./Hero";
 import { getBlogs } from "@/actions/getData";
+import { getTranslations } from "next-intl/server";
+import HeroWrapper from "@/components/HeroWrapper";
 
 interface Props {
   page: number;
@@ -11,9 +12,13 @@ interface Props {
 export default async function BasePage({ page, limit, keyword }: Props) {
   const { blogs, totalBlogsCount, totalPages } = await getBlogs({ page, limit, keyword });
 
+  const t = await getTranslations("blog");
+  const title = t("title");
+  const headline = t("headline");
+
   return (
     <div className="scroll-mt-16">
-      <Hero />
+      <HeroWrapper title={title} headline={headline} />;{" "}
       <section className="py-12 bg-primary/2">
         <div className="container">
           <List

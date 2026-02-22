@@ -2,9 +2,9 @@ import useServices from "@/hooks/useServices";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import SectionWrapper from "./SectionWrapper";
 import ServiceCard from "../ServiceCard";
+import { Link } from "@/i18n/navigation";
 
 export default function HomeServices() {
   const t = useTranslations("home");

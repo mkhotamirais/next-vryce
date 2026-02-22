@@ -31,7 +31,7 @@ export default function ServiceCard({ item }: { item: IService }) {
         </p>
         <p className="text-sm">{item.priceNote}</p>
       </div>
-      <p className="h-auto md:h-20 text-muted-foreground text-sm leading-relaxed">
+      <p className="h-auto md:h-22 text-muted-foreground text-sm leading-relaxed">
         <span className="font-semibold">{purposeLabel}: </span>
         {item.purpose}
       </p>

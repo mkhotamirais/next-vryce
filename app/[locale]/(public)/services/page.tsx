@@ -1,6 +1,8 @@
 import HeroWrapper from "@/components/HeroWrapper";
+import HomeContactUs from "@/components/home/HomeContactUs";
 import ServiceCard from "@/components/ServiceCard";
 import useServices from "@/hooks/useServices";
+import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
@@ -30,11 +32,17 @@ export default function Services({ params }: Props) {
   const { locale } = use(params);
 
   setRequestLocale(locale);
+
+  const t = useTranslations("services");
+
   const { services } = useServices();
+
+  const title = t("title");
+  const headline = t("headline");
 
   return (
     <>
-      <HeroWrapper title="Layanan Vryce" />
+      <HeroWrapper title={title} headline={headline} />
       <section className="py-12 bg-primary/4">
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((item, i) => (
@@ -42,6 +50,7 @@ export default function Services({ params }: Props) {
           ))}
         </div>
       </section>
+      <HomeContactUs />
     </>
   );
 }

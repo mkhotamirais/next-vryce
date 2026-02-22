@@ -43,7 +43,7 @@ export default function Footer2() {
           <div>
             <h4 className="font-semibold text-xl mb-4">{title3}</h4>
             <div>
-              <a href={l.email.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
+              <a href={l.email.url} className="pb-2 inline-flex text-gray-400 hover:underline items-center gap-2">
                 <Mail className="size-5" />
                 {l.email.label}
               </a>
@@ -62,7 +62,7 @@ export default function Footer2() {
         </div>
       </div>
       <div className="py-4 bg-gray-900 text-sm text-center">
-        <div className="container text-sm">Copyright © 2024 Vryce. All rights reserved.</div>
+        <div className="container text-sm">Copyright © 2026 Vryce. All rights reserved.</div>
       </div>
     </footer>
   );

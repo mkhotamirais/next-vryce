@@ -1,5 +1,7 @@
 import HeroWrapper from "@/components/HeroWrapper";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { use } from "react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -8,7 +10,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -19,10 +20,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Contact() {
+export default function Contact({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = use(params);
+
+  setRequestLocale(locale);
+
+  const t = useTranslations("contact");
+  const title = t("title");
+  const headline = t("headline");
+
   return (
     <>
-      <HeroWrapper title="Kontak Vryce" />
+      <HeroWrapper title={title} headline={headline} />
       <section>content</section>
     </>
   );

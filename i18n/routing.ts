@@ -15,5 +15,13 @@ export const routing = defineRouting({
     },
     "/talent": "/talent",
     "/blog": "/blog",
+    "/contact": {
+      en: "/contact",
+      id: "/kontak",
+    },
+    "/about": {
+      en: "/about",
+      id: "/tentang",
+    },
   },
 });

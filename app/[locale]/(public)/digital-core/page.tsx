@@ -11,7 +11,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -30,11 +29,14 @@ export default function DigitalCore({ params }: Props) {
   const { locale } = use(params);
 
   setRequestLocale(locale);
+
   const t = useTranslations("digital_core");
   const title = t("title");
+  const headline = t("headline");
+
   return (
     <>
-      <HeroWrapper title={title} />
+      <HeroWrapper title={title} headline={headline} />
       <section className="py-12">
         <div className="container">Content layanan web, landing page, sama ai </div>
       </section>

@@ -1,7 +1,7 @@
 import { Camera } from "lucide-react";
 import { Button } from "../ui/button";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function HomeAbout() {
   const t = useTranslations("home.about");
@@ -29,7 +29,7 @@ export default function HomeAbout() {
             ))}
           </div>
           <Button size="lg" asChild>
-            <Link href="/tentang">{aboutUs}</Link>
+            <Link href="/about">{aboutUs}</Link>
           </Button>
         </article>
       </div>

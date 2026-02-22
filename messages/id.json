@@ -105,33 +105,38 @@
   },
   "about": {
     "title": "Tentang Vryce",
-    "sub_headline": "Mitra Terintegrasi untuk Pertumbuhan Digital Berbasis Hasil",
+    "headline": "Solusi pemasaran digital terintegrasi untuk performa tinggi dan pertumbuhan bisnis yang nyata",
     "paragraph_1": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu brand dan bisnis tidak hanya tampil di dunia digital, tetapi bertumbuh secara terukur—mulai dari brand awareness, traffic, leads, hingga konversi dan penjualan.",
     "paragraph_2": "Kami percaya bahwa digital marketing tidak cukup hanya dengan menjalankan campaign. Oleh karena itu, Vryce mengelola seluruh ekosistem marketing sebagai satu sistem terintegrasi, yang dirancang untuk memastikan setiap channel memberikan kontribusi nyata terhadap tujuan bisnis klien.",
-    "paragraph_3": "Vryce memberi layanan; performance ads, SEO & SEM, KOL marketing, affiliate marketing, social media strategy, landing page development, marketing automation, hingga AI-based digital marketing untuk menciptakan pertumbuhan brand yang berkelanjutan untuk memaksimalkan tujuan pemasaran digital yang dibutuhkan.",
-    "talent": {
-      "title": "Vryce Talent & Creator Management",
-      "paragraph_1": "Sebagai bagian dari diferensiasi layanan, Vryce juga memiliki Talent & Creator Management yang secara khusus berfokus pada industri fashion, skincare, dan makeup.",
-      "paragraph_2": "Talent di bawah manajemen Vryce tidak hanya berperan sebagai content creator, tetapi sebagai performance-driven talent yang dioptimalkan untuk:",
-      "p2_list": "Mendukung penjualan produk fashion & beauty | Menjadi bagian dari campaign performance ads | Berfungsi sebagai KOL dan | Meningkatkan trust, credibility, dan conversion brand",
-      "paragraph_3": "Talent kami dipilih berdasarkan:",
-      "p3_list": "Kesesuaian niche (fashion, skincare, makeup) | Engagement & audience quality | Kemampuan menghasilkan impact pada campaign dan penjualan",
-      "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur."
-    }
+    "paragraph_3": "Vryce memberi layanan; performance ads, SEO & SEM, KOL marketing, affiliate marketing, social media strategy, landing page development, marketing automation, hingga AI-based digital marketing untuk menciptakan pertumbuhan brand yang berkelanjutan untuk memaksimalkan tujuan pemasaran digital yang dibutuhkan."
   },
   "digital_core": {
     "title": "Solusi Digital Vryce",
-    "sub_headline": "Fondasi Teknologi di Balik Dominasi Digital anda"
+    "headline": "Memberdayakan brand melalui teknologi canggih demi dominasi dan pertumbuhan digital global"
   },
   "talent": {
-    "title": "Talenta Vryce",
-    "sub_headline": "Menghubungkan Brand Visioner dengan Talenta Luar Biasa"
+    "title": "Vryce Talent",
+    "headline": "Talent berbakat untuk mendukung layanan pemasaran digital dan pertumbuhan bisnis Anda",
+    "welcome": "Welcome to",
+    "sub_title_1": "Vryce Talent & Creator Management",
+    "paragraph_1": "Sebagai bagian dari diferensiasi layanan, Vryce juga memiliki Talent & Creator Management yang secara khusus berfokus pada industri fashion, skincare, dan makeup.",
+    "paragraph_2": "Talent di bawah manajemen Vryce tidak hanya berperan sebagai content creator, tetapi sebagai performance-driven talent yang dioptimalkan untuk:",
+    "p2_list": "Mendukung penjualan produk fashion & beauty | Menjadi bagian dari campaign performance ads | Berfungsi sebagai KOL dan | Meningkatkan trust, credibility, dan conversion brand",
+    "sub_title_2": "Talent kami dipilih berdasarkan",
+    "p3_list": "Kesesuaian niche (fashion, skincare, makeup) | Engagement & audience quality | Kemampuan menghasilkan impact pada campaign dan penjualan",
+    "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur."
   },
   "blog": {
-    "title": "Blog & Artikel Vryce"
+    "title": "Blog & Artikel Vryce",
+    "headline": "Kuasai Pemasaran Digital dengan Wawasan Profesional dan Strategi Pertumbuhan Teruji"
+  },
+  "contact": {
+    "title": "Kontak Vryce",
+    "headline": "Mari Berkolaborasi dan Tingkatkan Eksistensi Brand Melalui Kerja Sama Strategis"
   },
   "services": {
     "title": "Paket Layanan & Harga Vryce",
+    "headline": "Temukan layanan digital marketing yang dirancang untuk menghadirkan pertumbuhan bisnis yang nyata, terukur, dan berkelanjutan",
     "service_1": {
       "title": "Vryce Performance Ads Package",
       "price": "Rp 2,8 juta",
@@ -201,7 +206,7 @@
       "price": "Rp 3,5 juta",
       "priceFor": "project",
       "priceNote": "",
-      "purpose": "Mengoptimalkan dan mempromosikan toko marketplace agar dikelola secara profesional, mudah ditemukan oleh calon pembeli, serta meningkatkan performa penjualan.",
+      "purpose": "Optimasi dan promosi marketplace agar dikelola profesional, mudah ditemukan pembeli, serta meningkatkan performa penjualan",
       "benefits": "Manajemen Marketplace Seller Center | Optimasi tampilan toko marketplace (profil, banner, dan branding) | Optimasi judul produk, deskripsi, dan keyword marketplace | Optimasi foto & tampilan produk (guideline / penyesuaian layout) | Setup promo dasar (diskon, voucher, dan campaign marketplace) | Basic marketplace ads setup (Shopee Ads / Tokopedia Ads) | Monitoring performa & rekomendasi strategi peningkatan penjualan"
     }
   },
