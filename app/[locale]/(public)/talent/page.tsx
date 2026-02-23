@@ -63,11 +63,11 @@ export default function Talent({ params }: Props) {
   const talent_paragraph_4 = t("paragraph_4");
 
   return (
-    <div className="leading-loose scroll-mt-12">
+    <div className="leading-loose scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 lg:px-16">
         <div className="container flex gap-8 flex-col md:flex-row">
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/3 order-2 md:order-1">
             <Image
               src="/images/talent/talent-1-iqbal.jpeg"
               alt="vryce talent"
@@ -76,7 +76,7 @@ export default function Talent({ params }: Props) {
               className="w-full h-full object-contain rounded-xl"
             />
           </div>
-          <div className="w-full md:w-2/3">
+          <div className="w-full md:w-2/3 order-1 md:order-2">
             {/* <p className="text-primary font-medium mb-2">{welcome}</p> */}
             <h2 className="h2 max-w-100">{sub_title_1}</h2>
             <Separator className="max-w-24 min-h-0.5 rounded bg-primary mb-6" />
@@ -119,7 +119,7 @@ export default function Talent({ params }: Props) {
       <section id="talentPeoples" className="scroll-mt-16 py-12 lg:px-16">
         <div className="container">
           <h2 className="h2 text-center mb-12!">{sub_title_3}</h2>
-          <div className="flex justify-center flex-wrap gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8">
             {talentPeoples.map((item, i) => (
               <TalentCard key={i} talent={item} />
             ))}

@@ -147,5 +147,5 @@
 }
 
 .h2 {
-  @apply text-2xl lg:text-4xl font-semibold mb-4;
+  @apply text-3xl lg:text-4xl font-semibold mb-4;
 }

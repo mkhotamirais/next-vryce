@@ -30,5 +30,9 @@ export default async function Blog({ params }: Props) {
 
   const page = Number((await params).page) || 1;
 
-  return <BasePage page={page} limit={blogLimit} />;
+  return (
+    <div className="scroll-mt-12 md:scroll-mt-16">
+      <BasePage page={page} limit={blogLimit} />;
+    </div>
+  );
 }

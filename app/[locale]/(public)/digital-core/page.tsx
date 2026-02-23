@@ -35,11 +35,11 @@ export default function DigitalCore({ params }: Props) {
   const headline = t("headline");
 
   return (
-    <>
+    <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12">
         <div className="container">Content layanan web, landing page, sama ai </div>
       </section>
-    </>
+    </div>
   );
 }

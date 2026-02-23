@@ -12,7 +12,7 @@ export default function HomeOurClients() {
   const description = t("description");
 
   return (
-    <div className="pt-16 pb-8 flex flex-col items-center bg-radial from-white from-70% to-primary/6 to-100%">
+    <div className="pt-16 pb-8 flex flex-col items-center">
       <h2 className="h2">{title}</h2>
       <p className="text-muted-foreground">{description}</p>
       <div className="flex items-center gap-12 mb-4">

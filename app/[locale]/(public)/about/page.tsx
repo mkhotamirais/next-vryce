@@ -31,7 +31,7 @@ export default function About() {
   const paragraph_3 = t("paragraph_3");
 
   return (
-    <>
+    <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 lg:py-16">
         <div className="container flex flex-col md:flex-row gap-8">
@@ -48,6 +48,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

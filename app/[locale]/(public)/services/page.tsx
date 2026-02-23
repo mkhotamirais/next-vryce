@@ -41,7 +41,7 @@ export default function Services({ params }: Props) {
   const headline = t("headline");
 
   return (
-    <>
+    <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 bg-primary/4">
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -51,6 +51,6 @@ export default function Services({ params }: Props) {
         </div>
       </section>
       <HomeContactUs />
-    </>
+    </div>
   );
 }

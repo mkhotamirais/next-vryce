@@ -25,4 +25,6 @@ export const talentPeoples = [
   { name: "Iqbal", role: " Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
   { name: "Iqbal", role: " Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
   { name: "Iqbal", role: " Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
+  { name: "Iqbal", role: " Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
+  { name: "Iqbal", role: " Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
 ];

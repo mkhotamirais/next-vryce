@@ -8,7 +8,7 @@ type Props = {
 
 export default function TalentCard({ talent }: Props) {
   return (
-    <div className="w-40 flex flex-col items-center space-y-3">
+    <div className="w-auto flex flex-col items-center space-y-3">
       <Image
         src={talent.image}
         alt="vryce talent"

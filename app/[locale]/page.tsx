@@ -17,13 +17,13 @@ export default function Home({ params }: Props) {
 
   setRequestLocale(locale);
   return (
-    <>
+    <div className="scroll-mt-12 md:scroll-mt-16">
       <HomeHero />
       <HomeWhyVrice />
       <HomeOurService />
       <HomeTalent />
       <HomeOurClients />
       <HomeContactUs />
-    </>
+    </div>
   );
 }

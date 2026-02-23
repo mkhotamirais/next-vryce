@@ -67,7 +67,8 @@
     "about_us": "About Us",
     "view_details": "View Details",
     "view_more_services": "View More Services",
-    "view_more_talent": "View talent details"
+    "view_talent_details": "View talent details",
+    "more_talents": "More talents"
   },
   "labels": {
     "purpose": "Purpose",

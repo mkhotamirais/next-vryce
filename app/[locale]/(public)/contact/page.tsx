@@ -30,9 +30,9 @@ export default function Contact({ params }: { params: Promise<{ locale: string }
   const headline = t("headline");
 
   return (
-    <>
+    <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section>content</section>
-    </>
+    </div>
   );
 }
