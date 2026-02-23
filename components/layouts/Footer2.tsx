@@ -37,11 +37,11 @@ export default function Footer2() {
           {/* <FooterMenu title={title1} list={footerMenu1} /> */}
           {/* <FooterMenu title={title2} list={footerMenu2} /> */}
           <div>
-            <h4 className="font-semibold text-xl mb-4">Address</h4>
+            <p className="font-semibold text-xl mb-4">Address</p>
             <address className="text-gray-400">{address}</address>
           </div>
           <div>
-            <h4 className="font-semibold text-xl mb-4">{title3}</h4>
+            <p className="font-semibold text-xl mb-4">{title3}</p>
             <div>
               <a href={l.email.url} className="pb-2 inline-flex text-gray-400 hover:underline items-center gap-2">
                 <Mail className="size-5" />
@@ -54,7 +54,7 @@ export default function Footer2() {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold text-xl mb-4">{title4}</h4>
+            <p className="font-semibold text-xl mb-4">{title4}</p>
             <div className="text-xl text-gray-400">
               <FaInstagram />
             </div>

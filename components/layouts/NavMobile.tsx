@@ -24,7 +24,7 @@ export default function NavMobile() {
     <div className="flex lg:hidden justify-end">
       <Sheet>
         <SheetTrigger asChild>
-          <Button size={"icon-lg"} variant={"outline"}>
+          <Button size={"icon-lg"} aria-label="mobile menu" variant={"outline"}>
             <Menu className="size-6" />
           </Button>
         </SheetTrigger>

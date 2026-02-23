@@ -10,6 +10,7 @@ import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { baseUrl } from "@/lib/common";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -23,12 +24,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
     alternates: {
-      canonical: `/${locale}`,
+      canonical: `${baseUrl}/${locale}`,
       languages: {
-        en: "/en",
-        id: "/id",
+        en: `${baseUrl}/en`,
+        id: `${baseUrl}/id`,
       },
     },
   };
