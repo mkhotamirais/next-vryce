@@ -39,7 +39,7 @@ export default function BlogCard({ blog }: Props) {
         </Link>
         <div
           className="text-muted-foreground"
-          dangerouslySetInnerHTML={{ __html: stripHtml(smartTrim(blog.content, 250)) }}
+          dangerouslySetInnerHTML={{ __html: stripHtml(smartTrim(blog.content, 120)) }}
         ></div>
         <div className="flex items-center gap-1 text-sm text-muted-foreground">
           <Calendar className="size-4" />

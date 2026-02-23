@@ -1,9 +1,12 @@
+import TalentCard from "@/components/cards/TalentCard";
 import HeroWrapper from "@/components/HeroWrapper";
 import HomeContactUs from "@/components/home/HomeContactUs";
 import { Separator } from "@/components/ui/separator";
-import { BarChart3, Camera, Heart, Palette, ShieldCheck, ShoppingBag, TrendingUp, Users } from "lucide-react";
+import { talentPeoples } from "@/lib/common";
+import { Heart, Palette, TrendingUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { use } from "react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -43,6 +46,7 @@ export default function Talent({ params }: Props) {
   const p2_list = t("p2_list").split(" | ");
   const sub_title_2 = t("sub_title_2");
   const p3_list = t("p3_list").split(" | ");
+  const sub_title_3 = t("sub_title_3");
 
   const p2list = [
     { label: p2_list[0], icon: "🛍️" },
@@ -59,13 +63,22 @@ export default function Talent({ params }: Props) {
   const talent_paragraph_4 = t("paragraph_4");
 
   return (
-    <>
+    <div className="leading-loose scroll-mt-12">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 lg:px-16">
         <div className="container flex gap-8 flex-col md:flex-row">
+          <div className="w-full md:w-1/3">
+            <Image
+              src="/images/talent/talent-1-iqbal.jpeg"
+              alt="vryce talent"
+              width={500}
+              height={500}
+              className="w-full h-full object-contain rounded-xl"
+            />
+          </div>
           <div className="w-full md:w-2/3">
             {/* <p className="text-primary font-medium mb-2">{welcome}</p> */}
-            <h2 className="h2 max-w-xl">{sub_title_1}</h2>
+            <h2 className="h2 max-w-100">{sub_title_1}</h2>
             <Separator className="max-w-24 min-h-0.5 rounded bg-primary mb-6" />
             <article className="text-muted-foreground space-y-4">
               <p>{talent_paragraph_1}</p>
@@ -78,9 +91,6 @@ export default function Talent({ params }: Props) {
                 ))}
               </ul>
             </article>
-          </div>
-          <div className="w-full md:w-1/3">
-            <Camera className="size-70" />
           </div>
         </div>
       </section>
@@ -106,7 +116,17 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
+      <section id="talentPeoples" className="scroll-mt-16 py-12 lg:px-16">
+        <div className="container">
+          <h2 className="h2 text-center mb-12!">{sub_title_3}</h2>
+          <div className="flex justify-center flex-wrap gap-8">
+            {talentPeoples.map((item, i) => (
+              <TalentCard key={i} talent={item} />
+            ))}
+          </div>
+        </div>
+      </section>
       <HomeContactUs />
-    </>
+    </div>
   );
 }

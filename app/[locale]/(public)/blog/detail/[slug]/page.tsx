@@ -1,4 +1,5 @@
 import { getBlogBySlug, getBlogs } from "@/actions/blog";
+import NewsletterForm from "@/components/NewsletterForm";
 import ShareSocialGroup from "@/components/ShareSocialGroup";
 import { baseUrl } from "@/lib/common";
 import { diffForHumans, smartTrim } from "@/lib/utils";
@@ -36,8 +37,8 @@ export default async function BlogDetail({ params }: { params: Promise<{ locale:
   if (!slug || !blog) return notFound();
 
   return (
-    <section className="py-8">
-      <div className="container">
+    <div className="py-8">
+      <section className="container">
         <article className="prose mx-auto">
           <div className="sticky top-16 bg-white flex items-center justify-between py-2 mb-6">
             <Link
@@ -77,7 +78,10 @@ export default async function BlogDetail({ params }: { params: Promise<{ locale:
           </div>
           <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: blog.content }}></div>
         </article>
+      </section>
+      <div className="container">
+        <NewsletterForm />
       </div>
-    </section>
+    </div>
   );
 }

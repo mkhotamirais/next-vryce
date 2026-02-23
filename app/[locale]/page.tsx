@@ -3,6 +3,7 @@ import HomeContactUs from "@/components/home/HomeContactUs";
 import HomeHero from "@/components/home/HomeHero";
 import HomeOurClients from "@/components/home/HomeOurClients";
 import HomeOurService from "@/components/home/HomeServices";
+import HomeTalent from "@/components/home/HomeTalent";
 import HomeWhyVrice from "@/components/home/HomeWhyVrice";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
@@ -20,6 +21,7 @@ export default function Home({ params }: Props) {
       <HomeHero />
       <HomeWhyVrice />
       <HomeOurService />
+      <HomeTalent />
       <HomeOurClients />
       <HomeContactUs />
     </>

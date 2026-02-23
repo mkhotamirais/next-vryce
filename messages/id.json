@@ -66,7 +66,8 @@
     "our_services": "Layanan Kami",
     "about_us": "Tentang Kami",
     "view_details": "Lihat Selengkapnya",
-    "view_more_services": "Lihat Layanan Lainnya"
+    "view_more_services": "Lihat Layanan Lainnya",
+    "view_more_talent": "Lihat detail talent"
   },
   "labels": {
     "purpose": "Tujuan",
@@ -76,7 +77,7 @@
     "hero": {
       "title": "Agensi Pemasaran Digital",
       "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
-      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu bisnis anda tumbuh melalui solusi pemasaran digital yang inovatif dan efektif."
+      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Melalui solusi pemasaran digital yang inovatif, kreatif, dan efektif, Vryce mendorong pertumbuhan bisnis secara berkelanjutan"
     },
     "about": {
       "title": "Kami Memaksimalkan Pertumbuhan Lewat Data, Performa, dan Hasil Nyata.",
@@ -96,7 +97,7 @@
     },
     "our_clients": {
       "title": "Klien Kami",
-      "description": "Dipercaya oleh berbagai perusahaan hingga saat ini."
+      "description": "Dipercaya oleh berbagai perusahaan hingga saat ini"
     },
     "contact": {
       "title": "Mari Bangun Sesuatu yang Luar Biasa Bersama",
@@ -119,12 +120,13 @@
     "headline": "Talent berbakat untuk mendukung layanan pemasaran digital dan pertumbuhan bisnis Anda",
     "welcome": "Welcome to",
     "sub_title_1": "Vryce Talent & Creator Management",
-    "paragraph_1": "Sebagai bagian dari diferensiasi layanan, Vryce juga memiliki Talent & Creator Management yang secara khusus berfokus pada industri fashion, skincare, dan makeup.",
+    "paragraph_1": "Sebagai bagian dari diferensiasi layanan, Vryce juga memiliki Talent & Creator Management yang secara khusus berfokus pada industri fashion, beauty, dan lifestyle",
     "paragraph_2": "Talent di bawah manajemen Vryce tidak hanya berperan sebagai content creator, tetapi sebagai performance-driven talent yang dioptimalkan untuk:",
-    "p2_list": "Mendukung penjualan produk fashion, beauty & lifestyle | Menjadi bagian dari campaign performance ads | Berfungsi sebagai KOL dan afiliasi | Meningkatkan trust, credibility, dan conversion brand",
+    "p2_list": "Mendukung penjualan produk fashion, beauty, dan lifestyle | Menjadi bagian dari campaign performance ads | Berfungsi sebagai KOL dan afiliasi | Meningkatkan trust, credibility, dan conversion brand",
     "sub_title_2": "Talent kami dipilih berdasarkan",
-    "p3_list": "Fashion, beauty & lifestyle | Engagement & audience quality | Kemampuan menghasilkan impact pada campaign dan penjualan",
-    "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur."
+    "p3_list": "Fashion, beauty, dan lifestyle | Engagement and audience quality | Kemampuan menghasilkan impact pada campaign dan penjualan",
+    "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur",
+    "sub_title_3": "Tumbuh Bersama Talenta Terbaik Vryce"
   },
   "blog": {
     "title": "Blog & Artikel Vryce",

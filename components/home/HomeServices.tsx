@@ -18,13 +18,7 @@ export default function HomeServices() {
   const { services } = useServices();
 
   return (
-    <SectionWrapper
-      id="services"
-      tagline={tagline}
-      title={title}
-      description={description}
-      className="bg-linear-to-b from-primary/6 to-primary/5"
-    >
+    <SectionWrapper id="services" tagline={tagline} title={title} description={description} className="">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {services.slice(0, 3).map((item, i) => (
           <ServiceCard key={i} item={item} />
