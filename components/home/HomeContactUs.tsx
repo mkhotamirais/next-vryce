@@ -17,7 +17,7 @@ export default function HomeContactUs() {
     <section className="py-16 bg-primary text-white">
       <div className="container flex flex-col items-center max-w-2xl text-center">
         <h2 className="h2">{title}</h2>
-        <p className="text-gray-100 mb-8">{description}</p>
+        <p className="mb-8">{description}</p>
         <Button
           className="py-8 px-16! rounded-full w-fit text-primary text-lg hover:ring-2 transition-all"
           variant={"outline"}
