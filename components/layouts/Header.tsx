@@ -6,7 +6,7 @@ import AuthBtn from "./AuthBtn";
 
 export default function Header() {
   return (
-    <header className="h-16 sticky top-0 bg-white z-30 backdrop-blur-2xl">
+    <header className="h-16 sticky top-0 bg-white/60 z-30 backdrop-blur-lg">
       <div className="container flex gap-8 items-center justify-between">
         <Logo />
         <div className="flex-1">
