@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaInstagram, FaTwitter } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 type Props = {
   talent: { name: string; role: string; image: string };
@@ -22,7 +22,7 @@ export default function TalentCard({ talent }: Props) {
       </div>
       <div className="flex gap-4">
         <FaInstagram />
-        <FaTwitter />
+        <FaXTwitter />
       </div>
     </div>
   );

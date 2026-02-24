@@ -1,8 +1,8 @@
-import React from "react";
 import Logo from "../Logo";
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
 import SwitchLangButton from "../SwitchLangButton";
+import AuthBtn from "./AuthBtn";
 
 export default function Header() {
   return (
@@ -10,12 +10,12 @@ export default function Header() {
       <div className="container flex gap-8 items-center justify-between">
         <Logo />
         <div className="flex-1">
-          <NavDesktop />
+          <NavDesktop authBtn={<AuthBtn />} />
           <div className="flex items-center justify-end gap-2">
             <div className="block lg:hidden">
               <SwitchLangButton />
             </div>
-            <NavMobile />
+            <NavMobile authBtn={<AuthBtn />} />
           </div>
         </div>
       </div>

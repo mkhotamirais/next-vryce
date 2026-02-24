@@ -97,3 +97,14 @@ export const generateSlug = (text: string) => {
     .replace(/-+/g, "-");
   return slug;
 };
+
+export function getAlternates(locale: string, path: string) {
+  return {
+    canonical: `/${locale}${path}`,
+    languages: {
+      en: `/en${path}`,
+      id: `/id${path}`,
+      "x-default": `/id${path}`,
+    },
+  };
+}

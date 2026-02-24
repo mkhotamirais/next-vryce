@@ -1,8 +1,5 @@
-import React from "react";
 import Logo from "../Logo";
-// import FooterMenu from "./FooterMenu";
 import { useTranslations } from "next-intl";
-// import useMenu from "@/hooks/useMenu";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
 import { address, links as l } from "@/lib/common";

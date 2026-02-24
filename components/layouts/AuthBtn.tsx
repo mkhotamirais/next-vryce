@@ -1,44 +1,21 @@
-"use client";
-
-import { signOut, useSession } from "next-auth/react";
-import React from "react";
+// components/layouts/AuthBtn.tsx
+import { auth } from "@/auth"; // Config Auth.js v5 kamu
+import { Link } from "@/i18n/navigation";
 import { Button } from "../ui/button";
-import Link from "next/link";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
+import AuthDropdown from "./AuthDropdown";
 
-export default function AuthBtn() {
-  const { data: session, status } = useSession();
+export default async function AuthBtn() {
+  const session = await auth();
 
-  if (status === "loading") return null;
+  if (!session?.user) {
+    // return (
+    //   <Button asChild variant="outline">
+    //     <Link href="/login">Login</Link>
+    //   </Button>
+    // );
+    return null;
+  }
 
-  return (
-    <div className="flex justify-end ">
-      {session?.user && (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button className="">Dashboard</Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem asChild>
-              <Link href="/admin">Admin Dashboard</Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => {
-                signOut();
-              }}
-              className="font-bold"
-            >
-              Logout
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      )}
-      {/* <Button variant={"default"} asChild>
-          <Link href="/login">
-            Login
-            <LogIn />
-          </Link>
-        </Button> */}
-    </div>
-  );
+  // Jika sudah login, berikan datanya ke komponen Client tadi
+  return <AuthDropdown userName={session.user.name || "User"} />;
 }

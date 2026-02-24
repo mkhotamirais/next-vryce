@@ -23,5 +23,6 @@ export const routing = defineRouting({
       en: "/about",
       id: "/tentang",
     },
+    "/login": "/login",
   },
 });

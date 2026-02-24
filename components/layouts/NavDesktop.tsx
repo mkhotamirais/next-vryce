@@ -5,10 +5,10 @@ import SwitchLangButton from "../SwitchLangButton";
 import useMenu from "@/hooks/useMenu";
 import { usePathname } from "next/navigation";
 import ContactButton from "../ContactButton";
-import AuthBtn from "./AuthBtn";
+// import AuthBtn from "./AuthBtn";
 import { Link } from "@/i18n/navigation";
 
-export default function NavDesktop() {
+export default function NavDesktop({ authBtn }: { authBtn?: React.ReactNode }) {
   const { mainMenu } = useMenu();
   const pathname = usePathname();
 
@@ -33,7 +33,8 @@ export default function NavDesktop() {
       </nav>
       <div className="flex items-center gap-3">
         <ContactButton />
-        <AuthBtn />
+        {/* <AuthBtn /> */}
+        {authBtn}
         <SwitchLangButton />
       </div>
     </div>

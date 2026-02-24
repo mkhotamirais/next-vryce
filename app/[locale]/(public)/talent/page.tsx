@@ -67,13 +67,13 @@ export default function Talent({ params }: Props) {
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 lg:px-16">
         <div className="container flex gap-8 flex-col md:flex-row">
-          <div className="w-full md:w-1/3 order-2 md:order-1">
+          <div className="w-full md:w-1/3 order-2 md:order-1 h-110">
             <Image
-              src="/images/talent/talent-1-iqbal.jpeg"
+              src="/images/talent/catalog-1-iqbal.jpeg"
               alt="vryce talent"
               width={500}
               height={500}
-              className="w-full h-full object-contain rounded-xl"
+              className="w-full h-full object-cover object-center rounded-xl"
             />
           </div>
           <div className="w-full md:w-2/3 order-1 md:order-2">

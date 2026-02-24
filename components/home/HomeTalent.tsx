@@ -53,14 +53,14 @@ export default function HomeTalent() {
             </div>
           </div>
         </div>
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <Button size={"lg"} asChild className="mx-auto">
             <Link href="/talent">
               {moreTalentDetails}
               <ArrowRight />
             </Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

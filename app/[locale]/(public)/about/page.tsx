@@ -1,4 +1,5 @@
 import HeroWrapper from "@/components/HeroWrapper";
+import { getAlternates } from "@/lib/utils";
 import { Camera } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -10,14 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("title"),
     description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
-    },
+    alternates: getAlternates(locale, "/about"),
   };
 }
 

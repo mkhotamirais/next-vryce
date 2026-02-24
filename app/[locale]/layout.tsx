@@ -22,13 +22,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: "metadata.home" });
 
   return {
+    metadataBase: new URL(baseUrl),
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      // canonical: `${baseUrl}/${locale}`,
       languages: {
-        en: `${baseUrl}/en`,
-        id: `${baseUrl}/id`,
+        en: "/en",
+        id: "/id",
+        "x-default": "/id",
       },
     },
   };
