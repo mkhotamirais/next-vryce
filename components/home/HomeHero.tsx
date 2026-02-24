@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 // import * as motion from "motion/react-client";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
-import HomeHeroBg from "./HomeHeroBg";
+// import HomeHeroBg from "./HomeHeroBg";
 
 export default function HomeHero() {
   const t = useTranslations("home.hero");
@@ -19,7 +19,7 @@ export default function HomeHero() {
   return (
     <section className="py-12 md:pt-28 md:pb-18">
       <div className="container relative">
-        <HomeHeroBg />
+        {/* <HomeHeroBg /> */}
         {/* <div className="-z-50 text-[400px] blur-2xl text-primary/30 font-medium absolute top-0 leading-none">V</div> */}
         <div className="flex flex-col items-start sm:items-center text-left sm:text-center max-w-4xl mx-auto space-y-6">
           <m.h1 variants={fades} initial="hide" animate="show" className="text-5xl md:text-6xl font-bold">

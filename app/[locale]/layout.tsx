@@ -15,6 +15,7 @@ import { AnimationProvider } from "@/components/providers/AnimationProvider";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
