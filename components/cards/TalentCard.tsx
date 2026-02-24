@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 // import * as motion from "motion/react-client";
+// import * as m from "motion/react-m";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 

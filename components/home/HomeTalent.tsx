@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 // import * as motion from "motion/react-client";
+// import * as m from "motion/react-m";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
@@ -29,14 +30,14 @@ export default function HomeTalent() {
             initial="hide"
             whileInView="show"
             viewport={{ once: true }}
-            className="w-full md:w-1/3 order-2 md:order-1"
+            className="w-full h-120 md:w-1/3 order-2 md:order-1 rounded-xl overflow-hidden border border-primary/5"
           >
             <Image
-              src="/images/talent/talent-1-iqbal.jpeg"
+              src="/images/talent/catalog-1-iqbal.jpeg"
               alt="vryce talent"
               width={500}
               height={500}
-              className="w-full h-full object-contain rounded-xl"
+              className="w-full h-full object-cover object-bottom"
             />
           </m.div>
           <div className="w-full md:w-2/3 leading-relaxed space-y-8 order-1 md:order-2">
@@ -75,7 +76,7 @@ export default function HomeTalent() {
                   Vryce Talents
                 </m.h3>
                 <Button variant={"link"} asChild>
-                  <Link href="/talent#talentPeoples">
+                  <Link href="/talent">
                     <span className="">{moreTalents}</span>
                     <ArrowRight />
                   </Link>

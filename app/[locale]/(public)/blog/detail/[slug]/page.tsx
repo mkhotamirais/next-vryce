@@ -67,7 +67,7 @@ export default async function BlogDetail({ params }: { params: Promise<{ locale:
                 alt={blog.title}
                 width={1000}
                 height={600}
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-center rounded-xl"
                 priority
               />
             ) : (

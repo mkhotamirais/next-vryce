@@ -5,6 +5,8 @@ import { diffForHumans, smartTrim, stripHtml } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowRight, Calendar, ImageIcon } from "lucide-react";
 import { Badge } from "../ui/badge";
+import * as m from "motion/react-m";
+import { fades } from "@/lib/animations";
 
 type Props = {
   blog: BlogProps;
@@ -12,7 +14,14 @@ type Props = {
 
 export default function BlogCard({ blog }: Props) {
   return (
-    <div className="flex flex-col w-full rounded-lg overflow-hidden shadow bg-white">
+    <m.div
+      variants={fades}
+      custom={{ delay: 0.1 }}
+      initial="hide"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="flex flex-col w-full rounded-lg overflow-hidden shadow bg-white"
+    >
       <Link href={`/blog/detail/${blog.slug}`} className="h-64">
         {blog?.imageUrl ? (
           <Image
@@ -34,7 +43,7 @@ export default function BlogCard({ blog }: Props) {
         </div>
         <Link href={`/blog/detail/${blog.slug}`} className="inline-block">
           <h3 className="font-semibold first-letter:uppercase text-xl hover:underline hover:text-primary transition-all">
-            {smartTrim(blog.title, 60)}
+            {smartTrim(blog.title, 64)}
           </h3>
         </Link>
         <div
@@ -53,6 +62,6 @@ export default function BlogCard({ blog }: Props) {
           <ArrowRight className="w-4 h-4" />
         </Link>
       </div>
-    </div>
+    </m.div>
   );
 }

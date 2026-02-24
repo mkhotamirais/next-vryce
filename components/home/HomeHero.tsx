@@ -34,7 +34,7 @@ export default function HomeHero() {
             <p className="text-base lg:text-lg text-muted-foreground">{description}</p>
           </m.div>
           <m.div variants={fades} custom={{ delay: 0.2 }} initial="hide" animate="show" className="flex gap-2">
-            <Button size={"lg"} className="w-48 py-8 px-12 text-lg rounded-full" asChild>
+            <Button size={"lg"} className="w-46 py-7 px-12 text-lg rounded-xl" asChild>
               <Link href="/services">{ourServices}</Link>
             </Button>
           </m.div>
