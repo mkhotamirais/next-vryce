@@ -1,7 +1,8 @@
 import React from "react";
 import { Separator } from "../ui/separator";
 // import { motion } from "motion/react";
-import * as motion from "motion/react-client";
+// import * as motion from "motion/react-client";
+import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
 interface ISectionWrapper {
@@ -18,7 +19,7 @@ export default function SectionWrapper({ id, tagline, title, description, childr
     <section id={id} className={`${className} py-12 md:py-16 scroll-mt-12 md:scroll-mt-16`}>
       <div className="container">
         <div className="mb-8 max-w-4xl mx-auto text-center">
-          <motion.div
+          <m.div
             variants={fades}
             custom={{ direction: "down" }}
             initial="hide"
@@ -27,8 +28,8 @@ export default function SectionWrapper({ id, tagline, title, description, childr
             className="text-primary font-semibold mb-1"
           >
             {tagline}
-          </motion.div>
-          <motion.h2
+          </m.div>
+          <m.h2
             variants={fades}
             initial={"hide"}
             whileInView={"show"}
@@ -36,9 +37,9 @@ export default function SectionWrapper({ id, tagline, title, description, childr
             className="h2 text-center"
           >
             {title}
-          </motion.h2>
+          </m.h2>
           <Separator className="max-w-32 min-h-0.5 rounded bg-primary mx-auto mb-4" />
-          <motion.p
+          <m.p
             variants={fades}
             custom={{ direction: "in", delay: 0.1 }}
             initial={"hide"}
@@ -47,7 +48,7 @@ export default function SectionWrapper({ id, tagline, title, description, childr
             className="text-muted-foreground text-center"
           >
             {description}
-          </motion.p>
+          </m.p>
         </div>
         {children}
       </div>

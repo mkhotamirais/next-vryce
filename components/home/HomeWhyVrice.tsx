@@ -3,7 +3,8 @@ import SectionWrapper from "./SectionWrapper";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 // import { motion } from "motion/react";
-import * as motion from "motion/react-client";
+// import * as motion from "motion/react-client";
+import * as m from "motion/react-m";
 import { varContainer, varItemSlideLeft } from "@/lib/animations";
 
 export default function HomeWhyVrice() {
@@ -19,7 +20,7 @@ export default function HomeWhyVrice() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2">
-            <motion.ul
+            <m.ul
               variants={varContainer}
               initial="hidden"
               whileInView="show"
@@ -27,12 +28,12 @@ export default function HomeWhyVrice() {
               className="leading-relaxed space-y-4 text-muted-foreground"
             >
               {points.map((item, i) => (
-                <motion.li key={i} variants={varItemSlideLeft} className="flex items-center gap-2 font-medium">
+                <m.li key={i} variants={varItemSlideLeft} className="flex items-center gap-2 font-medium">
                   <CheckCircle className="text-primary min-w-5 w-5" />
                   {item}
-                </motion.li>
+                </m.li>
               ))}
-            </motion.ul>
+            </m.ul>
           </div>
           <div className="w-full md:w-1/2">
             <Image

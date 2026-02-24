@@ -14,7 +14,7 @@ import { Button } from "./ui/button";
 import { Check, Copy, Share2 } from "lucide-react";
 import { useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "./ui/dropdown-menu";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 type Props = {
   url: string;
@@ -37,26 +37,28 @@ export default function ShareSocialGroup({ url = "https://vryce.id", title = "vr
       <DropdownMenuContent align="end" className="rounded-xl">
         <div className="flex py-2 px-3 gap-3">
           <div>
-            <Tooltip open={isOpenCopy || isCopied} onOpenChange={setIsOpenCopy}>
-              <TooltipTrigger asChild>
-                <Button
-                  aria-label="copy link"
-                  variant={"outline"}
-                  size={"icon"}
-                  className="rounded-full"
-                  onClick={() => {
-                    navigator.clipboard.writeText(url);
-                    setIsCopied(true);
-                    setTimeout(() => setIsCopied(false), 1500);
-                  }}
-                >
-                  {isCopied ? <Check className="text-primary" /> : <Copy />}
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{isCopied ? "Copied!" : "Copy Link"}</p>
-              </TooltipContent>
-            </Tooltip>
+            <TooltipProvider>
+              <Tooltip open={isOpenCopy || isCopied} onOpenChange={setIsOpenCopy}>
+                <TooltipTrigger asChild>
+                  <Button
+                    aria-label="copy link"
+                    variant={"outline"}
+                    size={"icon"}
+                    className="rounded-full"
+                    onClick={() => {
+                      navigator.clipboard.writeText(url);
+                      setIsCopied(true);
+                      setTimeout(() => setIsCopied(false), 1500);
+                    }}
+                  >
+                    {isCopied ? <Check className="text-primary" /> : <Copy />}
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{isCopied ? "Copied!" : "Copy Link"}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
           {/* WhatsApp */}
           <WhatsappShareButton url={url} title={title} separator=":: ">

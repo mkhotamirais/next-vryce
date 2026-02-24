@@ -6,7 +6,8 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { IService } from "@/hooks/useServices";
 import { usePathname } from "next/navigation";
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
 export default function ServiceCard({ item }: { item: IService }) {
@@ -21,7 +22,7 @@ export default function ServiceCard({ item }: { item: IService }) {
   const benefitsLabel = l("benefits");
 
   return (
-    <motion.div
+    <m.div
       variants={fades}
       custom={{ delay: 0.1 }}
       initial="hide"
@@ -62,6 +63,6 @@ export default function ServiceCard({ item }: { item: IService }) {
           </Link>
         </Button>
       )}
-    </motion.div>
+    </m.div>
   );
 }

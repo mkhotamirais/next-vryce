@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import * as motion from "motion/react-client";
+// import * as motion from "motion/react-client";
+import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
 const clientListUrl = [
@@ -15,10 +16,10 @@ export default function HomeOurClients() {
 
   return (
     <div className="pt-16 pb-8 flex flex-col items-center">
-      <motion.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
+      <m.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
         {title}
-      </motion.h2>
-      <motion.p
+      </m.h2>
+      <m.p
         variants={fades}
         custom={{ direction: "in", delay: 0.1 }}
         initial="hide"
@@ -27,12 +28,12 @@ export default function HomeOurClients() {
         className="text-muted-foreground"
       >
         {description}
-      </motion.p>
+      </m.p>
       <div className="flex items-center gap-12 mb-4">
         {clientListUrl.map((item, i) => (
-          <motion.div key={i} variants={fades} initial="hide" whileInView="show" viewport={{ once: true }}>
+          <m.div key={i} variants={fades} initial="hide" whileInView="show" viewport={{ once: true }}>
             <Image src={item.src} alt={item.alt} width={100} height={100} className="w-28" />
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </div>

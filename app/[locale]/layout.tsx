@@ -9,8 +9,8 @@ import Footer2 from "@/components/layouts/Footer2";
 import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
 import { Toaster } from "sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { baseUrl } from "@/lib/common";
+import { AnimationProvider } from "@/components/providers/AnimationProvider";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -57,15 +57,15 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextAuthProvider>
-          <TooltipProvider>
-            <NextIntlClientProvider>
+          <NextIntlClientProvider>
+            <AnimationProvider>
               <Toaster position="top-center" richColors />
               <Header />
               <main className="min-h-screen">{children}</main>
               <Footer2 />
               <ButtonEdge />
-            </NextIntlClientProvider>
-          </TooltipProvider>
+            </AnimationProvider>
+          </NextIntlClientProvider>
         </NextAuthProvider>
       </body>
     </html>

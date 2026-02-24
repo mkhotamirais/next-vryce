@@ -5,7 +5,8 @@ import TalentCard from "../cards/TalentCard";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import * as motion from "motion/react-client";
+// import * as motion from "motion/react-client";
+import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
 export default function HomeTalent() {
@@ -23,7 +24,7 @@ export default function HomeTalent() {
     <section className="py-12 lg:py-16 bg-primary/3">
       <div className="container">
         <div className="flex flex-col md:flex-row gap-8">
-          <motion.div
+          <m.div
             variants={fades}
             initial="hide"
             whileInView="show"
@@ -37,10 +38,10 @@ export default function HomeTalent() {
               height={500}
               className="w-full h-full object-contain rounded-xl"
             />
-          </motion.div>
+          </m.div>
           <div className="w-full md:w-2/3 leading-relaxed space-y-8 order-1 md:order-2">
             <div>
-              <motion.h2
+              <m.h2
                 variants={fades}
                 custom={{ direction: "right" }}
                 initial="hide"
@@ -49,8 +50,8 @@ export default function HomeTalent() {
                 className="h2 max-w-100"
               >
                 {title}
-              </motion.h2>
-              <motion.p
+              </m.h2>
+              <m.p
                 variants={fades}
                 custom={{ direction: "in", delay: 0.1 }}
                 initial="hide"
@@ -59,11 +60,11 @@ export default function HomeTalent() {
                 className="text-muted-foreground"
               >
                 {description}
-              </motion.p>
+              </m.p>
             </div>
             <div>
               <div className="flex items-center justify-between mb-4">
-                <motion.h3
+                <m.h3
                   variants={fades}
                   custom={{ direction: "right" }}
                   initial="hide"
@@ -72,7 +73,7 @@ export default function HomeTalent() {
                   className="border-l-2 pl-4 border-primary leading-relaxed font-semibold text-lg"
                 >
                   Vryce Talents
-                </motion.h3>
+                </m.h3>
                 <Button variant={"link"} asChild>
                   <Link href="/talent#talentPeoples">
                     <span className="">{moreTalents}</span>

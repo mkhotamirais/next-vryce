@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
-import * as motion from "motion/react-client";
+// import * as motion from "motion/react-client";
+import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 
 export default function TalentCard({ talent }: Props) {
   return (
-    <motion.div
+    <m.div
       variants={fades}
       initial="hide"
       whileInView="show"
@@ -31,6 +32,6 @@ export default function TalentCard({ talent }: Props) {
         <FaInstagram />
         <FaXTwitter />
       </div>
-    </motion.div>
+    </m.div>
   );
 }
