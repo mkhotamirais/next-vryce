@@ -1,4 +1,3 @@
-// components/AnimationProvider.tsx
 "use client";
 import { LazyMotion } from "motion/react";
 
