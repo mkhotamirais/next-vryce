@@ -1,11 +1,13 @@
 "use client";
 
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Link from "next/dist/client/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { IService } from "@/hooks/useServices";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
+import { fades } from "@/lib/animations";
 
 export default function ServiceCard({ item }: { item: IService }) {
   const b = useTranslations("buttons");
@@ -19,8 +21,13 @@ export default function ServiceCard({ item }: { item: IService }) {
   const benefitsLabel = l("benefits");
 
   return (
-    <div
-      className={`bg-white flex flex-col space-y-4 shadow hover:shadow-md p-6 rounded-lg transition-all ${isServicesPage ? "" : "text-center items-center"} `}
+    <motion.div
+      variants={fades}
+      custom={{ delay: 0.1 }}
+      initial="hide"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      className={`bg-white flex flex-col space-y-4 shadow p-6 rounded-lg ${isServicesPage ? "" : "text-center items-center"} `}
     >
       <h3 className="text-xl font-bold h-auto md:h-16">{item.title}</h3>
       <div className="h-auto md:h-12">
@@ -55,6 +62,6 @@ export default function ServiceCard({ item }: { item: IService }) {
           </Link>
         </Button>
       )}
-    </div>
+    </motion.div>
   );
 }

@@ -5,6 +5,8 @@ import TalentCard from "../cards/TalentCard";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import * as motion from "motion/react-client";
+import { fades } from "@/lib/animations";
 
 export default function HomeTalent() {
   const t = useTranslations("talent");
@@ -14,14 +16,20 @@ export default function HomeTalent() {
   const p2 = t("paragraph_2");
   const p2_list = t("p2_list").replaceAll(" | ", "; ");
   const description = p2 + " " + p2_list;
-  const moreTalentDetails = b("view_talent_details");
+  // const moreTalentDetails = b("view_talent_details");
   const moreTalents = b("more_talents");
 
   return (
     <section className="py-12 lg:py-16 bg-primary/3">
       <div className="container">
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-1/3 order-2 md:order-1">
+          <motion.div
+            variants={fades}
+            initial="hide"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="w-full md:w-1/3 order-2 md:order-1"
+          >
             <Image
               src="/images/talent/talent-1-iqbal.jpeg"
               alt="vryce talent"
@@ -29,15 +37,42 @@ export default function HomeTalent() {
               height={500}
               className="w-full h-full object-contain rounded-xl"
             />
-          </div>
+          </motion.div>
           <div className="w-full md:w-2/3 leading-relaxed space-y-8 order-1 md:order-2">
             <div>
-              <h2 className="h2 max-w-100">{title}</h2>
-              <p className="text-muted-foreground">{description}</p>
+              <motion.h2
+                variants={fades}
+                custom={{ direction: "right" }}
+                initial="hide"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="h2 max-w-100"
+              >
+                {title}
+              </motion.h2>
+              <motion.p
+                variants={fades}
+                custom={{ direction: "in", delay: 0.1 }}
+                initial="hide"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="text-muted-foreground"
+              >
+                {description}
+              </motion.p>
             </div>
             <div>
               <div className="flex items-center justify-between mb-4">
-                <h3 className="border-l-2 pl-4 border-primary leading-relaxed font-semibold text-lg">Vryce Talents</h3>
+                <motion.h3
+                  variants={fades}
+                  custom={{ direction: "right" }}
+                  initial="hide"
+                  whileInView="show"
+                  viewport={{ once: true }}
+                  className="border-l-2 pl-4 border-primary leading-relaxed font-semibold text-lg"
+                >
+                  Vryce Talents
+                </motion.h3>
                 <Button variant={"link"} asChild>
                   <Link href="/talent#talentPeoples">
                     <span className="">{moreTalents}</span>

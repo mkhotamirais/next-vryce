@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
-import ServiceCard from "../ServiceCard";
+import ServiceCard from "../cards/ServiceCard";
 import { Link } from "@/i18n/navigation";
 
 export default function HomeServices() {

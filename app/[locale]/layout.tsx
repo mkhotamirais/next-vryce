@@ -54,7 +54,7 @@ export default async function RootLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale}>
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextAuthProvider>
           <TooltipProvider>

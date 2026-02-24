@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import * as motion from "motion/react-client";
+import { fades } from "@/lib/animations";
 
 const clientListUrl = [
   { alt: "Panorama Alam", src: "/images/clients/logo-panoramaalam.svg" },
@@ -13,11 +15,24 @@ export default function HomeOurClients() {
 
   return (
     <div className="pt-16 pb-8 flex flex-col items-center">
-      <h2 className="h2">{title}</h2>
-      <p className="text-muted-foreground">{description}</p>
+      <motion.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
+        {title}
+      </motion.h2>
+      <motion.p
+        variants={fades}
+        custom={{ direction: "in", delay: 0.1 }}
+        initial="hide"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="text-muted-foreground"
+      >
+        {description}
+      </motion.p>
       <div className="flex items-center gap-12 mb-4">
         {clientListUrl.map((item, i) => (
-          <Image key={i} src={item.src} alt={item.alt} width={100} height={100} className="w-28" />
+          <motion.div key={i} variants={fades} initial="hide" whileInView="show" viewport={{ once: true }}>
+            <Image src={item.src} alt={item.alt} width={100} height={100} className="w-28" />
+          </motion.div>
         ))}
       </div>
     </div>

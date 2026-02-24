@@ -2,6 +2,9 @@ import { useTranslations } from "next-intl";
 import SectionWrapper from "./SectionWrapper";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
+import { varContainer, varItemSlideLeft } from "@/lib/animations";
 
 export default function HomeWhyVrice() {
   const t = useTranslations("home.why");
@@ -16,14 +19,20 @@ export default function HomeWhyVrice() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2">
-            <ul className="leading-relaxed space-y-4 text-muted-foreground">
+            <motion.ul
+              variants={varContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              className="leading-relaxed space-y-4 text-muted-foreground"
+            >
               {points.map((item, i) => (
-                <li key={i} className="flex items-center gap-2 font-medium">
+                <motion.li key={i} variants={varItemSlideLeft} className="flex items-center gap-2 font-medium">
                   <CheckCircle className="text-primary min-w-5 w-5" />
                   {item}
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           </div>
           <div className="w-full md:w-1/2">
             <Image

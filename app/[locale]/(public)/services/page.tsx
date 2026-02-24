@@ -1,6 +1,6 @@
 import HeroWrapper from "@/components/HeroWrapper";
 import HomeContactUs from "@/components/home/HomeContactUs";
-import ServiceCard from "@/components/ServiceCard";
+import ServiceCard from "@/components/cards/ServiceCard";
 import useServices from "@/hooks/useServices";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";

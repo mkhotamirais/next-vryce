@@ -1,6 +1,7 @@
 import Image from "next/image";
-import React from "react";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import * as motion from "motion/react-client";
+import { fades } from "@/lib/animations";
 
 type Props = {
   talent: { name: string; role: string; image: string };
@@ -8,7 +9,13 @@ type Props = {
 
 export default function TalentCard({ talent }: Props) {
   return (
-    <div className="w-auto flex flex-col items-center space-y-3">
+    <motion.div
+      variants={fades}
+      initial="hide"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="w-auto flex flex-col items-center space-y-3"
+    >
       <Image
         src={talent.image}
         alt="vryce talent"
@@ -24,6 +31,6 @@ export default function TalentCard({ talent }: Props) {
         <FaInstagram />
         <FaXTwitter />
       </div>
-    </div>
+    </motion.div>
   );
 }

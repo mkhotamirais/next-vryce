@@ -119,7 +119,8 @@ export default function Talent({ params }: Props) {
       <section id="talentPeoples" className="scroll-mt-16 py-12 lg:px-16">
         <div className="container">
           <h2 className="h2 text-center mb-12!">{sub_title_3}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8"> */}
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 max-w-sm mx-auto gap-8">
             {talentPeoples.map((item, i) => (
               <TalentCard key={i} talent={item} />
             ))}
