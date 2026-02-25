@@ -3,20 +3,21 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { getTranslations } from "next-intl/server";
+import { smartTrim } from "@/lib/utils";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.digital_core" });
+  const t = await getTranslations({ locale, namespace: "metadata.about" });
+
+  const title = smartTrim(t("title"), 50);
+  const description = smartTrim(t("description"), 150);
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
+      canonical: locale === "id" ? "/id/solusi-digital" : "/en/digital-core",
+      languages: { en: "/en/digital-core", id: "/id/solusi-digital", "x-default": "/id/solusi-digital" },
     },
   };
 }

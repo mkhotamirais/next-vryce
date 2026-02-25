@@ -5,21 +5,21 @@ import useServices from "@/hooks/useServices";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
+import { smartTrim } from "@/lib/utils";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.services" });
+  const t = await getTranslations({ locale, namespace: "metadata.about" });
+
+  const title = smartTrim(t("title"), 50);
+  const description = smartTrim(t("description"), 150);
 
   return {
-    title: t("title"),
-    description: t("description"),
-    // 2. Tambahkan Alternates untuk SEO Internasional (Sangat Penting!)
+    title,
+    description,
     alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
+      canonical: locale === "id" ? "/id/layanan" : "/en/services",
+      languages: { en: "/en/services", id: "/id/layanan", "x-default": "/id/layanan" },
     },
   };
 }

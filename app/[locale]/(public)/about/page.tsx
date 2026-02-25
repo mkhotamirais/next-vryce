@@ -1,5 +1,5 @@
 import HeroWrapper from "@/components/HeroWrapper";
-import { getAlternates } from "@/lib/utils";
+import { smartTrim } from "@/lib/utils";
 import { Camera } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -8,10 +8,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.about" });
 
+  const title = smartTrim(t("title"), 50);
+  const description = smartTrim(t("description"), 150);
+
   return {
-    title: t("title"),
-    description: t("description"),
-    alternates: getAlternates(locale, "/about"),
+    title,
+    description,
+    alternates: {
+      canonical: locale === "id" ? "/id/tentang" : "/en/about",
+      languages: { en: "/en/about", id: "/id/tentang", "x-default": "/id/tentang" },
+    },
   };
 }
 

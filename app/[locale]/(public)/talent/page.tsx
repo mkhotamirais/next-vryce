@@ -10,20 +10,21 @@ import Image from "next/image";
 import { use } from "react";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
+import { smartTrim } from "@/lib/utils";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.talent" });
+  const t = await getTranslations({ locale, namespace: "metadata.about" });
+
+  const title = smartTrim(t("title"), 50);
+  const description = smartTrim(t("description"), 150);
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
+      canonical: `/${locale}/talent`,
+      languages: { en: "/en/talent", id: "/id/talent", "x-default": "/id/talent" },
     },
   };
 }

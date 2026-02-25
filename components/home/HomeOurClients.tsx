@@ -15,27 +15,29 @@ export default function HomeOurClients() {
   const description = t("description");
 
   return (
-    <div className="pt-16 pb-8 flex flex-col items-center">
-      <m.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
-        {title}
-      </m.h2>
-      <m.p
-        variants={fades}
-        custom={{ direction: "in", delay: 0.1 }}
-        initial="hide"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="text-muted-foreground"
-      >
-        {description}
-      </m.p>
-      <div className="flex items-center gap-12 mb-4">
-        {clientListUrl.map((item, i) => (
-          <m.div key={i} variants={fades} initial="hide" whileInView="show" viewport={{ once: true }}>
-            <Image src={item.src} alt={item.alt} width={100} height={100} className="w-28" />
-          </m.div>
-        ))}
+    <section className="pt-16 pb-8 flex flex-col items-center">
+      <div className="container">
+        <m.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
+          {title}
+        </m.h2>
+        <m.p
+          variants={fades}
+          custom={{ direction: "in", delay: 0.1 }}
+          initial="hide"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-muted-foreground text-center"
+        >
+          {description}
+        </m.p>
+        <div className="flex items-center gap-12 mb-4">
+          {clientListUrl.map((item, i) => (
+            <m.div key={i} variants={fades} initial="hide" whileInView="show" viewport={{ once: true }}>
+              <Image src={item.src} alt={item.alt} width={100} height={100} className="w-28" />
+            </m.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

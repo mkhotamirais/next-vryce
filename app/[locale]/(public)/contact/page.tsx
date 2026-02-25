@@ -1,21 +1,22 @@
 import HeroWrapper from "@/components/HeroWrapper";
+import { smartTrim } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.contact" });
+  const t = await getTranslations({ locale, namespace: "metadata.about" });
+
+  const title = smartTrim(t("title"), 50);
+  const description = smartTrim(t("description"), 150);
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
+      canonical: locale === "id" ? "/id/kontak" : "/en/contact",
+      languages: { en: "/en/contact", id: "/id/tentang", "x-default": "/id/tentang" },
     },
   };
 }

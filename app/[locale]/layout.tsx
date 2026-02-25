@@ -25,16 +25,34 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return {
     metadataBase: new URL(baseUrl),
-    title: t("title"),
-    description: t("description"),
-    alternates: {
-      // canonical: `${baseUrl}/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-        "x-default": "/id",
-      },
+    title: {
+      template: `%s | Vryce`,
+      default: t("title"),
     },
+    description: t("description"),
+    // alternates: {
+    //   // canonical: `/${locale}`,
+    //   languages: {
+    //     en: "/en",
+    //     id: "/id",
+    //     "x-default": "/id",
+    //   },
+    // },
+    // 3. Tambahkan OpenGraph agar link terlihat bagus di Google & Medsos
+    // openGraph: {
+    //   title: t("title"),
+    //   description: t("description"),
+    //   url: `/${locale}`,
+    //   siteName: "Vryce",
+    //   locale: locale === "id" ? "id_ID" : "en_US",
+    //   type: "website",
+    //   // images: [{ url: '/og-image.png' }] // Tambahkan jika ada gambar preview
+    // },
+
+    // 4. Verifikasi Search Console (Opsional, tapi membantu)
+    // verification: {
+    //   google: 'kode-verifikasi-dari-gsc',
+    // },
   };
 }
 

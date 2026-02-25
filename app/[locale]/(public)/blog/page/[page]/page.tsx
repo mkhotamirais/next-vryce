@@ -3,20 +3,18 @@ import { blogLimit } from "@/lib/common";
 import BasePage from "../../BasePage";
 import { getBlogs } from "@/actions/blog";
 import { routing } from "@/i18n/routing";
+import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; page: string }> }) {
+  const { locale, page } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.blog" });
 
   return {
-    title: t("title"),
+    title: `${t("title")} - Page ${page}`,
     description: t("description"),
     alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        id: "/id",
-      },
+      canonical: `/${locale}/blog/page/${page}`,
+      languages: { en: `/en/blog/page/${page}`, id: `/id/blog/page/${page}` },
     },
   };
 }
@@ -51,6 +49,18 @@ export default async function BlogPage({ params }: Props) {
   setRequestLocale(locale);
 
   const page = Number((await params).page) || 1;
+  const queryClient = new QueryClient();
 
-  return <BasePage page={page} limit={blogLimit} />;
+  await queryClient.prefetchQuery({
+    queryKey: ["blogs", page, blogLimit, ""], // Keyword kosong untuk default list
+    queryFn: () => getBlogs({ page, limit: blogLimit }),
+  });
+
+  return (
+    <div className="scroll-mt-12 md:scroll-mt-16">
+      <HydrationBoundary state={dehydrate(queryClient)}>
+        <BasePage page={page} limit={blogLimit} />;
+      </HydrationBoundary>
+    </div>
+  );
 }

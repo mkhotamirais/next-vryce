@@ -1,15 +1,30 @@
 import HomeHero from "@/components/home/HomeHero";
 import { use } from "react";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import HomeContactUs from "@/components/home/HomeContactUs";
 import HomeOurClients from "@/components/home/HomeOurClients";
 import HomeServices from "@/components/home/HomeServices";
 import HomeTalent from "@/components/home/HomeTalent";
 import HomeWhyVrice from "@/components/home/HomeWhyVrice";
+import { smartTrim } from "@/lib/utils";
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata.home" });
+
+  const title = smartTrim(t("title"), 50);
+  const description = smartTrim(t("description"), 150);
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/${locale}`,
+      languages: { en: "/en", id: "/id", "x-default": "/id" },
+    },
+  };
+}
+
+type Props = { params: Promise<{ locale: string }> };
 
 export default function Home({ params }: Props) {
   const { locale } = use(params);

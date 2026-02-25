@@ -12,13 +12,11 @@ interface Props {
 }
 
 export default function BasePage({ page, limit, keyword }: Props) {
-  const { blogs, totalBlogsCount, totalPages, isPending } = useBlog({ page, limit, keyword });
+  const { blogs, totalBlogsCount, totalPages } = useBlog({ page, limit, keyword });
 
   const t = useTranslations("blog");
   const title = t("title");
   const headline = t("headline");
-
-  if (isPending) return null;
 
   return (
     <div className="scroll-mt-16">
