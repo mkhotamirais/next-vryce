@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import CreateBlogForm from "./CreateBlogForm";
-import { getBlogCategories } from "@/actions/blogCategory";
+import CreateBlogWrapper from "./CreateBlogWrapper";
 
 export default async function CreateBlog() {
-  const blogCategories = await getBlogCategories();
-
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
@@ -14,7 +11,7 @@ export default async function CreateBlog() {
           <Link href="/admin/blog">Go to Blog List</Link>
         </Button>
       </div>
-      <CreateBlogForm blogCategories={blogCategories} />
+      <CreateBlogWrapper />
     </div>
   );
 }

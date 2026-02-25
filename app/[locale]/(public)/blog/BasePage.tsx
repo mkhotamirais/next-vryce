@@ -1,7 +1,9 @@
+"use client";
+
 import List from "./List";
-import { getTranslations } from "next-intl/server";
 import HeroWrapper from "@/components/HeroWrapper";
-import { getBlogs } from "@/actions/blog";
+import { useTranslations } from "next-intl";
+import { useBlog } from "@/hooks/tanstack-hooks/useBlog";
 
 interface Props {
   page: number;
@@ -9,12 +11,14 @@ interface Props {
   keyword?: string;
 }
 
-export default async function BasePage({ page, limit, keyword }: Props) {
-  const { blogs, totalBlogsCount, totalPages } = await getBlogs({ page, limit, keyword });
+export default function BasePage({ page, limit, keyword }: Props) {
+  const { blogs, totalBlogsCount, totalPages, isPending } = useBlog({ page, limit, keyword });
 
-  const t = await getTranslations("blog");
+  const t = useTranslations("blog");
   const title = t("title");
   const headline = t("headline");
+
+  if (isPending) return null;
 
   return (
     <div className="scroll-mt-16">

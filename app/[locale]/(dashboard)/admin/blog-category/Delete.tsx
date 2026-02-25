@@ -15,7 +15,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { FaTrash } from "react-icons/fa6";
-import { deleteBlogCategory } from "@/actions/blogCategory";
+import { useBlogCategory } from "@/hooks/tanstack-hooks/useBlogCategory";
+// import { deleteBlogCategory } from "@/actions/blogCategory";
 
 interface DeleteProps {
   category: BlogCategory;
@@ -23,11 +24,13 @@ interface DeleteProps {
 
 export default function Delete({ category }: DeleteProps) {
   const [open, setOpen] = useState(false);
-  const [pending, setPending] = useState(false);
+  // const [pending, setPending] = useState(false);
+  const { deleteCategory, isDeleting: pending } = useBlogCategory();
 
   const handleDelete = async () => {
-    setPending(true);
-    const result = await deleteBlogCategory(category.id);
+    // setPending(true);
+    // const result = await deleteBlogCategory(category.id);
+    const result = await deleteCategory(category.id);
     if (!result?.ok) {
       toast.error(result?.message);
       return;

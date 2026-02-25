@@ -17,7 +17,8 @@ import { blogSchema } from "@/lib/schemas/blog";
 import TiptapEditor from "@/components/ui/custom/tiptap/TiptapEditor";
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { BlogProps } from "@/types/blog";
-import { updateBlog } from "@/actions/blog";
+import { useBlog } from "@/hooks/tanstack-hooks/useBlog";
+// import { updateBlog } from "@/actions/blog";
 
 type inferSchema = z.infer<typeof blogSchema>;
 
@@ -38,7 +39,8 @@ export default function EditBlogForm({ blog, blogCategories }: Props) {
       image: undefined,
     },
   });
-  const pending = form.formState.isSubmitting;
+  // const pending = form.formState.isSubmitting;
+  const { updateBlog, isUpdating: pending } = useBlog();
 
   const [imagePreview, setImagePreview] = useState<string | null>(blog?.imageUrl || null);
   const [removeImage, setRemoveImage] = useState(false);
@@ -100,7 +102,8 @@ export default function EditBlogForm({ blog, blogCategories }: Props) {
       formData.append("image", image as Blob);
     }
 
-    const result = await updateBlog(blog.slug, formData);
+    // const result = await updateBlog(blog.slug, formData);
+    const result = await updateBlog({ slug: blog.slug, formData });
 
     if (!result?.ok) {
       toast.error(result?.message);

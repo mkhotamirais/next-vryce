@@ -51,38 +51,44 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-  const session = await auth();
-  if (!session || !session.user || session.user.role !== "ADMIN")
-    return Response.json({ ok: false, message: "Unauthorized" }, { status: 401 });
-
-  const formData = await req.formData();
-  const imageFile = formData.get("image") as File | null;
-  const rawData = Object.fromEntries(formData.entries());
-  const dataForValidation = { ...rawData, image: imageFile instanceof File && imageFile.size > 0 ? imageFile : null };
-
-  const validatedFields = blogSchema.safeParse(dataForValidation);
-  if (!validatedFields.success)
-    return Response.json(
-      { ok: false, message: "Validation failed", errors: z.treeifyError(validatedFields.error) },
-      { status: 400 },
-    );
-
-  let imageUrl = "";
-  if (imageFile && imageFile.size > 0) {
-    try {
-      const blob = await put(`blogs/${Date.now()}-${imageFile.name}`, imageFile, { access: "public", multipart: true });
-      imageUrl = blob.url;
-    } catch (error) {
-      console.log(error);
-      return Response.json({ ok: false, message: "Failed to upload image" }, { status: 500 });
-    }
-  }
-
-  const { title, content } = validatedFields.data;
-  let categoryId = validatedFields.data.categoryId;
-  const slug = generateSlug(title);
-
   try {
+    const session = await auth();
+    if (!session || !session.user || session.user.role !== "ADMIN")
+      return Response.json({ ok: false, message: "Unauthorized" }, { status: 401 });
+
+    const formData = await req.formData();
+    const imageFile = formData.get("image") as File | null;
+    const rawData = Object.fromEntries(formData.entries());
+    const dataForValidation = { ...rawData, image: imageFile instanceof File && imageFile.size > 0 ? imageFile : null };
+
+    const validatedFields = blogSchema.safeParse(dataForValidation);
+    if (!validatedFields.success)
+      return Response.json(
+        { ok: false, message: "Validation failed", errors: z.treeifyError(validatedFields.error) },
+        { status: 400 },
+      );
+
+    let imageUrl = "";
+    if (imageFile && imageFile.size > 0) {
+      try {
+        const blob = await put(`blogs/${Date.now()}-${imageFile.name}`, imageFile, {
+          access: "public",
+          multipart: true,
+        });
+        imageUrl = blob.url;
+      } catch (error) {
+        console.log(error);
+        return Response.json({ ok: false, message: "Failed to upload image" }, { status: 500 });
+      }
+    }
+
+    const { title, content } = validatedFields.data;
+    let categoryId = validatedFields.data.categoryId;
+    const slug = generateSlug(title);
+
+    const existingBlogSlug = await prisma.blog.findFirst({ where: { slug } });
+    if (existingBlogSlug) return Response.json({ ok: false, message: "Nama produk sudah digunakan." }, { status: 409 });
+
     const existingCategory = await prisma.blogCategory.findUnique({ where: { id: categoryId } });
     if (!existingCategory) {
       const defaultCategory = await prisma.blogCategory.findFirst({ where: { isDefault: true } });

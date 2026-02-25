@@ -1,16 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import EditBlogForm from "./EditBlogForm";
-import { getBlogCategories } from "@/actions/blogCategory";
-import { redirect } from "next/navigation";
-import { getBlogBySlug } from "@/actions/blog";
+import EditBlogWrapper from "./EditBlogWrapper";
 
 export default async function EditBlog({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
-  const blog = await getBlogBySlug(slug);
-  const blogCategories = await getBlogCategories();
-
-  if (!blogCategories?.length || !blog) redirect("/");
 
   return (
     <>
@@ -20,7 +13,7 @@ export default async function EditBlog({ params }: { params: Promise<{ slug: str
           <Link href="/admin/blog">Go to Blog List</Link>
         </Button>
       </div>
-      <EditBlogForm blog={blog} blogCategories={blogCategories} />
+      <EditBlogWrapper slug={slug} />
     </>
   );
 }

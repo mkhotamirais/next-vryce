@@ -14,8 +14,10 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useBlogCategory } from "@/hooks/tanstack-hooks/useBlogCategory";
 
-export default function List({ blogCategories }: { blogCategories: BlogCategory[] | undefined }) {
+export default function List() {
+  const { data: blogCategories } = useBlogCategory();
   const [isEdit, setIsEdit] = useState<string | null>(null);
 
   return (

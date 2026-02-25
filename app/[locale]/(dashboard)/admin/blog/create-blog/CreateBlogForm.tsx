@@ -16,7 +16,8 @@ import { Spinner } from "@/components/ui/spinner";
 import { blogSchema } from "@/lib/schemas/blog";
 import TiptapEditor from "@/components/ui/custom/tiptap/TiptapEditor";
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
-import { createBlog } from "@/actions/blog";
+import { useBlog } from "@/hooks/tanstack-hooks/useBlog";
+// import { createBlog } from "@/actions/blog";
 
 type inferSchema = z.infer<typeof blogSchema>;
 
@@ -27,7 +28,8 @@ export default function CreateBlogForm({ blogCategories }: { blogCategories: Blo
     resolver: zodResolver(blogSchema),
     defaultValues: { title: "", content: "", categoryId: "", image: undefined },
   });
-  const pending = form.formState.isSubmitting;
+  // const pending = form.formState.isSubmitting;
+  const { createBlog, isCreating: pending } = useBlog();
 
   const [imagePreview, setImagePreview] = useState<string | null>(null);
 
@@ -86,7 +88,6 @@ export default function CreateBlogForm({ blogCategories }: { blogCategories: Blo
     }
 
     const result = await createBlog(formData);
-
     if (!result?.ok) {
       toast.error(result.message);
       return;
@@ -101,7 +102,7 @@ export default function CreateBlogForm({ blogCategories }: { blogCategories: Blo
   };
 
   return (
-    <form id="blog-category-form" onSubmit={form.handleSubmit(onSubmit)}>
+    <form id="blog-form" onSubmit={form.handleSubmit(onSubmit)}>
       <FieldGroup>
         <Controller
           name="image"

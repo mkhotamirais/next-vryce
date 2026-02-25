@@ -11,11 +11,12 @@ import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
 import { Toaster } from "sonner";
 import { baseUrl } from "@/lib/common";
 import { AnimationProvider } from "@/components/providers/AnimationProvider";
+import ClientProvider from "@/components/providers/ClientProvider";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  // display: "swap",
+  display: "swap",
 });
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -59,13 +60,15 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={`${montserrat.variable} font-montserrat`}>
         <NextAuthProvider>
           <NextIntlClientProvider>
-            <AnimationProvider>
-              <Toaster position="top-center" richColors />
-              <Header />
-              <main className="min-h-screen">{children}</main>
-              <Footer2 />
-              <ButtonEdge />
-            </AnimationProvider>
+            <ClientProvider>
+              <AnimationProvider>
+                <Toaster position="top-center" richColors swipeDirections={["left", "right", "top"]} />
+                <Header />
+                <main className="min-h-screen">{children}</main>
+                <Footer2 />
+                <ButtonEdge />
+              </AnimationProvider>
+            </ClientProvider>
           </NextIntlClientProvider>
         </NextAuthProvider>
       </body>

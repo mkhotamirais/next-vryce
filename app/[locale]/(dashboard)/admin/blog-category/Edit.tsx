@@ -11,7 +11,8 @@ import { blogCategorySchema } from "@/lib/schemas/blog";
 import { Controller, useForm } from "react-hook-form";
 import z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { updateBlogCategory } from "@/actions/blogCategory";
+// import { updateBlogCategory } from "@/actions/blogCategory";
+import { useBlogCategory } from "@/hooks/tanstack-hooks/useBlogCategory";
 
 type inferSchema = z.infer<typeof blogCategorySchema>;
 
@@ -27,10 +28,12 @@ export default function Edit({ category, setIsEdit }: EditProps) {
     resolver: zodResolver(blogCategorySchema),
     defaultValues: { name },
   });
-  const pending = form.formState.isSubmitting;
+  // const pending = form.formState.isSubmitting;
+  const { updateCategory, isUpdating: pending } = useBlogCategory();
 
   const onSubmit = async (data: inferSchema) => {
-    const res = await updateBlogCategory({ id: category.id, name: data.name });
+    // const res = await updateBlogCategory({ id: category.id, name: data.name });
+    const res = await updateCategory({ id: category.id, name: data.name });
     if (!res?.ok) {
       toast.error(res?.message || "error");
       return;

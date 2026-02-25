@@ -15,7 +15,8 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { BlogProps } from "@/types/blog";
-import { deleteBlog } from "@/actions/blog";
+import { useBlog } from "@/hooks/tanstack-hooks/useBlog";
+// import { deleteBlog } from "@/actions/blog";
 
 interface IDelete {
   blog: BlogProps;
@@ -24,11 +25,12 @@ interface IDelete {
 
 export default function Delete({ blog, setOpen }: IDelete) {
   const [openDialog, setOpenDialog] = useState(false);
-  const [pending, setPending] = useState(false);
+  // const [pending, setPending] = useState(false);
+  const { deleteBlog, isDeleting: pending } = useBlog();
   const router = useRouter();
 
   const handleDelete = async () => {
-    setPending(true);
+    // setPending(true);
     const result = await deleteBlog(blog.slug);
     if (!result?.ok) {
       toast.error(result.message);
@@ -38,7 +40,7 @@ export default function Delete({ blog, setOpen }: IDelete) {
     setOpen(false);
     setOpenDialog(false);
 
-    setPending(false);
+    // setPending(false);
     router.refresh();
   };
 

@@ -1,7 +1,9 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import List from "./List";
-import { getBlogs } from "@/actions/blog";
+import { useBlog } from "@/hooks/tanstack-hooks/useBlog";
 
 interface Props {
   page: number;
@@ -9,8 +11,8 @@ interface Props {
   keyword?: string;
 }
 
-export default async function BasePage({ page, limit, keyword }: Props) {
-  const { blogs, totalBlogsCount, totalPages } = await getBlogs({ page, limit, keyword });
+export default function BasePage({ page, limit, keyword }: Props) {
+  const { blogs, totalBlogsCount, totalPages } = useBlog({ page, limit, keyword });
 
   return (
     <>

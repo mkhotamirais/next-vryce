@@ -9,7 +9,8 @@ import { Spinner } from "@/components/ui/spinner";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import z from "zod";
-import { createBlogCategory } from "@/actions/blogCategory";
+import { useBlogCategory } from "@/hooks/tanstack-hooks/useBlogCategory";
+// import { createBlogCategory } from "@/actions/blogCategory";
 
 type inferSchema = z.infer<typeof blogCategorySchema>;
 
@@ -18,10 +19,12 @@ export default function Create() {
     resolver: zodResolver(blogCategorySchema),
     defaultValues: { name: "" },
   });
-  const pending = form.formState.isSubmitting;
+  // const pending = form.formState.isSubmitting;
+  const { createCategory, isCreating: pending } = useBlogCategory();
 
   const onSubmit = async (data: inferSchema) => {
-    const res = await createBlogCategory({ name: data.name });
+    // const res = await createBlogCategory({ name: data.name });
+    const res = await createCategory(data.name);
     if (!res?.ok) {
       toast.error(res?.message || "error");
       return;
