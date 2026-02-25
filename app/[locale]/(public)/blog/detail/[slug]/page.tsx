@@ -3,14 +3,6 @@ import { smartTrim, stripHtml } from "@/lib/utils";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import BlogDetailClient from "./BlogDetailClient";
 import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
-import Blog from "../../page";
-
-// export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
-//   const slug = (await params).slug;
-//   const blog = await getBlogBySlug(slug);
-
-//   return { title: smartTrim(blog?.title || "", 60), description: smartTrim(blog?.content || "", 160) };
-// };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
