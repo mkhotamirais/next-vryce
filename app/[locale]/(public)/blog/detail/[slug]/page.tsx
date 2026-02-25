@@ -16,13 +16,13 @@ export const generateStaticParams = async () => {
 };
 
 export default async function BlogDetail({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale } = await params;
+  const { locale, slug } = await params;
 
   setRequestLocale(locale);
 
   return (
     <div className="py-8">
-      <BlogDetailClient />
+      <BlogDetailClient slug={slug} />
       {/* <div className="container">
         <NewsletterForm />
       </div> */}

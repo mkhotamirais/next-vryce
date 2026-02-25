@@ -7,11 +7,8 @@ import { diffForHumans } from "@/lib/utils";
 import { ArrowLeft, Calendar, Folder, ImageIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 
-export default function BlogDetailClient() {
-  const slug = useParams().slug as string;
-
+export default function BlogDetailClient({ slug }: { slug: string }) {
   const { data: blog, isPending } = useBlogDetail(slug);
   const currentBlogCategory = blog?.BlogCategory;
   const url = `${baseUrl}/blog/${blog?.slug}`;
