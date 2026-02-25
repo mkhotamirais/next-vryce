@@ -79,16 +79,16 @@ export const useBlog = ({
   };
 };
 
-// 2. Hook Tambahan untuk Detail Blog (Get by Slug)
 export const useBlogDetail = (slug: string) => {
   return useQuery({
-    queryKey: ["blog", slug],
+    queryKey: ["blog-detail", slug],
     queryFn: async () => {
       if (!slug) return null;
       const res = await fetch(`/api/blog/${slug}`);
       if (!res.ok) throw new Error("Blog not found");
       return res.json();
     },
-    enabled: !!slug, // Hanya jalan jika slug ada
+    enabled: !!slug,
+    staleTime: 1000 * 60 * 5,
   });
 };

@@ -2,6 +2,7 @@ import { getBlogBySlug, getBlogs } from "@/actions/blog";
 import { smartTrim } from "@/lib/utils";
 import { setRequestLocale } from "next-intl/server";
 import BlogDetailClient from "./BlogDetailClient";
+import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
 
 export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const slug = (await params).slug;
@@ -20,12 +21,18 @@ export default async function BlogDetail({ params }: { params: Promise<{ locale:
 
   setRequestLocale(locale);
 
+  const queryClient = new QueryClient();
+
+  await queryClient.prefetchQuery({
+    queryKey: ["blog-detail", slug],
+    queryFn: () => getBlogBySlug(slug),
+  });
+
   return (
     <div className="py-8">
-      <BlogDetailClient slug={slug} />
-      {/* <div className="container">
-        <NewsletterForm />
-      </div> */}
+      <HydrationBoundary state={dehydrate(queryClient)}>
+        <BlogDetailClient slug={slug} />
+      </HydrationBoundary>
     </div>
   );
 }
