@@ -10,7 +10,8 @@ async function getBlogs() {
     });
 
     if (!res.ok) return [];
-    return res.json();
+    const { blogs } = await res.json();
+    return blogs;
   } catch (error) {
     console.error("Sitemap Blog Fetch Error:", error);
     return [];
