@@ -15,9 +15,9 @@ import { Menu, X } from "lucide-react";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
 import { Link } from "@/i18n/navigation";
-// import AuthBtn from "./AuthBtn";
+import AuthBtn from "./AuthBtn";
 
-export default function NavMobile({ authBtn }: { authBtn?: React.ReactNode }) {
+export default function NavMobile() {
   const { mainMenu } = useMenu();
 
   return (
@@ -62,8 +62,7 @@ export default function NavMobile({ authBtn }: { authBtn?: React.ReactNode }) {
             </ul>
           </nav>
           <SheetFooter>
-            {/* <AuthBtn /> */}
-            {authBtn}
+            <AuthBtn />
 
             {/* <Button asChild className="text-center" size={"lg"}>
               <Link href="/login">

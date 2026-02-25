@@ -1,16 +1,15 @@
-// components/layouts/AuthDropdown.tsx
 "use client";
 
-import { signOut } from "next-auth/react"; // Atau gunakan logout action
+import { signOut } from "next-auth/react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 
-export default function AuthDropdown({ userName }: { userName: string }) {
+export default function AuthDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button>Dashboard ({userName})</Button>
+        <Button>Dashboard</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem asChild>

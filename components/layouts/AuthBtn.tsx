@@ -1,21 +1,29 @@
-// components/layouts/AuthBtn.tsx
-import { auth } from "@/auth"; // Config Auth.js v5 kamu
+"use client";
+
 import { Link } from "@/i18n/navigation";
+import { signOut, useSession } from "next-auth/react";
 import { Button } from "../ui/button";
-import AuthDropdown from "./AuthDropdown";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 
-export default async function AuthBtn() {
-  const session = await auth();
+export default function AuthBtn() {
+  const { data: session, status } = useSession();
 
-  if (!session?.user) {
-    // return (
-    //   <Button asChild variant="outline">
-    //     <Link href="/login">Login</Link>
-    //   </Button>
-    // );
-    return null;
-  }
+  if (status === "loading") return null;
+  if (!session?.user || status !== "authenticated") return null;
 
-  // Jika sudah login, berikan datanya ke komponen Client tadi
-  return <AuthDropdown userName={session.user.name || "User"} />;
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button>Dashboard</Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem asChild>
+          <Link href="/admin">Admin Dashboard</Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => signOut()} className="font-bold text-red-600">
+          Logout
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 }
