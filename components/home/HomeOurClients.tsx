@@ -15,8 +15,8 @@ export default function HomeOurClients() {
   const description = t("description");
 
   return (
-    <section className="pt-16 pb-8 flex flex-col items-center">
-      <div className="container">
+    <section className="pt-16 pb-8">
+      <div className="container flex flex-col items-center">
         <m.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
           {title}
         </m.h2>

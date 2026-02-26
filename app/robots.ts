@@ -9,8 +9,8 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/", // Izinkan akses ke seluruh halaman publik
       disallow: [
         "/api/", // Jangan indeks route API
-        "/_next/", // Jangan indeks file internal Next.js
         "/admin/", // Jika ada dashboard admin, sebaiknya dilarang
+        // "/_next/", // Jangan indeks file internal Next.js
       ],
     },
     // Menghubungkan bot langsung ke file sitemap yang kita buat tadi
