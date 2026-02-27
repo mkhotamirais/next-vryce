@@ -4,10 +4,13 @@ import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { getTranslations } from "next-intl/server";
 import { smartTrim } from "@/lib/utils";
+import DcNaration from "./DcNaration";
+import DcServices from "./DcServices";
+import DcTechStack from "./DcTechStack";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.about" });
+  const t = await getTranslations({ locale, namespace: "metadata.digital_core" });
 
   const title = smartTrim(t("title"), 50);
   const description = smartTrim(t("description"), 150);
@@ -38,9 +41,9 @@ export default function DigitalCore({ params }: Props) {
   return (
     <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
-      <section className="py-12">
-        <div className="container">Content layanan web, landing page, sama ai </div>
-      </section>
+      <DcNaration />
+      <DcServices />
+      <DcTechStack />
     </div>
   );
 }

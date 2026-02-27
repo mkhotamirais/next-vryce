@@ -146,6 +146,7 @@ export default function useServices() {
   };
 
   const services = [s1, s2, s3, s4, s5, s6, s7, s8, s9] as IService[];
+  const digitalServices = [s7, s8, s9] as IService[];
 
-  return { services };
+  return { services, digitalServices };
 }
