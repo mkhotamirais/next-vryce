@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
 import { address, links as l } from "@/lib/common";
+import Link from "next/link";
 
 export default function Footer2() {
   const f = useTranslations("footer");
@@ -40,10 +41,10 @@ export default function Footer2() {
           <div>
             <p className="font-semibold text-xl mb-4">{title3}</p>
             <div>
-              <a href={l.email.url} className="pb-2 inline-flex text-gray-400 hover:underline items-center gap-2">
+              <Link href="/#contact" className="pb-2 inline-flex text-gray-400 hover:underline items-center gap-2">
                 <Mail className="size-5" />
                 {l.email.label}
-              </a>
+              </Link>
               <a href={l.wa.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
                 <Phone className="size-5" />
                 {l.wa.label}
@@ -53,7 +54,9 @@ export default function Footer2() {
           <div>
             <p className="font-semibold text-xl mb-4">{title4}</p>
             <div className="text-xl text-gray-400">
-              <FaInstagram />
+              <a href={l.ig.url} aria-label={l.ig.label}>
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </div>
