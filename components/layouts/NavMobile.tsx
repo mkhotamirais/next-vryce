@@ -14,11 +14,12 @@ import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "../Logo";
 import useMenu from "@/hooks/useMenu";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import AuthBtn from "./AuthBtn";
 
 export default function NavMobile() {
   const { mainMenu } = useMenu();
+  const pathname = usePathname();
 
   return (
     <div className="flex lg:hidden justify-end">
@@ -48,7 +49,11 @@ export default function NavMobile() {
               {mainMenu.map((item, i) => (
                 <li key={i}>
                   <SheetClose asChild>
-                    <Button asChild className="block mb-1 border-b" variant={"ghost"}>
+                    <Button
+                      asChild
+                      className={`${pathname === item.url ? "font-semibold" : ""} block mb-1 border-b`}
+                      variant={"ghost"}
+                    >
                       <Link href={item.url}>{item.label}</Link>
                     </Button>
                   </SheetClose>
