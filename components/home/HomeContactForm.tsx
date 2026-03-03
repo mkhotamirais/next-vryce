@@ -13,13 +13,14 @@ import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { toast } from "sonner";
 import { Spinner } from "../ui/spinner";
+import { Send } from "lucide-react";
 
 type inferContactSchema = z.infer<typeof contactSchema>;
 
 export default function HomeContactForm() {
   const t = useTranslations("validate");
   const l = useTranslations("labels");
-  const c = useTranslations("contact");
+  const c = useTranslations("home.contact");
 
   const name = l("name");
   const yourName = l("your_name");
@@ -113,6 +114,7 @@ export default function HomeContactForm() {
         <Button type="submit" disabled={pending} size={"lg"}>
           {pending && <Spinner />}
           {labelBtn}
+          <Send />
         </Button>
       </FieldGroup>
     </form>

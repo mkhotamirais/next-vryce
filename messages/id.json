@@ -106,7 +106,9 @@
     },
     "contact": {
       "title": "Mari Bangun Sesuatu yang Luar Biasa Bersama",
-      "description": "Sedang mencari mitra untuk proyek selanjutnya atau butuh konsultasi? Mari kita wujudkan ide kamu menjadi nyata"
+      "description": "Sedang mencari mitra untuk proyek selanjutnya atau butuh konsultasi? Mari kita wujudkan ide kamu menjadi nyata. Ceritakan detail kebutuhan digital marketing bisnis Anda dan berdiskusi dengan tim profesional kami",
+      "success_message": "Terima kasih, {name}! Pesan Anda sudah kami terima. Kami akan segera menghubungi anda kembali melalui email.",
+      "label_btn": "Kirim"
     }
   },
   "about": {
@@ -143,11 +145,7 @@
   },
   "contact": {
     "title": "Kontak Vryce",
-    "headline": "Mari Berkolaborasi dan Tingkatkan Eksistensi Brand Melalui Kerja Sama Strategis",
-    "c_wa": "Hubungi kami melalui",
-    "c_email": "atau kirim pesan melalui form berikut",
-    "success_message": "Terima kasih, {name}! Pesan Anda sudah kami terima. Kami akan segera menghubungi anda kembali melalui email.",
-    "label_btn": "Kirim Pesan"
+    "headline": "Mari Berkolaborasi dan Tingkatkan Eksistensi Brand Melalui Kerja Sama Strategis"
   },
   "services": {
     "title": "Paket Layanan & Harga Vryce",

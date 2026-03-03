@@ -1,21 +1,21 @@
 import { useTranslations } from "next-intl";
 // import { Button } from "../ui/button";
 // import { FaWhatsapp } from "react-icons/fa6";
-import { links } from "@/lib/common";
+// import { links } from "@/lib/common";
 import HomeContactForm from "./HomeContactForm";
 
-const wa = links.wa;
+// const wa = links.wa;
 
 export default function HomeContactUs() {
   const t = useTranslations("home.contact");
-  const c = useTranslations("contact");
+  // const c = useTranslations("contact");
   // const b = useTranslations("buttons");
 
   const title = t("title");
   const description = t("description");
   // const contactUs = b("contact");
-  const cWa = c("c_wa");
-  const cEmail = c("c_email");
+  // const cWa = c("c_wa");
+  // const cEmail = c("c_email");
 
   return (
     <section id="contact" className="scroll-mt-12 py-12 bg-primary/3">
@@ -24,11 +24,12 @@ export default function HomeContactUs() {
           <div className="text-center">
             <h2 className="h2">{title}</h2>
             <p className="mb-8 text-muted-foreground leading-relaxed">
-              {description}. {cWa}{" "}
+              {description}
+              {/* {cWa}{" "}
               <a href={wa.url} className="text-primary font-semibold">
                 WhatsApp {wa.label}
               </a>{" "}
-              {cEmail}
+              {cEmail} */}
             </p>
           </div>
           {/* <Button
