@@ -172,7 +172,7 @@ export default function Talent({ params }: Props) {
             {sub_title_3}
           </m.h2>
           {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8"> */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 max-w-sm mx-auto gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-xl mx-auto gap-8">
             {talentPeoples.map((item, i) => (
               <TalentCard key={i} talent={item} />
             ))}
