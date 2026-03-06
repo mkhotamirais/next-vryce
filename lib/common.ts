@@ -19,8 +19,8 @@ export const adminMenu = [
 ];
 
 export const talentPeoples = [
-  { name: "Iqbal", role: " Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
-  { name: "Faiqordhowi", role: " Model & Creator", image: "/images/talent/talent-2-faiqordhowi.jpeg" },
-  { name: "Wahyusntsoo", role: " Model & Creator", image: "/images/talent/talent-3-wahyusntsoo.jpeg" },
-  { name: "Unokimuno", role: " Model & Creator", image: "/images/talent/talent-4-unokimuno.jpeg" },
+  { name: "Iqbal", role: "Model & Creator", image: "/images/talent/talent-1-iqbal.jpeg" },
+  { name: "Faiqordhowi", role: "Model & Creator", image: "/images/talent/talent-2-faiqordhowi.jpeg" },
+  { name: "Wahyusntsoo", role: "Creator", image: "/images/talent/talent-3-wahyusntsoo.jpeg" },
+  { name: "Unokimuno", role: "Creator", image: "/images/talent/talent-4-unokimuno.jpeg" },
 ];
