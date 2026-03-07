@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import Link from "next/dist/client/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -28,9 +28,9 @@ export default function ServiceCard({ item }: { item: IService }) {
       initial="hide"
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}
-      className={`bg-white flex flex-col space-y-4 shadow p-6 rounded-lg ${isServicesPage ? "" : "text-center items-center"} `}
+      className={`bg-white flex flex-col space-y-4 shadow p-6 rounded-lg`}
     >
-      <h3 className="text-xl font-bold h-auto md:h-16">{item.title}</h3>
+      <h3 className="text-xl font-bold h-auto md:h-14">{item.title}</h3>
       <div className="h-auto md:h-12">
         <p className="text-2xl font-semibold mb-1 space-x-1 leading-none">
           <span className="text-primary">{item.price.replace("juta", "jt").replace("Million", "M")}</span>
@@ -56,12 +56,13 @@ export default function ServiceCard({ item }: { item: IService }) {
           </ul>
         </div>
       ) : (
-        <Button variant={"link"} asChild>
-          <Link href="/services">
-            {viewDetails}
-            <ArrowRight />
-          </Link>
-        </Button>
+        <Link
+          href="/services"
+          className="flex items-center gap-2 text-primary font-medium text-sm py-2 hover:underline"
+        >
+          {viewDetails}
+          <ArrowRight className="size-4" />
+        </Link>
       )}
     </m.div>
   );

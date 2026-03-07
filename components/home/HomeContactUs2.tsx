@@ -6,7 +6,7 @@ import HomeContactForm from "./HomeContactForm";
 
 // const wa = links.wa;
 
-export default function HomeContactUs() {
+export default function HomeContactUs2() {
   const t = useTranslations("home.contact");
   // const c = useTranslations("contact");
   // const b = useTranslations("buttons");
@@ -20,16 +20,21 @@ export default function HomeContactUs() {
   // const cEmail = c("c_email");
 
   return (
-    <section id="contact" className="scroll-mt-12 py-12 bg-primary/3">
+    <section
+      id="contact"
+      // className="scroll-mt-12 py-12 bg-[radial-gradient(circle_at_top,rgba(41,98,255,0.15)_10%,transparent_30%)]"
+      // className="scroll-mt-12 py-12 bg-linear-to-b from-primary/10 from-10% to-white to-30%"
+      className="scroll-mt-12 py-12 bg-muted"
+    >
       <div className="container">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-left md:text-center">
             {/* <h2 className="text-2xl font-bold mb-4">{title}</h2> */}
-            <h2 className="text-xl font-semibold mb-4">
+            <h2 className="h2">
               {titleSplit[0]},
               <br /> <span className="">{titleSplit[1]}</span>
             </h2>
-            <p className="mb-8 text-muted-foreground leading-relaxed">
+            <p className="mb-8 leading-relaxed text-muted-foreground">
               {description}
               {/* {cWa}{" "}
               <a href={wa.url} className="text-primary font-semibold">

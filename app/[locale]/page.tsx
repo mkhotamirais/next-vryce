@@ -1,12 +1,13 @@
 import HomeHero from "@/components/home/HomeHero";
 import { use } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeContactUs from "@/components/home/HomeContactUs";
+// import HomeContactUs from "@/components/home/HomeContactUs";
 import HomeOurClients from "@/components/home/HomeOurClients";
 import HomeServices from "@/components/home/HomeServices";
 import HomeTalent from "@/components/home/HomeTalent";
 import HomeWhyVrice from "@/components/home/HomeWhyVrice";
 import { smartTrim } from "@/lib/utils";
+import HomeContactUs2 from "@/components/home/HomeContactUs2";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -37,7 +38,8 @@ export default function Home({ params }: Props) {
       <HomeServices />
       <HomeTalent />
       <HomeOurClients />
-      <HomeContactUs />
+      {/* <HomeContactUs /> */}
+      <HomeContactUs2 />
     </div>
   );
 }

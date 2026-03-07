@@ -54,7 +54,7 @@ export default function HomeContactForm() {
     <form id="contact-form" onSubmit={form.handleSubmit(onSubmit)}>
       {/* <FieldGroup className="p-8 bg-white rounded-lg border border-primary/10"> */}
       <FieldGroup>
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8">
           <Controller
             name="name"
             control={form.control}
@@ -67,7 +67,7 @@ export default function HomeContactForm() {
                   aria-invalid={fieldState.invalid}
                   placeholder={yourName}
                   autoComplete="off"
-                  className="bg-white"
+                  className="bg-white py-6"
                 />
                 {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
               </Field>
@@ -85,7 +85,7 @@ export default function HomeContactForm() {
                   aria-invalid={fieldState.invalid}
                   placeholder="example@email.com"
                   autoComplete="off"
-                  className="bg-white"
+                  className="bg-white py-6"
                 />
                 {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
               </Field>
@@ -111,7 +111,7 @@ export default function HomeContactForm() {
             </Field>
           )}
         />
-        <Button type="submit" disabled={pending} size={"lg"}>
+        <Button type="submit" disabled={pending} size={"lg"} className="py-6">
           {pending && <Spinner />}
           {labelBtn}
           <Send />
