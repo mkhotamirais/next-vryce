@@ -23,7 +23,7 @@ export default function TalentCard({ talent }: Props) {
         alt="vryce talent"
         width={100}
         height={100}
-        className="size-25 object-cover object-center rounded-full border zoom-in-50"
+        className="size-24 object-cover object-center rounded-full border zoom-in-50"
       />
       <div className="text-center">
         <h3 className="font-medium">{talent.name}</h3>
