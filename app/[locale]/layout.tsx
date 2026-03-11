@@ -12,6 +12,7 @@ import { Toaster } from "sonner";
 import { baseUrl } from "@/lib/common";
 import { AnimationProvider } from "@/components/providers/AnimationProvider";
 import ClientProvider from "@/components/providers/ClientProvider";
+import MainProvider from "@/components/providers/MainProvider";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -82,7 +83,7 @@ export default async function RootLayout({ children, params }: Props) {
               <AnimationProvider>
                 <Toaster position="top-center" richColors swipeDirections={["left", "right", "top"]} />
                 <Header />
-                <main className="min-h-screen">{children}</main>
+                <MainProvider>{children}</MainProvider>
                 <Footer2 />
                 <ButtonEdge />
               </AnimationProvider>

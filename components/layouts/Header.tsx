@@ -1,12 +1,14 @@
 import Logo from "../Logo";
 import NavDesktop from "./NavDesktop";
-import NavMobile from "./NavMobile";
+// import NavMobile from "./NavMobile";
 import SwitchLangButton from "../SwitchLangButton";
+import NavMobilePushBtn from "./NavMobilePushBtn";
+import NavMobilePushContent from "./NavMobilePushContent";
 
 export default function Header() {
   return (
-    <header className="h-16 sticky top-0 bg-white/60 z-30 backdrop-blur-lg">
-      <div className="container flex gap-8 items-center justify-between">
+    <header className="min-h-16 sticky top-0 bg-white/80 z-30 backdrop-blur">
+      <div className="container flex gap-8 items-center justify-between min-h-16">
         <Logo />
         <div className="flex-1">
           <NavDesktop />
@@ -14,10 +16,12 @@ export default function Header() {
             <div className="block lg:hidden">
               <SwitchLangButton />
             </div>
-            <NavMobile />
+            {/* <NavMobile /> */}
+            <NavMobilePushBtn />
           </div>
         </div>
       </div>
+      <NavMobilePushContent />
     </header>
   );
 }
