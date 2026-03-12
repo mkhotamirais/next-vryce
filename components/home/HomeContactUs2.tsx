@@ -39,7 +39,7 @@ export default function HomeContactUs2() {
               {titleSplit[2]} <br />
             </h2>
             <p className="mb-8 leading-relaxed text-gray-600 text-center">
-              <span className="hidden md:block">{description.split("?")[0]}</span>
+              <span className="hidden md:block">{description.split("?")[0]}?</span>
               <span>{description.split("?")[1]}</span>
               {/* {cWa}{" "}
               <a href={wa.url} className="text-primary font-semibold">
