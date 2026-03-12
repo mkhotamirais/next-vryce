@@ -39,7 +39,7 @@ export default function SectionWrapper({ id, tagline, title, description, childr
             initial={"hide"}
             whileInView={"show"}
             viewport={{ once: true }}
-            className="text-muted-foreground"
+            className="text-gray-600"
           >
             {description}
           </m.p>

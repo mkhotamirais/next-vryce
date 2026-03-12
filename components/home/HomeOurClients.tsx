@@ -26,7 +26,7 @@ export default function HomeOurClients() {
           initial="hide"
           whileInView="show"
           viewport={{ once: true }}
-          className="text-muted-foreground text-center"
+          className="text-gray-600 text-center"
         >
           {description}
         </m.p>

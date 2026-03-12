@@ -31,7 +31,7 @@ export default function HomeHero() {
             className="space-y-4"
           >
             <p className="text-xl md:text-2xl font-medium text-primary">{tagline}</p>
-            <p className="text-base lg:text-lg text-muted-foreground">{description}</p>
+            <p className="text-base lg:text-lg text-gray-600">{description}</p>
           </m.div>
           <m.div variants={fades} custom={{ delay: 0.2 }} initial="hide" animate="show" className="flex gap-2">
             <Button size={"lg"} className="w-46 py-7 px-12 text-lg rounded-xl" asChild>

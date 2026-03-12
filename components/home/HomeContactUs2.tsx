@@ -32,11 +32,15 @@ export default function HomeContactUs2() {
             {/* <h2 className="text-2xl font-bold mb-4">{title}</h2> */}
             <h2 className="h2 text-center tracking-tighter!">
               {titleSplit[0]} <br />
-              {titleSplit[1]} <br />
+              {titleSplit[1]}{" "}
+              <span className="md:hidden">
+                <br />
+              </span>
               {titleSplit[2]} <br />
             </h2>
-            <p className="mb-8 leading-relaxed text-muted-foreground">
-              {description}
+            <p className="mb-8 leading-relaxed text-gray-600 text-center">
+              <span className="hidden md:block">{description.split("?")[0]}</span>
+              <span>{description.split("?")[1]}</span>
               {/* {cWa}{" "}
               <a href={wa.url} className="text-primary font-semibold">
                 WhatsApp {wa.label}

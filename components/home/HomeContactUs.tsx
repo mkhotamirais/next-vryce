@@ -30,7 +30,7 @@ export default function HomeContactUs() {
               <br /> <span className="">{titleSplit[1]}</span>
             </h2>
             <p className="mb-8 text-muted-foreground leading-relaxed">
-              {description}
+              {description.split("?")[1]}
               {/* {cWa}{" "}
               <a href={wa.url} className="text-primary font-semibold">
                 WhatsApp {wa.label}

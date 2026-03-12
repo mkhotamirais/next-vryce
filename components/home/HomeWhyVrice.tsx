@@ -25,7 +25,7 @@ export default function HomeWhyVrice() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
-              className="leading-relaxed space-y-4 text-muted-foreground"
+              className="leading-relaxed space-y-4 text-gray-600"
             >
               {points.map((item, i) => (
                 <m.li key={i} variants={varItemSlideLeft} className="flex items-center gap-2 font-medium">

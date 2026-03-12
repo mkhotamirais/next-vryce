@@ -59,7 +59,7 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="text-muted-foreground"
+                className="text-gray-600"
               >
                 {description}
               </m.p>
