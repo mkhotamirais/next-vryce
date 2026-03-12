@@ -139,7 +139,7 @@
 }
 
 .btn {
-  @apply border rounded;
+  @apply border;
 }
 
 .h1 {
@@ -147,5 +147,5 @@
 }
 
 .h2 {
-  @apply text-3xl lg:text-4xl font-semibold mb-4;
+  @apply text-[28px] lg:text-4xl font-semibold mb-4 tracking-tight;
 }

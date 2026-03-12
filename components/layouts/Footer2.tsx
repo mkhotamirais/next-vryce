@@ -41,11 +41,11 @@ export default function Footer2() {
           <div>
             <p className="font-semibold text-xl mb-4">{title3}</p>
             <div>
-              <Link href="/#contact" className="pb-2 inline-flex text-gray-400 hover:underline items-center gap-2">
+              <Link href="/#contact" className="pb-2 flex text-gray-400 hover:underline items-center gap-2">
                 <Mail className="size-5" />
                 {l.email.label}
               </Link>
-              <a href={l.wa.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
+              <a href={l.wa.url} className="py-2 flex text-gray-400 hover:underline items-center gap-2">
                 <Phone className="size-5" />
                 {l.wa.label}
               </a>

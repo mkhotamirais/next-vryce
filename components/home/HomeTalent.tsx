@@ -48,9 +48,10 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="h2 max-w-100"
+                className="h2 text-center md:text-left max-w-100"
               >
-                {title}
+                {title.split("&")[0]} &
+                <br /> {title.split("&")[1]}
               </m.h2>
               <m.p
                 variants={fades}

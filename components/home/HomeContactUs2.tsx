@@ -12,7 +12,7 @@ export default function HomeContactUs2() {
   // const b = useTranslations("buttons");
 
   const title = t("title");
-  const titleSplit = title.split(", ");
+  const titleSplit = title.split(";");
 
   const description = t("description");
   // const contactUs = b("contact");
@@ -30,9 +30,10 @@ export default function HomeContactUs2() {
         <div className="max-w-4xl mx-auto">
           <div className="text-left md:text-center">
             {/* <h2 className="text-2xl font-bold mb-4">{title}</h2> */}
-            <h2 className="h2">
-              {titleSplit[0]},
-              <br /> <span className="">{titleSplit[1]}</span>
+            <h2 className="h2 text-center tracking-tighter!">
+              {titleSplit[0]} <br />
+              {titleSplit[1]} <br />
+              {titleSplit[2]} <br />
             </h2>
             <p className="mb-8 leading-relaxed text-muted-foreground">
               {description}
