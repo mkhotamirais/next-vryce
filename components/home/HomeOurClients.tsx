@@ -28,7 +28,9 @@ export default function HomeOurClients() {
           viewport={{ once: true }}
           className="text-gray-600 text-center"
         >
-          {description}
+          {description.split(";")[0]}
+          <br />
+          {description.split(";")[1]}
         </m.p>
         <div className="flex items-center gap-12 mb-4">
           {clientListUrl.map((item, i) => (

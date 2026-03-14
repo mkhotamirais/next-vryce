@@ -100,12 +100,16 @@
       "description": "Kami menggabungkan data dan kreativitas untuk mengubah biaya pemasaran menjadi pertumbuhan bisnis yang terukur melalui pendekatan yang berfokus pada hasil",
       "points": "Fokus pada performa dan hasil bisnis | Strategi marketing berbasis data | Talent & creator management yang berkualitas | Affiliate marketing sebagai growth engine | Fleksibel: retainer, project-based, hingga performance-based"
     },
+    "talent": {
+      "title": "Vryce Talent & Creator Management",
+      "desription": "Talent di bawah manajemen Vryce hadir untuk membantu brand menjangkau audiens yang lebih luas melalui konten yang relevan, sekaligus berperan sebagai afiliasi yang membangun kepercayaan dan kredibilitas untuk menigkatkan penjualan"
+    },
     "our_clients": {
       "title": "Klien Kami",
-      "description": "Dipercaya oleh berbagai perusahaan hingga saat ini"
+      "description": "Dipercaya oleh berbagai perusahaan; hingga saat ini"
     },
     "contact": {
-      "title": "If your online marketing; isn’t growing,; it’s time to fix it",
+      "title": "If your online marketing isn’t growing, it’s time to fix it",
       "description": "Sedang mencari mitra untuk proyek selanjutnya atau butuh konsultasi? Ceritakan detail kebutuhan digital marketing bisnis Anda dan berdiskusi dengan tim profesional kami",
       "success_message": "Terima kasih, {name}! Pesan Anda sudah kami terima. Kami akan segera menghubungi anda kembali melalui email.",
       "label_btn": "Kirim"

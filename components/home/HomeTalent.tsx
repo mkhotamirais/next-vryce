@@ -13,8 +13,9 @@ import { fades } from "@/lib/animations";
 export default function HomeTalent() {
   const t = useTranslations("talent");
   const b = useTranslations("buttons");
+  const ht = useTranslations("home.talent");
 
-  const title = t("sub_title_1");
+  const title = ht("title");
   const p2 = t("paragraph_2");
   const p2_list = t("p2_list").replaceAll(" | ", "; ");
   const description = p2 + " " + p2_list;
