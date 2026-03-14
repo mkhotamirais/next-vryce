@@ -28,6 +28,8 @@ export default function CreateBlogForm({ blogCategories }: { blogCategories: Blo
     resolver: zodResolver(blogSchema),
     defaultValues: { title: "", content: "", categoryId: "", image: undefined },
   });
+
+  console.log(form.getFieldState);
   // const pending = form.formState.isSubmitting;
   const { createBlog, isCreating: pending } = useBlog();
 
