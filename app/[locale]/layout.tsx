@@ -1,11 +1,11 @@
 import { Montserrat } from "next/font/google";
 import "../globals.css";
-// import Header from "@/components/layouts/Header";
+import Header from "@/components/layouts/Header";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/dist/client/components/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-// import Footer2 from "@/components/layouts/Footer2";
+import Footer2 from "@/components/layouts/Footer2";
 import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
 import { Toaster } from "sonner";
@@ -82,9 +82,9 @@ export default async function RootLayout({ children, params }: Props) {
             <ClientProvider>
               <AnimationProvider>
                 <Toaster position="top-center" richColors swipeDirections={["left", "right", "top"]} />
-                {/* <Header /> */}
+                <Header />
                 <MainProvider>{children}</MainProvider>
-                {/* <Footer2 /> */}
+                <Footer2 />
                 <ButtonEdge />
               </AnimationProvider>
             </ClientProvider>

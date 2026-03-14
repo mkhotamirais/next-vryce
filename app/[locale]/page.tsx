@@ -36,7 +36,7 @@ export default function Home({ params }: Props) {
       <HomeHero />
       <HomeWhyVrice />
       <HomeServices />
-      <HomeTalent />
+      {/* <HomeTalent /> */}
       <HomeOurClients />
       {/* <HomeContactUs /> */}
       <HomeContactUs2 />
