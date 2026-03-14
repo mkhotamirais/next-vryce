@@ -65,9 +65,9 @@ export default function Talent({ params }: Props) {
   const talent_paragraph_4 = t("paragraph_4");
 
   return (
-    <div className="leading-loose scroll-mt-12 md:scroll-mt-16">
+    <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
-      <section className="py-12 lg:px-16">
+      <section className="py-12 lg:px-16 leading-loose">
         <div className="container flex gap-8 flex-col md:flex-row">
           <m.div
             variants={fades}
@@ -115,7 +115,7 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
-      <section className="py-12 lg:px-16 bg-primary/3">
+      <section className="py-12 lg:px-16 bg-primary/3 leading-loose">
         <div className="container">
           <div className="max-w-auto md:max-w-5xl mx-auto">
             <m.h2
@@ -159,7 +159,7 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
-      <section id="talentPeoples" className="scroll-mt-16 py-12 lg:px-16">
+      <section id="talentPeoples" className="scroll-mt-16 py-12 lg:px-16 leading-loose">
         <div className="container">
           <m.h2
             variants={fades}
