@@ -12,27 +12,27 @@ export default function DcNaration() {
 
   return (
     <section className="py-12">
-      <div className="container space-y-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 leading-relaxed">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter bg-linear-to-br from-gray-700 md:from-primary from-50% to-gray-700 to-50% bg-clip-text text-transparent">
+      <div className="container flex flex-col md:flex-row gap-12 leading-relaxed">
+        <div className="w-full md:w-3/5">
+          {/* <h2 className="text-3xl md:text-4xl font-bold tracking-tighter bg-linear-to-br from-gray-700 md:from-primary from-50% to-gray-700 to-50% bg-clip-text text-transparent">
               {subTitle1}
-            </h2>
-            {/* <Link
+            </h2> */}
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-gray-800 mb-4">{subTitle1}</h2>
+          {/* <Link
               href="#digital-services"
               className="flex items-center gap-2 text-primary hover:underline mt-8 font-semibold"
             >
               {ourServices}
               <ArrowDown className="" />
             </Link> */}
-          </div>
           <p className="text-muted-foreground">{p1}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 leading-relaxed">
-          <p className="order-2 md:order-1 text-muted-foreground">{p2}</p>
-          <h2 className="order-1 md:order-2 lext-left md:text-right text-3xl md:text-5xl font-bold tracking-tighter bg-linear-to-br from-gray-700 md:from-primary from-50% to-gray-700 to-50% bg-clip-text text-transparent">
+        <div className="w-full md:w-2/5">
+          {/* <h2 className="lext-left text-3xl md:text-4xl font-bold tracking-tighter bg-linear-to-br from-gray-700 md:from-primary from-50% to-gray-700 to-50% bg-clip-text text-transparent">
             {subTitle2}
-          </h2>
+          </h2> */}
+          <h2 className="lext-left text-3xl md:text-3xl font-bold tracking-tighter text-gray-800 mb-4">{subTitle2}</h2>
+          <p className="text-muted-foreground">{p2}</p>
         </div>
       </div>
     </section>
