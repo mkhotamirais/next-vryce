@@ -61,8 +61,10 @@ export default function HomeTalent() {
                 viewport={{ once: true }}
                 className="text-gray-600 text-center md:text-left"
               >
-                {description.split("optimized for:")[0]}
-                <span className="hidden md:inline">optimized for: {description.split("optimized for:")[1]}</span>
+                {description.split(/optimized for:|yang dioptimalkan/i)[0]}
+                <span className="hidden md:inline">
+                  optimized for: {description.split(/optimized for:|yang dioptimalkan/i)[1]}
+                </span>
               </m.p>
             </div>
             <div>
