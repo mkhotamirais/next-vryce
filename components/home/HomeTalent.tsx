@@ -11,14 +11,15 @@ import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
 export default function HomeTalent() {
-  const t = useTranslations("talent");
+  // const t = useTranslations("talent");
   const b = useTranslations("buttons");
   const ht = useTranslations("home.talent");
 
   const title = ht("title");
-  const p2 = t("paragraph_2");
-  const p2_list = t("p2_list").replaceAll(" | ", "; ");
-  const description = p2 + " " + p2_list;
+  // const p2 = t("paragraph_2");
+  // const p2_list = t("p2_list").replaceAll(" | ", "; ");
+  const desc = ht("description");
+  // const description = p2 + " " + p2_list;
   // const moreTalentDetails = b("view_talent_details");
   const moreTalents = b("more_talents");
 
@@ -62,10 +63,11 @@ export default function HomeTalent() {
                 viewport={{ once: true }}
                 className="text-gray-600 text-center md:text-left"
               >
-                {description.split(/optimized for:|yang dioptimalkan/i)[0]}
+                {/* {description.split(/optimized for:|yang dioptimalkan/i)[0]}
                 <span className="hidden md:inline">
                   optimized for: {description.split(/optimized for:|yang dioptimalkan/i)[1]}
-                </span>
+                </span> */}
+                {desc}
               </m.p>
             </div>
             <div>
