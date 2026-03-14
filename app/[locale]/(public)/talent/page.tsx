@@ -1,6 +1,5 @@
 import TalentCard from "@/components/cards/TalentCard";
 import HeroWrapper from "@/components/HeroWrapper";
-import HomeContactUs from "@/components/home/HomeContactUs";
 import { Separator } from "@/components/ui/separator";
 import { talentPeoples } from "@/lib/common";
 import { Heart, Palette, TrendingUp } from "lucide-react";
@@ -11,6 +10,7 @@ import { use } from "react";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 import { smartTrim } from "@/lib/utils";
+import HomeContactUs2 from "@/components/home/HomeContactUs2";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -42,7 +42,6 @@ export default function Talent({ params }: Props) {
 
   const title = t("title");
   const headline = t("headline");
-  // const welcome = t("welcome");
   const sub_title_1 = t("sub_title_1");
   const talent_paragraph_1 = t("paragraph_1");
   const talent_paragraph_2 = t("paragraph_2");
@@ -179,7 +178,7 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
-      <HomeContactUs />
+      <HomeContactUs2 />
     </div>
   );
 }
