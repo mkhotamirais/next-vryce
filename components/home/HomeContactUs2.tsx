@@ -30,7 +30,7 @@ export default function HomeContactUs2() {
         <div className="max-w-4xl mx-auto">
           <div className="text-left md:text-center">
             {/* <h2 className="text-2xl font-bold mb-4">{title}</h2> */}
-            <h2 className="font-semibold mb-4 text-center tracking-tight max-w-3xl mx-auto">
+            <h2 className="font-semibold mb-4 text-left md:text-center tracking-tight max-w-3xl mx-auto">
               {/* {titleSplit[0]} <br />
               {titleSplit[1]}{" "}
               <span className="md:hidden">
@@ -44,7 +44,7 @@ export default function HomeContactUs2() {
                 {title.split(",")[1]}
               </span>
             </h2>
-            <p className="mb-8 leading-relaxed text-gray-600 text-center">
+            <p className="mb-8 leading-relaxed text-gray-600 text-left md:text-center">
               <span className="hidden md:block">{description.split("?")[0]}?</span>
               <span>{description.split("?")[1]}</span>
               {/* {cWa}{" "}

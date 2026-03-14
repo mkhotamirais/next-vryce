@@ -50,7 +50,7 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="h2 text-center md:text-left max-w-100"
+                className="h2 text-left"
               >
                 {title.split("&")[0]} &
                 <br /> {title.split("&")[1]}
@@ -61,7 +61,7 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="text-gray-600 text-center md:text-left"
+                className="text-gray-600 text-left"
               >
                 {/* {description.split(/optimized for:|yang dioptimalkan/i)[0]}
                 <span className="hidden md:inline">
