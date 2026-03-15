@@ -1,11 +1,11 @@
 import HeroWrapper from "@/components/HeroWrapper";
-import HomeContactUs from "@/components/home/HomeContactUs";
 import ServiceCard from "@/components/cards/ServiceCard";
 import useServices from "@/hooks/useServices";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { smartTrim } from "@/lib/utils";
+import HomeContactUs2 from "@/components/home/HomeContactUs2";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -50,7 +50,7 @@ export default function Services({ params }: Props) {
           ))}
         </div>
       </section>
-      <HomeContactUs />
+      <HomeContactUs2 />
     </div>
   );
 }
