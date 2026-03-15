@@ -134,20 +134,18 @@
   }
 }
 
-@layer components {
-  .container {
-    @apply max-w-6xl mx-auto px-3 h-full;
-  }
+.container {
+  @apply max-w-6xl mx-auto px-3 h-full;
+}
 
-  .btn {
-    @apply border;
-  }
+.btn {
+  @apply border;
+}
 
-  .h1 {
-    @apply text-3xl lg:text-5xl font-bold mb-4;
-  }
+.h1 {
+  @apply text-3xl lg:text-5xl font-bold mb-4;
+}
 
-  .h2 {
-    @apply text-[28px] lg:text-4xl font-semibold mb-4 leading-10 tracking-tight;
-  }
+.h2 {
+  @apply text-[28px] lg:text-4xl font-semibold mb-4 leading-10 tracking-tight;
 }
