@@ -2,7 +2,8 @@
 import HomeOurClients from "@/components/home/HomeOurClients";
 import { smartTrim } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { use } from "react";
 import Image from "next/image";
 import TalentList from "../talent/TalentList";
 
@@ -23,7 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function About() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default function About({ params }: Props) {
+  const { locale } = use(params);
+
+  setRequestLocale(locale);
   const t = useTranslations("about");
 
   const title = t("title");
