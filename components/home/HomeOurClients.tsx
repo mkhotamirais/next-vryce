@@ -9,7 +9,7 @@ const clientListUrl = [
   { alt: "Kamirelawan", src: "/images/clients/logo-kamirelawan.png" },
 ];
 
-export default function HomeOurClients() {
+export default function HomeOurClients({ withTitle = true }: { withTitle?: boolean }) {
   const t = useTranslations("home.our_clients");
   const title = t("title");
   const description = t("description");
@@ -17,21 +17,25 @@ export default function HomeOurClients() {
   return (
     <section className="pt-16 pb-8">
       <div className="container flex flex-col items-center">
-        <m.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
-          {title}
-        </m.h2>
-        <m.p
-          variants={fades}
-          custom={{ direction: "in", delay: 0.1 }}
-          initial="hide"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="text-gray-600 text-center"
-        >
-          {description.split(";")[0]}
-          <br />
-          {description.split(";")[1]}
-        </m.p>
+        {withTitle ? (
+          <>
+            <m.h2 variants={fades} initial="hide" whileInView="show" viewport={{ once: true }} className="h2">
+              {title}
+            </m.h2>
+            <m.p
+              variants={fades}
+              custom={{ direction: "in", delay: 0.1 }}
+              initial="hide"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-gray-600 text-center"
+            >
+              {description.split(";")[0]}
+              <br />
+              {description.split(";")[1]}
+            </m.p>
+          </>
+        ) : null}
         <div className="flex items-center gap-12 mb-4">
           {clientListUrl.map((item, i) => (
             <m.div key={i} variants={fades} initial="hide" whileInView="show" viewport={{ once: true }}>

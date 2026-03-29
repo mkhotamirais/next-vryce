@@ -23,9 +23,7 @@ export default function Footer() {
       <div className="container pt-12 pb-8">
         <div className="grid grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div>
-              <Logo />
-            </div>
+            <div>{/* <Logo variant="dark" /> */}</div>
             <p className="text-gray-400">{tagline}</p>
             {/* <div>
               <address className="text-gray-400 not-italic">

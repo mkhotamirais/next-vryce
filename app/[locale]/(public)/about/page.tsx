@@ -1,8 +1,10 @@
-import HeroWrapper from "@/components/HeroWrapper";
+// import HeroWrapper from "@/components/HeroWrapper";
+import HomeOurClients from "@/components/home/HomeOurClients";
 import { smartTrim } from "@/lib/utils";
-import { Camera } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
+import TalentList from "../talent/TalentList";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -25,21 +27,33 @@ export default function About() {
   const t = useTranslations("about");
 
   const title = t("title");
-  const headline = t("headline");
+  // const headline = t("headline");
   const paragraph_1 = t("paragraph_1");
   const paragraph_2 = t("paragraph_2");
   const paragraph_3 = t("paragraph_3");
 
   return (
     <div className="scroll-mt-12 md:scroll-mt-16">
-      <HeroWrapper title={title} headline={headline} />
-      <section className="py-12 lg:py-16">
-        <div className="container flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-1/3 order-2 md:order-1">
-            <Camera className="size-70" />
+      {/* <HeroWrapper title={title} headline={headline} /> */}
+      <section className="h-100 py-20 bg-[url('/images/talent/talent-1-iqbal.jpeg')] bg-blend-saturation bg-black/60 grayscale bg-cover bg-center w-full">
+        {/* <div className="container flex items-center justify-center h-full"> */}
+        <div className="container flex items-end justify-start h-full">
+          <h1 className="text-5xl md:text-7xl font-bold text-left sm:text-center leading-tight text-white">{title}</h1>
+        </div>
+      </section>
+      <section className="py-12 lg:py-20 bg-[radial-gradient(circle_at_top_right,rgba(41,98,255,0.30)_0%,transparent_40%),radial-gradient(circle_at_left_bottom,rgba(41,98,255,0.15)_0%,transparent_40%)]">
+        <div className="container flex flex-col md:flex-row gap-8 lg:gap-16">
+          <div className="w-full lg:h-150 md:w-1/2 order-2 md:order-1">
+            <Image
+              src="/images/talent/talent-1-iqbal.jpeg"
+              alt="About Us"
+              width={800}
+              height={600}
+              className="rounded-lg object-cover w-full h-full"
+            />
           </div>
-          <div className="w-full md:w-2/3 leading-relaxed order-1 md:order-2">
-            <h2 className="h2">Vryce Digital Marketing Agency</h2>
+          <div className="w-full md:w-1/2 leading-loose order-1 md:order-2">
+            <h2 className="h2 mb-8!">Vryce Digital Marketing Agency</h2>
             <article className="text-muted-foreground space-y-4">
               <p>{paragraph_1}</p>
               <p>{paragraph_2}</p>
@@ -48,6 +62,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <HomeOurClients withTitle={false} />
+      <TalentList className="bg-primary/4" />
     </div>
   );
 }

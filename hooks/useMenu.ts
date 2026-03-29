@@ -13,6 +13,7 @@ export default function useMenu() {
     { label: t("services.label"), url: t("services.url") },
     { label: t("digital_core.label"), url: t("digital_core.url") },
     { label: t("talent.label"), url: t("talent.url") },
+    { label: t("about.label"), url: t("about.url") },
     { label: t("blog.label"), url: t("blog.url") },
   ] as { label: string; url: SafeHref }[];
 

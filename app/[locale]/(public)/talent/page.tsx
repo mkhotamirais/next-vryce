@@ -1,7 +1,7 @@
-import TalentCard from "@/components/cards/TalentCard";
+// import TalentCard from "@/components/cards/TalentCard";
 import HeroWrapper from "@/components/HeroWrapper";
 import { Separator } from "@/components/ui/separator";
-import { talentPeoples } from "@/lib/common";
+// import { talentPeoples } from "@/lib/common";
 import { Heart, Palette, TrendingUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -11,6 +11,7 @@ import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 import { smartTrim } from "@/lib/utils";
 import HomeContactUs2 from "@/components/home/HomeContactUs2";
+import TalentList from "./TalentList";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -48,7 +49,7 @@ export default function Talent({ params }: Props) {
   const p2_list = t("p2_list").split(" | ");
   const sub_title_2 = t("sub_title_2");
   const p3_list = t("p3_list").split(" | ");
-  const sub_title_3 = t("sub_title_3");
+  // const sub_title_3 = t("sub_title_3");
 
   const p2list = [
     { label: p2_list[0], icon: "🛍️" },
@@ -159,25 +160,7 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
-      <section id="talentPeoples" className="scroll-mt-16 py-12 lg:px-16 leading-loose">
-        <div className="container">
-          <m.h2
-            variants={fades}
-            initial="hide"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="h2 text-center mb-12!"
-          >
-            {sub_title_3}
-          </m.h2>
-          {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8"> */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-xl mx-auto gap-8">
-            {talentPeoples.map((item, i) => (
-              <TalentCard key={i} talent={item} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <TalentList />
       <HomeContactUs2 />
     </div>
   );

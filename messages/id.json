@@ -4,6 +4,7 @@
     "services": { "label": "Layanan", "url": "/services" },
     "digital_core": { "label": "Solusi Digital", "url": "/digital-core" },
     "talent": { "label": "Talent", "url": "/talent" },
+    "about": { "label": "Tentang", "url": "/about" },
     "blog": { "label": "Blog", "url": "/blog" }
   },
   "footer": {
