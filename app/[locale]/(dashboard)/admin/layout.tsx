@@ -5,7 +5,7 @@ import AdminProvider from "@/components/providers/AdminProvider";
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
     <AdminProvider>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="container py-8">Loading...</div>}>
         <div className="container pb-8">
           <div className="max-w-xl">
             <AdminMenu />

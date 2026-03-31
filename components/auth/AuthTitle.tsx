@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import React from "react";
 import Logo from "../Logo";
 
 export default function AuthTitle({ type }: { type: "login" | "register" }) {

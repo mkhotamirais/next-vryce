@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import EditBlogWrapper from "./EditBlogWrapper";
+import { getBlogs } from "@/actions/blog";
+
+export const generateStaticParams = async () => {
+  const { blogs } = await getBlogs();
+  return blogs.map((blog) => ({ slug: blog.slug }));
+};
 
 export default async function EditBlog({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
