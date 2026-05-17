@@ -10,20 +10,20 @@ export interface IService {
 export default function useServices() {
   const s = useTranslations("services");
 
-  const s1_title = s("service_1.title");
-  const s1_price = s("service_1.price");
-  const s1_priceFor = s("service_1.priceFor");
-  const s1_priceNote = s("service_1.priceNote");
-  const s1_purpose = s("service_1.purpose");
-  const s1_benefits = s("service_1.benefits").split(" | ");
-  const s1 = {
-    title: s1_title,
-    price: s1_price,
-    priceFor: s1_priceFor,
-    priceNote: s1_priceNote,
-    purpose: s1_purpose,
-    benefits: s1_benefits,
-  };
+  // const s1_title = s("service_1.title");
+  // const s1_price = s("service_1.price");
+  // const s1_priceFor = s("service_1.priceFor");
+  // const s1_priceNote = s("service_1.priceNote");
+  // const s1_purpose = s("service_1.purpose");
+  // const s1_benefits = s("service_1.benefits").split(" | ");
+  // const s1 = {
+  //   title: s1_title,
+  //   price: s1_price,
+  //   priceFor: s1_priceFor,
+  //   priceNote: s1_priceNote,
+  //   purpose: s1_purpose,
+  //   benefits: s1_benefits,
+  // };
 
   const s2_title = s("service_2.title");
   const s2_price = s("service_2.price");
@@ -55,20 +55,20 @@ export default function useServices() {
     benefits: s3_benefits,
   };
 
-  const s4_title = s("service_4.title");
-  const s4_price = s("service_4.price");
-  const s4_priceFor = s("service_4.priceFor");
-  const s4_priceNote = s("service_4.priceNote");
-  const s4_purpose = s("service_4.purpose");
-  const s4_benefits = s("service_4.benefits").split(" | ");
-  const s4 = {
-    title: s4_title,
-    price: s4_price,
-    priceFor: s4_priceFor,
-    priceNote: s4_priceNote,
-    purpose: s4_purpose,
-    benefits: s4_benefits,
-  };
+  // const s4_title = s("service_4.title");
+  // const s4_price = s("service_4.price");
+  // const s4_priceFor = s("service_4.priceFor");
+  // const s4_priceNote = s("service_4.priceNote");
+  // const s4_purpose = s("service_4.purpose");
+  // const s4_benefits = s("service_4.benefits").split(" | ");
+  // const s4 = {
+  //   title: s4_title,
+  //   price: s4_price,
+  //   priceFor: s4_priceFor,
+  //   priceNote: s4_priceNote,
+  //   purpose: s4_purpose,
+  //   benefits: s4_benefits,
+  // };
 
   const s5_title = s("service_5.title");
   const s5_price = s("service_5.price");
@@ -85,20 +85,20 @@ export default function useServices() {
     benefits: s5_benefits,
   };
 
-  const s6_title = s("service_6.title");
-  const s6_price = s("service_6.price");
-  const s6_priceFor = s("service_6.priceFor");
-  const s6_priceNote = s("service_6.priceNote");
-  const s6_purpose = s("service_6.purpose");
-  const s6_benefits = s("service_6.benefits").split(" | ");
-  const s6 = {
-    title: s6_title,
-    price: s6_price,
-    priceFor: s6_priceFor,
-    priceNote: s6_priceNote,
-    purpose: s6_purpose,
-    benefits: s6_benefits,
-  };
+  // const s6_title = s("service_6.title");
+  // const s6_price = s("service_6.price");
+  // const s6_priceFor = s("service_6.priceFor");
+  // const s6_priceNote = s("service_6.priceNote");
+  // const s6_purpose = s("service_6.purpose");
+  // const s6_benefits = s("service_6.benefits").split(" | ");
+  // const s6 = {
+  //   title: s6_title,
+  //   price: s6_price,
+  //   priceFor: s6_priceFor,
+  //   priceNote: s6_priceNote,
+  //   purpose: s6_purpose,
+  //   benefits: s6_benefits,
+  // };
 
   const s7_title = s("service_7.title");
   const s7_price = s("service_7.price");
@@ -115,20 +115,20 @@ export default function useServices() {
     benefits: s7_benefits,
   };
 
-  const s8_title = s("service_8.title");
-  const s8_price = s("service_8.price");
-  const s8_priceFor = s("service_8.priceFor");
-  const s8_priceNote = s("service_8.priceNote");
-  const s8_purpose = s("service_8.purpose");
-  const s8_benefits = s("service_8.benefits").split(" | ");
-  const s8 = {
-    title: s8_title,
-    price: s8_price,
-    priceFor: s8_priceFor,
-    priceNote: s8_priceNote,
-    purpose: s8_purpose,
-    benefits: s8_benefits,
-  };
+  // const s8_title = s("service_8.title");
+  // const s8_price = s("service_8.price");
+  // const s8_priceFor = s("service_8.priceFor");
+  // const s8_priceNote = s("service_8.priceNote");
+  // const s8_purpose = s("service_8.purpose");
+  // const s8_benefits = s("service_8.benefits").split(" | ");
+  // const s8 = {
+  //   title: s8_title,
+  //   price: s8_price,
+  //   priceFor: s8_priceFor,
+  //   priceNote: s8_priceNote,
+  //   purpose: s8_purpose,
+  //   benefits: s8_benefits,
+  // };
 
   const s9_title = s("service_9.title");
   const s9_price = s("service_9.price");
@@ -145,8 +145,10 @@ export default function useServices() {
     benefits: s9_benefits,
   };
 
-  const services = [s1, s2, s3, s4, s5, s6, s7, s8, s9] as IService[];
-  const digitalServices = [s7, s8, s9] as IService[];
+  // const services = [s1, s2, s3, s4, s5, s6, s7, s8, s9] as IService[];
+  const services = [s2, s3, s5, s7, s9] as IService[];
+  // const digitalServices = [s7, s8, s9] as IService[];
+  const digitalServices = [s7, s9] as IService[];
 
   return { services, digitalServices };
 }
