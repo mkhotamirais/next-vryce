@@ -1,6 +1,6 @@
 {
   "main_menu": {
-    "home": { "label": "Beranda", "url": "/" },
+    "home": { "label": "Home", "url": "/" },
     "services": { "label": "Layanan", "url": "/services" },
     "digital_core": { "label": "Solusi Digital", "url": "/digital-core" },
     "talent": { "label": "Talent", "url": "/talent" },
@@ -34,7 +34,7 @@
   "metadata": {
     "home": {
       "title": "Vryce - Agensi Digital Marketing Terkemuka di Indonesia",
-      "description": "Vryce adalah agensi digital marketing berbasis performa yang fokus pada strategi berbasis data dan hasil bisnis nyata."
+      "description": "Vryce adalah mitra strategis untuk brand yang ingin mendapatkan jangkauan yang lebih luas dan melangkah lebih jauh lagi"
     },
     "about": {
       "title": "Tentang Vryce - Misi Kami dan Tim Ahli",
@@ -82,8 +82,8 @@
   "home": {
     "hero": {
       "title": "Agensi Pemasaran Digital",
-      "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
-      "description": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Melalui solusi pemasaran digital yang inovatif, kreatif, dan efektif, Vryce mendorong pertumbuhan bisnis secara berkelanjutan"
+      "tagline": "Crafting Growth for Beauty, Fashion & Lifestyle Brands",
+      "description": "Vryce adalah mitra strategis untuk brand yang ingin mendapatkan jangkauan yang lebih luas dan melangkah lebih jauh lagi. Melalui konten dan manajemen media sosial, kampanye KOL & UGC, performance ads, SEO & SEM, website profesional, hingga otomatisasi AI & marketing—kami mengemas setiap aspek digital agar brand Anda makin dicintai, menggerakkan penjualan, dan bertumbuh secara berkelanjutan"
     },
     "about": {
       "title": "Kami Memaksimalkan Pertumbuhan Lewat Data, Performa, dan Hasil Nyata.",
@@ -119,8 +119,8 @@
   "about": {
     "title": "Tentang Vryce",
     "headline": "Solusi pemasaran digital terintegrasi untuk performa tinggi dan pertumbuhan bisnis yang nyata",
-    "paragraph_1": "Vryce adalah Digital Marketing Agency yang berfokus pada strategi pemasaran digital berbasis performa, data, dan hasil bisnis. Kami membantu brand dan bisnis tidak hanya tampil di dunia digital, tetapi bertumbuh secara terukur—mulai dari brand awareness, traffic, leads, hingga konversi dan penjualan.",
-    "paragraph_2": "Kami percaya bahwa digital marketing tidak cukup hanya dengan menjalankan campaign. Oleh karena itu, Vryce mengelola seluruh ekosistem marketing sebagai satu sistem terintegrasi, yang dirancang untuk memastikan setiap channel memberikan kontribusi nyata terhadap tujuan bisnis klien.",
+    "paragraph_1": "Vryce adalah mitra strategis yang menjembatani tampilan visual berkelas dengan pencapaian omzet nyata. Kami membantu brand tidak hanya tampil memikat, tetapi juga memperbesar skala bisnis melalui eksekusi digital yang tepat sasaran.",
+    "paragraph_2": "Melalui integrasi enam jalur utama—mulai dari kreasi media sosial, kampanye KOL & UGC, performance ads, Google Ads & SEO, website profesional, hingga otomatisasi AI—kami memastikan setiap langkah yang diambil mampu memperkuat posisi brand sekaligus menggerakkan angka penjualan secara langsung.",
     "paragraph_3": "Vryce memberi layanan; performance ads, SEO & SEM, KOL marketing, affiliate marketing, social media strategy, landing page development, marketing automation, hingga AI-based digital marketing untuk menciptakan pertumbuhan brand yang berkelanjutan untuk memaksimalkan tujuan pemasaran digital yang dibutuhkan."
   },
   "digital_core": {
@@ -142,7 +142,7 @@
     "sub_title_2": "Talent kami dipilih berdasarkan",
     "p3_list": "Fashion, beauty, dan lifestyle | Engagement and audience quality | Mendorong dampak kampanye dan penjualan",
     "paragraph_4": "Dengan model ini, Vryce menjembatani brand, talent, dan sistem performance marketing dalam satu ekosistem—sehingga campaign tidak hanya terlihat menarik, tetapi memberikan hasil yang terukur",
-    "sub_title_3": "Meet our talents"
+    "sub_title_3": "Meet our team"
   },
   "blog": {
     "title": "Blog & Artikel Vryce",
@@ -156,76 +156,52 @@
     "title": "Paket Layanan & Harga Vryce",
     "headline": "Solusi pemasaran digital untuk pertumbuhan bisnis yang konsisten dan maksimal",
     "service_1": {
-      "title": "Vryce Performance Ads Package",
-      "price": "Rp 2,8 juta",
-      "priceFor": "bulan",
-      "priceNote": "(Di luar budget iklan)",
-      "purpose": "Menghasilkan leads, inquiry, atau penjualan secara cepat melalui iklan berbayar berbasis data.",
-      "benefits": "Platform iklan (Meta / Google / TikTok) | Strategy & funnel planning | Setup dan optimasi campaign | Ads copy & creative direction | Weekly optimization | Monthly performance report"
+      "title": "Vryce Social Media & Content Creation",
+      "price": "",
+      "priceFor": "",
+      "priceNote": "",
+      "purpose": "Mengelola akun media sosial secara konsisten melalui konten visual dan video pendek yang relevan untuk membangun citra brand, meningkatkan interaksi, serta mendorong minat beli audiens.",
+      "benefits": "Content strategy & monthly calendar berorientasi konversi | Pembuatan konten posting (Feed, Carousel, Story) | Produksi video pendek (Reels, TikTok, Shorts) berdaya jual | Visual branding & copywriting (Caption sales-driven & Hashtag) | Scheduling & publishing management | Community engagement & penanganan pertanyaan calon pembeli | Monthly performance & engagement report"
     },
     "service_2": {
-      "title": "Vryce SEO & SEM Package",
-      "price": "Rp 3 juta",
-      "priceFor": "bulan | min. 4-6 bulan",
-      "priceNote": "(Di luar budget iklan)",
-      "purpose": "Meningkatkan visibilitas brand di Google dan mendatangkan traffic dan pelanggan berkualitas jangka menengah–panjang.",
-      "benefits": "Website & keyword audit | On-page & technical SEO | Google Search Ads (SEM) | Funnel & keyword strategy | Optimization mingguan | Tracking & analytics | Monitoring ranking & search performance | Monthly report"
+      "title": "Vryce KOL & UGC Marketing Package",
+      "price": "",
+      "priceFor": "",
+      "priceNote": "",
+      "purpose": "Meningkatkan brand awareness, kepercayaan publik, dan mendongkrak penjualan secara langsung melalui ulasan autentik dari kreator serta influencer yang tepat.",
+      "benefits": "Talent, KOL & UGC creator sourcing terkurasi | Campaign strategy, planning & sales-driven briefing | Product seeding management | Pembuatan konten promosi & ulasan produk berkonversi tinggi | Rights management untuk aset iklan & promosi | Performance, link click & sales tracking report"
     },
     "service_3": {
-      "title": "Vryce KOL Marketing Package",
-      "price": "Rp 5 – 12 juta",
-      "priceFor": "campaign",
+      "title": "Vryce Performance Ads Package",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Meningkatkan awareness, trust, dan penjualan melalui talent dan KOL.",
-      "benefits": "Talent & KOL | Campaign planning & briefing | Konten sales-driven | Performance tracking & report"
+      "purpose": "Menjangkau target audiens potensial di Meta Ads dan TikTok Ads secara akurat untuk memicu transaksi langsung, retargeting, dan memaksimalkan pertumbuhan omzet yang terukur.",
+      "benefits": "Audience research & conversion campaign structure setup | Ad creative strategy & high-converting copywriting | Meta Ads (Instagram & Facebook) & TikTok Ads management | A/B testing (Creative, Copy, & Audience) | Budget optimization & Return on Ad Spend (ROAS) monitoring | Pixel & conversion tracking setup | Weekly optimization & monthly sales performance report"
     },
     "service_4": {
-      "title": "Vryce Affiliate Marketing Package",
-      "price": "Rp 5-15 juta",
-      "priceFor": "bulan + opsional komisi 5-15%",
+      "title": "Vryce SEO & Google Ads Package",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Membangun channel penjualan tambahan berbasis komisi.",
-      "benefits": "Setup sistem affiliate | Rekrut & onboarding affiliator / talent | Campaign & promo management | Tracking & payout reporting"
+      "purpose": "Meningkatkan visibilitas brand di Google serta mendatangkan traffic dari calon pelanggan berkualitas yang siap melakukan pembelian secara berkelanjutan.",
+      "benefits": "Website & high-intent keyword audit | Sales funnel & keyword strategy | On-page & technical SEO | Google Search Ads (SEM) management berorientasi konversi | Optimasi & A/B testing mingguan | Tracking & conversion analytics | Monitoring ranking & search performance | Monthly sales attribution & search performance report"
     },
     "service_5": {
-      "title": "Vryce Social Media Management",
-      "price": "Rp 2,5 juta",
-      "priceFor": "bulan",
+      "title": "Vryce Web Development",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Mengelola akun media sosial secara konsisten untuk membangun brand dan mendukung campaign.",
-      "benefits": "Content planning & calendar | Pembuatan konten posting (feed, carousel, reels) | Caption & hashtag | Scheduling & publishing | Monitoring & monthly report"
+      "purpose": "Membangun website profesional yang modern, cepat, dan ramah pengguna untuk meningkatkan kredibilitas brand serta mempermudah proses transaksi pelanggan.",
+      "benefits": "Custom website design (Company profile / Brand catalog) | Mobile-responsive & conversion-focused layout | Basic SEO setup & page speed optimization | Integrasi landing page promosi & tombol transaksi langsung | Domain & hosting setup assistance | Security, payment gateway / WhatsApp order integration & analytics setup"
     },
     "service_6": {
-      "title": "Vryce Marketplace Optimization & Promotion",
-      "price": "Rp 3,5 juta",
-      "priceFor": "project",
+      "title": "Vryce AI & Marketing Automation Package",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Optimasi dan promosi marketplace agar dikelola profesional, mudah ditemukan pembeli, serta meningkatkan performa penjualan",
-      "benefits": "Manajemen Marketplace Seller Center | Optimasi tampilan toko marketplace (profil, banner, dan branding) | Optimasi judul produk, deskripsi, dan keyword marketplace | Optimasi foto & tampilan produk (guideline / penyesuaian layout) | Setup promo dasar (diskon, voucher, dan campaign marketplace) | Basic marketplace ads setup (Shopee Ads / Tokopedia Ads) | Monitoring performa & rekomendasi strategi peningkatan penjualan"
-    },
-    "service_7": {
-      "title": "Vryce Web Development",
-      "price": "Rp 3,5 juta",
-      "priceFor": "project",
-      "priceNote": "",
-      "purpose": "Membangun website profesional untuk meningkatkan kredibilitas brand dan kepercayaan customer",
-      "benefits": "Company profile / brand website | Desain modern & user-friendly | Basic SEO setup | Domain & hosting setup assistance"
-    },
-    "service_8": {
-      "title": "Vryce Landing Page Development",
-      "price": "Rp 2,5 juta",
-      "priceFor": "project",
-      "priceNote": "",
-      "purpose": "Menyediakan landing page yang dirancang untuk meningkatkan kredibilitas brand serta mengoptimalkan konversi dari berbagai channel.",
-      "benefits": "Landing page | Struktur copywriting berbasis funnel | CTA & form lead terintegrasi | Basic SEO & tracking"
-    },
-    "service_9": {
-      "title": "Vryce Marketing Automation & AI Package",
-      "price": "Rp 6 – 12 juta",
-      "priceFor": "bulan",
-      "priceNote": "",
-      "purpose": "Mengotomatiskan proses marketing dan meningkatkan efisiensi tim.",
-      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
+      "purpose": "Mengotomatiskan alur kerja pemasaran dan manajemen pelanggan untuk meningkatkan efisiensi operasional serta mendorong pembeli setia melakukan pembelian berulang (repeat order).",
+      "benefits": "Lead management & CRM setup | Email & WhatsApp marketing automation untuk penawaran & follow-up | Automated customer onboarding, abandoned cart recovery & re-engagement workflow | AI-based sales insight & optimization | Data integration & purchase tracking analytics | Monthly evaluation & sales workflow review"
     }
   },
   "not_found": {

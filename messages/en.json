@@ -34,7 +34,7 @@
   "metadata": {
     "home": {
       "title": "Vryce - Leading Digital Marketing Agency in Indonesia",
-      "description": "Vryce is a performance-driven digital marketing agency focusing on data-backed strategies and real business results."
+      "description": "Vryce is a strategic partner for brands looking to expand their reach and go even further"
     },
     "about": {
       "title": "About Vryce - Our Mission and Expert Team",
@@ -82,8 +82,8 @@
   "home": {
     "hero": {
       "title": "Digital Marketing Agency",
-      "tagline": "Performance-Driven | Data-Focused | Result-Oriented",
-      "description": "Vryce is a digital marketing agency specializing in performance-driven, data-focused, and result-oriented strategies. Through innovative, creative, and effective digital marketing solutions, Vryce drives sustainable business growth"
+      "tagline": "Crafting Growth for Beauty, Fashion & Lifestyle Brands",
+      "description": "Vryce is a strategic partner for brands looking to expand their reach and go even further. Through content and social media management, KOL & UGC campaigns, performance ads, SEO & SEM, professional websites, and AI & marketing automation—we craft every digital aspect so your brand becomes more beloved, drives sales, and grows sustainably."
     },
     "about": {
       "title": "Maximizing Growth Through Data, Performance, and Real Results",
@@ -119,9 +119,9 @@
   "about": {
     "title": "About Vryce",
     "headline": "Integrated digital marketing solutions designed for high performance and measurable business growth",
-    "paragraph_1": "Vryce is a digital marketing agency focused on performance-driven, data-led strategies that deliver real business results. We help brands not only establish a digital presence but achieve measurable growth—from brand awareness and traffic to leads, conversions, and sales.",
-    "paragraph_2": "We believe effective digital marketing goes beyond just running campaigns. Therefore, Vryce manages the entire marketing ecosystem as an integrated system, ensuring every channel contributes significantly to our clients' business goals.",
-    "paragraph_3": "Vryce offers a comprehensive suite of services, including performance ads, SEO & SEM, KOL and affiliate marketing, social media strategy, landing page development, marketing automation, and AI-based digital marketing. Our mission is to drive sustainable brand growth and maximize your digital marketing objectives."
+    "paragraph_1": "Vryce is a strategic partner bridging high-end visuals with tangible revenue growth. We help brands not only look captivating, but also scale their business through targeted digital execution.",
+    "paragraph_2": "Through the integration of six core channels—from social media creation, KOL & UGC campaigns, performance ads, Google Ads & SEO, professional websites, to AI automation—we ensure every step strengthens your brand positioning while directly driving sales numbers.",
+    "paragraph_3": "Vryce provides services including performance ads, SEO & SEM, KOL marketing, affiliate marketing, social media strategy, landing page development, marketing automation, and AI-based digital marketing to build sustainable brand growth and maximize your required digital marketing goals."
   },
   "digital_core": {
     "title": "Vryce Digital Core",
@@ -142,7 +142,7 @@
     "sub_title_2": "Our talent is selected based on",
     "p3_list": "Fashion, beauty, and lifestyle | Engagement and audience quality | Ability to drive campaign impact and sales",
     "paragraph_4": "Through this model, Vryce bridges brands, talent, and performance marketing systems into a single ecosystem—ensuring campaigns are not only visually engaging but deliver measurable results",
-    "sub_title_3": "Meet our talents"
+    "sub_title_3": "Meet our team"
   },
   "blog": {
     "title": "The Vryce Insights",
@@ -156,77 +156,52 @@
     "title": "Vryce Service Packages & Pricing",
     "headline": "Digital marketing solutions for consistent and maximum business growth",
     "service_1": {
-      "title": "Vryce Performance Ads Package",
-      "price": "IDR 2.8 Million",
-      "priceFor": "month",
-      "priceNote": "(Excludes ad budget)",
-      "purpose": "Generate leads, inquiries, or fast sales through data-driven paid advertising.",
-      "benefits": "Ad Platform (Meta / Google / TikTok) | Strategy & funnel planning | Campaign setup & optimization | Ads copy & creative direction | Weekly optimization | Monthly performance report"
+      "title": "Vryce Social Media & Content Creation",
+      "price": "",
+      "priceFor": "",
+      "priceNote": "",
+      "purpose": "Consistently manage social media accounts through relevant visual content and short-form videos to build brand image, increase engagement, and drive audience purchase intent.",
+      "benefits": "Conversion-oriented content strategy & monthly calendar | Post content creation (Feed, Carousel, Story) | High-converting short-form video production (Reels, TikTok, Shorts) | Visual branding & copywriting (Sales-driven captions & hashtags) | Scheduling & publishing management | Community engagement & prospective buyer inquiry handling | Monthly performance & engagement report"
     },
     "service_2": {
-      "title": "Vryce SEO & SEM Package",
-      "price": "IDR 3 Million",
-      "priceFor": "month | min. 4-6 months",
-      "priceNote": "(Excludes ad budget)",
-      "purpose": "Increase brand visibility on Google and drive high-quality traffic and customers for the mid-to-long term.",
-      "benefits": "Website & keyword audit | On-page & technical SEO | Google Search Ads (SEM) | Funnel & keyword strategy | Weekly optimization | Tracking & analytics | Ranking & search performance monitoring | Monthly report"
+      "title": "Vryce KOL & UGC Marketing Package",
+      "price": "",
+      "priceFor": "",
+      "priceNote": "",
+      "purpose": "Increase brand awareness, public trust, and directly boost sales through authentic reviews from curated creators and the right influencers.",
+      "benefits": "Curated talent, KOL & UGC creator sourcing | Campaign strategy, planning & sales-driven briefing | Product seeding management | High-converting promotional content & product review creation | Rights management for ad & promo assets | Performance, link click & sales tracking report"
     },
     "service_3": {
-      "title": "Vryce KOL Marketing Package",
-      "price": "IDR 5 – 12 Million",
-      "priceFor": "campaign",
+      "title": "Vryce Performance Ads Package",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Boost awareness, trust, and sales through talent and Key Opinion Leaders (KOL).",
-      "benefits": "Talent & KOL | Campaign planning & briefing | Sales-driven content | Performance tracking & report"
+      "purpose": "Accurately reach potential target audiences on Meta Ads and TikTok Ads to trigger direct transactions, retargeting, and maximize measurable revenue growth.",
+      "benefits": "Audience research & conversion campaign structure setup | Ad creative strategy & high-converting copywriting | Meta Ads (Instagram & Facebook) & TikTok Ads management | A/B testing (Creative, Copy, & Audience) | Budget optimization & Return on Ad Spend (ROAS) monitoring | Pixel & conversion tracking setup | Weekly optimization & monthly sales performance report"
     },
     "service_4": {
-      "title": "Vryce Affiliate Marketing Package",
-      "price": "IDR 5 – 15 Million",
-      "priceFor": "month + optional 5-15% commission",
+      "title": "Vryce SEO & Google Ads Package",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Build additional sales channels based on commission-driven performance.",
-      "benefits": "Affiliate system setup | Recruiter & onboarding of affiliates/talent | Campaign & promo management | Tracking & payout reporting"
+      "purpose": "Enhance brand visibility on Google and drive traffic from high-quality prospective customers ready to make sustainable purchases.",
+      "benefits": "Website & high-intent keyword audit | Sales funnel & keyword strategy | On-page & technical SEO | Conversion-oriented Google Search Ads (SEM) management | Weekly optimization & A/B testing | Tracking & conversion analytics | Ranking & search performance monitoring | Monthly sales attribution & search performance report"
     },
     "service_5": {
-      "title": "Vryce Social Media Management",
-      "price": "IDR 2.5 Million",
-      "priceFor": "month",
+      "title": "Vryce Web Development",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Consistently manage social media accounts to build brand presence and support campaigns.",
-      "benefits": "Content planning & calendar | Social media content creation (Feed, Carousel, Reels) | Captions & hashtags | Scheduling & publishing | Monitoring & monthly report"
+      "purpose": "Build a modern, fast, and user-friendly professional website to boost brand credibility and streamline the customer transaction process.",
+      "benefits": "Custom website design (Company profile / Brand catalog) | Mobile-responsive & conversion-focused layout | Basic SEO setup & page speed optimization | Promotional landing page integration & direct transaction buttons | Domain & hosting setup assistance | Security, payment gateway / WhatsApp order integration & analytics setup"
     },
     "service_6": {
-      "title": "Vryce Marketplace Optimization & Promotion",
-      "price": "IDR 3.5 Million",
-      "priceFor": "project",
+      "title": "Vryce AI & Marketing Automation Package",
+      "price": "",
+      "priceFor": "",
       "priceNote": "",
-      "purpose": "Optimize and promote marketplace stores to be professionally managed, easily discoverable by potential buyers, and boost sales performance.",
-      "benefits": "Marketplace Seller Center management | Storefront optimization (Profile, Banner, Branding) | Product title, description, and keyword optimization | Product image & layout optimization | Basic promo setup (Discounts, Vouchers, Campaigns) | Basic marketplace ads setup (Shopee/Tokopedia Ads) | Performance monitoring & sales growth strategy"
-    },
-
-    "service_7": {
-      "title": "Vryce Web Development",
-      "price": "IDR 3.5 Million",
-      "priceFor": "project",
-      "priceNote": "",
-      "purpose": "Build professional websites to enhance brand credibility and customer trust.",
-      "benefits": "Company profile / brand website | Modern & user-friendly design | Basic SEO setup | Domain & hosting setup assistance"
-    },
-    "service_8": {
-      "title": "Vryce Landing Page Development",
-      "price": "IDR 2.5 Million",
-      "priceFor": "project",
-      "priceNote": "",
-      "purpose": "Provide landing pages designed to boost brand credibility and optimize conversion rates across various channels.",
-      "benefits": "Landing page | Funnel-based copywriting structure | Integrated CTA & lead forms | Basic SEO & tracking"
-    },
-    "service_9": {
-      "title": "Vryce Marketing Automation & AI Package",
-      "price": "IDR 6 – 12 Million",
-      "priceFor": "month",
-      "priceNote": "",
-      "purpose": "Automate marketing processes and enhance team efficiency.",
-      "benefits": "Lead & CRM automation | Email / WhatsApp automation | AI-based optimization & insight"
+      "purpose": "Automate marketing workflows and customer management to improve operational efficiency and drive loyal buyers to make repeat orders.",
+      "benefits": "Lead management & CRM setup | Email & WhatsApp marketing automation for offers & follow-ups | Automated customer onboarding, abandoned cart recovery & re-engagement workflow | AI-based sales insights & optimization | Data integration & purchase tracking analytics | Monthly evaluation & sales workflow review"
     }
   },
   "not_found": {

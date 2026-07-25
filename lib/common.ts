@@ -1,6 +1,6 @@
 const isProd = process.env.NODE_ENV === "production";
 export const baseUrl = isProd ? "https://vryce.id" : "http://localhost:3000";
-export const address = "Denpasar, Bali, Indonesia";
+export const address = "Jakarta, Indonesia";
 export const blogLimit = 12;
 
 export const links = {
@@ -24,3 +24,7 @@ export const talentPeoples = [
   { name: "Wahyusntsoo", role: "Creator", image: "/images/talent/talent-3-wahyusntsoo.jpeg" },
   { name: "Unokimuno", role: "Creator", image: "/images/talent/talent-4-unokimuno.jpeg" },
 ];
+
+export const serviceKeys = ["service_1", "service_2", "service_3", "service_4", "service_5", "service_6"];
+export const serviceThreeKeys = ["service_1", "service_2", "service_3"];
+export const serviceDigitalKeys = ["service_4", "service_5"];

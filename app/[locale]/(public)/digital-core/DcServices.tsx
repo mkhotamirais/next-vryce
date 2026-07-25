@@ -1,12 +1,13 @@
 "use client";
 
 import ServiceCard from "@/components/cards/ServiceCard";
-import useServices from "@/hooks/useServices";
+import { serviceDigitalKeys } from "@/lib/common";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
 
 export default function DcServices() {
-  const { digitalServices } = useServices();
   const digitalRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("services");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,9 +37,18 @@ export default function DcServices() {
       <div className="container">
         <h2 className="h2 text-center">Digital Services</h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {digitalServices.map((item, i) => (
-            <ServiceCard key={i} item={item} />
-          ))}
+          {serviceDigitalKeys.map((key) => {
+            const serviceData = {
+              title: t(`${key}.title`),
+              purpose: t(`${key}.purpose`),
+              benefits: t(`${key}.benefits`),
+              price: t(`${key}.price`),
+              priceFor: t(`${key}.priceFor`),
+              priceNote: t(`${key}.priceNote`),
+            };
+
+            return <ServiceCard key={key} service={serviceData} />;
+          })}
         </div>
       </div>
     </section>

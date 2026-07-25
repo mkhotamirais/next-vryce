@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const title = smartTrim(t("title"), 50);
   const description = smartTrim(t("description"), 150);
+
   return {
     title,
     description,

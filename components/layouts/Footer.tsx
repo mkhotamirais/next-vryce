@@ -1,29 +1,29 @@
-import React from "react";
 import Logo from "../Logo";
-import FooterMenu from "./FooterMenu";
 import { useTranslations } from "next-intl";
-import useMenu from "@/hooks/useMenu";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
-import { links as l } from "@/lib/common";
+import { address, links as l } from "@/lib/common";
+import Link from "next/link";
 
 export default function Footer() {
   const f = useTranslations("footer");
 
   const tagline = f("tagline");
 
-  const title1 = f("menu_1.title");
-  const title2 = f("menu_2.title");
+  // const title1 = f("menu_1.title");
+  // const title2 = f("menu_2.title");
   const title3 = f("menu_3.title");
   const title4 = f("menu_4.title");
-  const { footerMenu1, footerMenu2 } = useMenu();
+  // const { footerMenu2 } = useMenu();
 
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container pt-12 pb-8">
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div>{/* <Logo variant="dark" /> */}</div>
+            <div>
+              <Logo variant="dark" />
+            </div>
             <p className="text-gray-400">{tagline}</p>
             {/* <div>
               <address className="text-gray-400 not-italic">
@@ -32,33 +32,37 @@ export default function Footer() {
             </div> */}
             {/* <PricingButton /> */}
           </div>
-          <FooterMenu title={title1} list={footerMenu1} />
-          <FooterMenu title={title2} list={footerMenu2} />
+          {/* <FooterMenu title={title1} list={footerMenu1} /> */}
+          {/* <FooterMenu title={title2} list={footerMenu2} /> */}
           <div>
-            <div className="mb-8">
-              <h4 className="font-semibold text-xl mb-4">{title3}</h4>
-              <div>
-                <a href={l.email.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
-                  <Mail className="size-5" />
-                  {l.email.label}
-                </a>
-                <a href={l.wa.url} className="py-2 inline-flex text-gray-400 hover:underline items-center gap-2">
-                  <Phone className="size-5" />
-                  {l.wa.label}
-                </a>
-              </div>
-            </div>
+            <p className="font-semibold text-xl mb-4">Address</p>
+            <address className="text-gray-400">{address}</address>
+          </div>
+          <div>
+            <p className="font-semibold text-xl mb-4">{title3}</p>
             <div>
-              <h4 className="font-semibold text-xl mb-4">{title4}</h4>
-              <div className="text-xl text-gray-400">
+              <Link href="/#contact" className="pb-2 flex text-gray-400 hover:underline items-center gap-2">
+                <Mail className="size-5" />
+                {l.email.label}
+              </Link>
+              <a href={l.wa.url} className="py-2 flex text-gray-400 hover:underline items-center gap-2">
+                <Phone className="size-5" />
+                {l.wa.label}
+              </a>
+            </div>
+          </div>
+          <div>
+            <p className="font-semibold text-xl mb-4">{title4}</p>
+            <div className="text-xl text-gray-400">
+              <a href={l.ig.url} aria-label={l.ig.label}>
                 <FaInstagram />
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div className="py-4 bg-gray-900 text-sm text-center">
-        <div className="container text-sm">Copyright © 2024 Vryce. All rights reserved.</div>
+        <div className="container text-sm">Copyright © 2026 Vryce. All rights reserved.</div>
       </div>
     </footer>
   );

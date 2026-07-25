@@ -1,11 +1,11 @@
 import HeroWrapper from "@/components/HeroWrapper";
 import ServiceCard from "@/components/cards/ServiceCard";
-import useServices from "@/hooks/useServices";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { smartTrim } from "@/lib/utils";
 import HomeContactUs2 from "@/components/home/HomeContactUs2";
+import { serviceKeys } from "@/lib/common";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -35,8 +35,6 @@ export default function Services({ params }: Props) {
 
   const t = useTranslations("services");
 
-  const { services } = useServices();
-
   const title = t("title");
   const headline = t("headline");
 
@@ -45,9 +43,18 @@ export default function Services({ params }: Props) {
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 bg-primary/4">
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((item, i) => (
-            <ServiceCard key={i} item={item} />
-          ))}
+          {serviceKeys.map((key) => {
+            const serviceData = {
+              title: t(`${key}.title`),
+              purpose: t(`${key}.purpose`),
+              benefits: t(`${key}.benefits`),
+              price: t(`${key}.price`),
+              priceFor: t(`${key}.priceFor`),
+              priceNote: t(`${key}.priceNote`),
+            };
+
+            return <ServiceCard key={key} service={serviceData} />;
+          })}
         </div>
       </section>
       <HomeContactUs2 />

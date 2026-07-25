@@ -1,11 +1,10 @@
-import { Montserrat } from "next/font/google";
 import "../globals.css";
+import { Montserrat } from "next/font/google";
 import Header from "@/components/layouts/Header";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/dist/client/components/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Footer2 from "@/components/layouts/Footer2";
 import ButtonEdge from "@/components/ButtonEdge";
 import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
 import { Toaster } from "sonner";
@@ -13,6 +12,7 @@ import { baseUrl } from "@/lib/common";
 import { AnimationProvider } from "@/components/providers/AnimationProvider";
 import ClientProvider from "@/components/providers/ClientProvider";
 import MainProvider from "@/components/providers/MainProvider";
+import Footer from "@/components/layouts/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -84,7 +84,7 @@ export default async function RootLayout({ children, params }: Props) {
                 <Toaster position="top-center" richColors swipeDirections={["left", "right", "top"]} />
                 <Header />
                 <MainProvider>{children}</MainProvider>
-                <Footer2 />
+                <Footer />
                 <ButtonEdge />
               </AnimationProvider>
             </ClientProvider>
