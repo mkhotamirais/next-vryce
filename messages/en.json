@@ -99,7 +99,8 @@
       "tagline": "Beyond Marketing",
       "title": "Why Choose Vryce?",
       "description": "We combine data and creativity to transform marketing costs into measurable business growth through a result-oriented approach",
-      "points": "Focus on performance and business results | Data-driven marketing strategies | Quality talent & creator management | Affiliate marketing as a growth engine | Flexible: retainer, project-based, or performance-based"
+      "points_old": "Focus on performance and business results | Data-driven marketing strategies | Quality talent & creator management | Affiliate marketing as a growth engine | Flexible: retainer, project-based, or performance-based",
+      "points": "Focus on performance and business results | Data-driven marketing strategies | Quality talent & creator management | Flexible: retainer, project-based, or performance-based"
     },
     "talent": {
       "title": "Vryce Talent & Creator Management",
