@@ -73,7 +73,7 @@ export default function About({ params }: Props) {
       </section>
 
       <HomeOurClients withTitle={false} />
-      <TalentList className="bg-primary/4" />
+      <TalentList className="bg-primary/2" />
     </div>
   );
 }

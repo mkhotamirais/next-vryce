@@ -33,7 +33,7 @@ export default function DcServices() {
   }, []);
 
   return (
-    <section ref={digitalRef} id="digital-services" className="scroll-mt-12 py-12 lg:py-16 bg-primary/4">
+    <section ref={digitalRef} id="digital-services" className="scroll-mt-12 py-12 lg:py-16 bg-primary/2">
       <div className="container">
         <h2 className="h2 text-center">Digital Services</h2>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">

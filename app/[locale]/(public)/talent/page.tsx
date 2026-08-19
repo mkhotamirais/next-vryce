@@ -114,7 +114,7 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
-      <section className="py-12 lg:px-16 bg-primary/3 leading-loose">
+      <section className="py-12 lg:px-16 bg-primary/2 leading-loose">
         <div className="container">
           <div className="max-w-auto md:max-w-5xl mx-auto">
             <m.h2
