@@ -1,7 +1,5 @@
-// import TalentCard from "@/components/cards/TalentCard";
 import HeroWrapper from "@/components/HeroWrapper";
 import { Separator } from "@/components/ui/separator";
-// import { talentPeoples } from "@/lib/common";
 import { Heart, Palette, TrendingUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -10,8 +8,8 @@ import { use } from "react";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 import { smartTrim } from "@/lib/utils";
-import HomeContactUs2 from "@/components/home/HomeContactUs2";
 import TalentList from "./TalentList";
+import HomeContact from "@/components/home/HomeContact";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -78,11 +76,11 @@ export default function Talent({ params }: Props) {
             className="w-full md:w-1/3 order-2 md:order-1 h-110"
           >
             <Image
-              src="/images/talent/catalog-1-iqbal.jpeg"
+              src="/images/talent/catalog-1-iqbal-on-transparent.png"
               alt="vryce talent"
               width={500}
               height={500}
-              className="w-full h-full object-cover object-bottom rounded-xl"
+              className="w-full h-full object-contain object-center rounded-xl bg-gray-50"
             />
           </m.div>
           <div className="w-full md:w-2/3 order-1 md:order-2">
@@ -124,13 +122,13 @@ export default function Talent({ params }: Props) {
               initial="hide"
               whileInView="show"
               viewport={{ once: true }}
-              className="h2 text-center"
+              className="h2 text-center capitalize"
             >
               {sub_title_2}
             </m.h2>
             <Separator className="max-w-24 min-h-0.5 rounded bg-primary mb-12 mx-auto" />
 
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ul className="grid grid-cols-1 xl:grid-cols-3 gap-8">
               {p3list.map((item, i) => (
                 <li key={i}>
                   <m.div
@@ -160,8 +158,8 @@ export default function Talent({ params }: Props) {
           </div>
         </div>
       </section>
-      <TalentList />
-      <HomeContactUs2 />
+      <TalentList title="Meet our talents" />
+      <HomeContact />
     </div>
   );
 }

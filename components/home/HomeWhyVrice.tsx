@@ -16,7 +16,7 @@ export default function HomeWhyVrice() {
   const points = t("points").split(" | ");
 
   return (
-    <SectionWrapper tagline={tagline} title={title} description={description} className="bg-primary/3">
+    <SectionWrapper tagline={tagline} title={title} description={description} className="bg-primary/2">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2">

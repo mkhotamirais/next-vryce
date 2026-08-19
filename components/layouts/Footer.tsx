@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-semibold text-xl mb-4">{title3}</p>
-            <div>
+            <div className="flex flex-col items-start">
               <Link href="/#contact" className="pb-2 flex text-gray-400 hover:underline items-center gap-2">
                 <Mail className="size-5" />
                 {l.email.label}
@@ -53,8 +53,8 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-semibold text-xl mb-4">{title4}</p>
-            <div className="text-xl text-gray-400">
-              <a href={l.ig.url} aria-label={l.ig.label}>
+            <div className="text-xl text-gray-400 flex items-center gap-4">
+              <a href={l.ig.url} aria-label={l.ig.label} className="hover:text-primary hover:scale-110 transition-all">
                 <FaInstagram />
               </a>
             </div>

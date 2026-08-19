@@ -28,7 +28,7 @@ export default function HomeOurClients({ withTitle = true }: { withTitle?: boole
               initial="hide"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-gray-600 text-center"
+              className="text-gray-600 text-center text-lg"
             >
               {description.split(";")[0]}
               <br />

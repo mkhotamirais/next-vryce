@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { smartTrim } from "@/lib/utils";
-import HomeContactUs2 from "@/components/home/HomeContactUs2";
+import HomeContactUs2 from "@/components/home/HomeContact";
 import { serviceKeys } from "@/lib/common";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -42,7 +42,7 @@ export default function Services({ params }: Props) {
     <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-12 bg-primary/4">
-        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           {serviceKeys.map((key) => {
             const serviceData = {
               title: t(`${key}.title`),

@@ -4,7 +4,7 @@ import { talentPeoples } from "@/lib/common";
 import { fades } from "@/lib/animations";
 import * as m from "motion/react-m";
 
-export default function TalentList({ className }: { className?: string }) {
+export default function TalentList({ className, title }: { className?: string; title?: string }) {
   const t = useTranslations("talent");
 
   const sub_title_3 = t("sub_title_3");
@@ -16,12 +16,12 @@ export default function TalentList({ className }: { className?: string }) {
           initial="hide"
           whileInView="show"
           viewport={{ once: true }}
-          className="h2 text-center mb-12!"
+          className="h2 text-center mb-12! capitalize"
         >
-          {sub_title_3}
+          {title ?? sub_title_3}
         </m.h2>
         {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8"> */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-xl mx-auto gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 max-w-6xl mx-auto gap-8">
           {talentPeoples.map((item, i) => (
             <TalentCard key={i} talent={item} />
           ))}

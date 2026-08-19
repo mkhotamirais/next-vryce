@@ -18,7 +18,7 @@ export default function SectionWrapper({ id, tagline, title, description, childr
   return (
     <section id={id} className={`${className} py-12 md:py-16 scroll-mt-12 md:scroll-mt-16`}>
       <div className="container">
-        <div className="mb-8 max-w-4xl mx-auto text-center">
+        <div className="mb-8 max-w-4xl mx-auto text-left sm:text-center">
           <m.div
             variants={fades}
             custom={{ direction: "down" }}
@@ -32,14 +32,14 @@ export default function SectionWrapper({ id, tagline, title, description, childr
           <m.h2 variants={fades} initial={"hide"} whileInView={"show"} viewport={{ once: true }} className="h2">
             {title}
           </m.h2>
-          <Separator className="max-w-24 min-h-0.5 rounded bg-primary mx-auto md:mx-auto mb-4" />
+          <Separator className="max-w-24 min-h-0.5 rounded bg-primary mx-0 sm:mx-auto md:mx-auto mb-4" />
           <m.p
             variants={fades}
             custom={{ direction: "in", delay: 0.1 }}
             initial={"hide"}
             whileInView={"show"}
             viewport={{ once: true }}
-            className="text-gray-600"
+            className="text-gray-600 text-lg"
           >
             {description}
           </m.p>

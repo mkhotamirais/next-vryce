@@ -49,9 +49,10 @@ export default function About({ params }: Props) {
           <h1 className="text-5xl md:text-7xl font-bold text-left sm:text-center leading-tight text-white">{title}</h1>
         </div>
       </section>
-      <section className="py-12 lg:py-20 bg-[radial-gradient(circle_at_top_right,rgba(41,98,255,0.30)_0%,transparent_40%),radial-gradient(circle_at_left_bottom,rgba(41,98,255,0.15)_0%,transparent_40%)]">
-        <div className="container flex flex-col md:flex-row gap-8 lg:gap-16">
-          <div className="w-full lg:h-150 md:w-1/2 order-2 md:order-1">
+      {/* <section className="py-12 lg:py-20 bg-[radial-gradient(circle_at_top_right,rgba(41,98,255,0.10)_0%,transparent_40%),radial-gradient(circle_at_left_bottom,rgba(41,98,255,0.10)_0%,transparent_40%)]"> */}
+      <section className="py-12 lg:py-20 bg-[radial-gradient(circle_at_top_right,rgba(41,98,255,0.10)_0%,transparent_30%)]">
+        <div className="container flex flex-col lg:flex-row gap-8 lg:gap-16">
+          <div className="w-full h-120 lg:w-1/2 order-2 lg:order-1">
             <Image
               src="/images/talent/talent-1-iqbal.jpeg"
               alt="About Us"
@@ -60,7 +61,7 @@ export default function About({ params }: Props) {
               className="rounded-lg object-cover w-full h-full"
             />
           </div>
-          <div className="w-full md:w-1/2 leading-loose order-1 md:order-2">
+          <div className="w-full lg:w-1/2 leading-loose order-1 lg:order-2">
             <h2 className="h2 mb-8!">Vryce Digital Marketing Agency</h2>
             <article className="text-muted-foreground space-y-4">
               <p>{paragraph_1}</p>

@@ -6,7 +6,7 @@ import HomeServices from "@/components/home/HomeServices";
 import HomeTalent from "@/components/home/HomeTalent";
 import HomeWhyVrice from "@/components/home/HomeWhyVrice";
 import { smartTrim } from "@/lib/utils";
-import HomeContactUs2 from "@/components/home/HomeContactUs2";
+import HomeContact from "@/components/home/HomeContact";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -38,7 +38,7 @@ export default function Home({ params }: Props) {
       <HomeServices />
       <HomeTalent />
       <HomeOurClients />
-      <HomeContactUs2 />
+      <HomeContact />
     </div>
   );
 }

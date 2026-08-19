@@ -6,7 +6,7 @@ import HomeContactForm from "./HomeContactForm";
 
 // const wa = links.wa;
 
-export default function HomeContactUs2() {
+export default function HomeContact() {
   const t = useTranslations("home.contact");
   // const c = useTranslations("contact");
   // const b = useTranslations("buttons");
@@ -24,29 +24,29 @@ export default function HomeContactUs2() {
       id="contact"
       // className="scroll-mt-12 py-12 bg-[radial-gradient(circle_at_top,rgba(41,98,255,0.15)_10%,transparent_30%)]"
       // className="scroll-mt-12 py-12 bg-linear-to-b from-primary/10 from-10% to-white to-30%"
-      className="scroll-mt-12 py-12 bg-muted"
+      className="scroll-mt-16 py-16 bg-primary/2"
     >
       <div className="container">
         <div className="max-w-4xl mx-auto">
-          <div className="text-left md:text-center">
+          <div className="mb-8 max-w-4xl mx-auto text-left sm:text-center">
             {/* <h2 className="text-2xl font-bold mb-4">{title}</h2> */}
-            <h2 className="font-semibold mb-4 text-left md:text-center tracking-tight max-w-3xl mx-auto">
+            <h2 className="h2">
               {/* {titleSplit[0]} <br />
               {titleSplit[1]}{" "}
               <span className="md:hidden">
                 <br />
               </span>
               {titleSplit[2]} <br /> */}
-              <span className="inline md:hidden text-[21px]">{title}</span>
-              <span className="hidden md:inline text-4xl">
+              <span className="inline md:hidden">{title}</span>
+              <span className="hidden md:inline">
                 {title.split(",")[0]},
                 <br />
                 {title.split(",")[1]}
               </span>
             </h2>
-            <p className="mb-8 leading-relaxed text-gray-600 text-left md:text-center">
+            <p className="mb-8 leading-relaxed text-gray-600 text-left sm:text-center text-lg max-w-3xl mx-0 md:mx-auto">
               <span className="hidden md:block">{description.split("?")[0]}?</span>
-              <span>{description.split("?")[1]}</span>
+              <span className="">{description.split("?")[1]}</span>
               {/* {cWa}{" "}
               <a href={wa.url} className="text-primary font-semibold">
                 WhatsApp {wa.label}

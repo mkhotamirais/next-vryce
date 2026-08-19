@@ -24,26 +24,26 @@ export default function HomeTalent() {
   const moreTalents = b("more_talents");
 
   return (
-    <section className="py-12 lg:py-16 bg-primary/3">
+    <section className="py-16 bg-primary/2">
       <div className="container">
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8">
           <m.div
             variants={fades}
             initial="hide"
             whileInView="show"
             viewport={{ once: true }}
-            className="w-full h-120 md:w-1/3 order-2 md:order-1 rounded-xl overflow-hidden border border-primary/5"
+            className="w-full h-126 lg:w-1/3 order-2 lg:order-1 rounded-xl overflow-hidden border border-primary/5"
           >
             <Image
-              src="/images/talent/catalog-1-iqbal.jpeg"
+              src="/images/talent/catalog-1-iqbal-on-transparent.png"
               alt="vryce talent"
               width={500}
               height={500}
-              className="w-full h-full object-cover object-bottom"
+              className="w-full h-full object-contain object-center bg-white"
             />
           </m.div>
-          <div className="w-full md:w-2/3 leading-relaxed space-y-8 order-1 md:order-2">
-            <div>
+          <div className="w-full lg:w-2/3 leading-relaxed space-y-8 order-1 lg:order-2">
+            <div className="mb-12">
               <m.h2
                 variants={fades}
                 custom={{ direction: "right" }}
@@ -61,7 +61,7 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="text-gray-600 text-left"
+                className="text-gray-600 text-left text-lg"
               >
                 {/* {description.split(/optimized for:|yang dioptimalkan/i)[0]}
                 <span className="hidden md:inline">
@@ -71,19 +71,19 @@ export default function HomeTalent() {
               </m.p>
             </div>
             <div>
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-8">
                 <m.h3
                   variants={fades}
                   custom={{ direction: "right" }}
                   initial="hide"
                   whileInView="show"
                   viewport={{ once: true }}
-                  className="border-l-2 pl-4 border-primary leading-relaxed font-semibold text-lg"
+                  className="border-l-2 pl-4 border-primary leading-relaxed font-semibold text-xl"
                 >
                   Vryce Talents
                 </m.h3>
                 <Button variant={"link"} asChild>
-                  <Link href="/talent">
+                  <Link href="/talent" className="text-lg">
                     <span className="">{moreTalents}</span>
                     <ArrowRight />
                   </Link>

@@ -76,7 +76,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${montserrat.variable} font-montserrat`}>
+      <body className={`${montserrat.variable} font-montserrat min-h-full flex flex-col w-full`}>
         <NextAuthProvider>
           <NextIntlClientProvider>
             <ClientProvider>

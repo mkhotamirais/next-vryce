@@ -16,10 +16,10 @@ export default function HomeHero() {
   const ourServices = b("our_services");
 
   return (
-    <section className="py-12 md:pt-28 md:pb-18">
+    <section className="py-12 md:py-28">
       <div className="container relative">
         <div className="-z-50 text-[400px] blur-2xl text-primary/30 font-medium absolute top-0 leading-none">V</div>
-        <div className="flex flex-col items-start sm:items-center text-left sm:text-center max-w-4xl mx-auto space-y-6">
+        <div className="flex flex-col items-start sm:items-center text-left sm:text-center max-w-6xl mx-auto space-y-6">
           <m.h1 variants={fades} initial="hide" animate="show" className="text-5xl md:text-6xl font-bold leading-tight">
             {title}
           </m.h1>
@@ -31,7 +31,7 @@ export default function HomeHero() {
             className="space-y-4"
           >
             <p className="text-xl md:text-2xl font-medium text-primary">{tagline}</p>
-            <p className="text-base lg:text-lg text-gray-600">{description}</p>
+            <p className="text-base lg:text-lg text-gray-600 leading-relaxed">{description}</p>
           </m.div>
           <m.div variants={fades} custom={{ delay: 0.2 }} initial="hide" animate="show" className="flex gap-2">
             <Button size={"lg"} className="w-46 py-7 px-12 text-lg rounded-xl" asChild>
