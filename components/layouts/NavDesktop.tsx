@@ -13,12 +13,14 @@ export default function NavDesktop() {
 
   return (
     <div className="hidden lg:flex justify-between items-center">
-      <nav>
+      <nav className="">
         <ul className="flex gap-1">
           {mainMenu.map((item) => (
             <li key={item.label}>
               <Button variant={"ghost"} asChild className={`${pathname === item.url ? "font-semibold" : ""}`}>
-                <Link href={item.url}>{item.label}</Link>
+                <Link href={item.url} className="text-base!">
+                  {item.label}
+                </Link>
               </Button>
             </li>
           ))}

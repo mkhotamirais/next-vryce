@@ -12,7 +12,10 @@ export default function ContactButton({ className }: { className?: string }) {
   const contact = t("contact");
 
   return (
-    <Button variant={"outline"} className={`${className} border`}>
+    <Button
+      variant={"ghost"}
+      className={`${className} text-base bg-primary text-white hover:text-primary hover:scale-110 p-5 rounded-lg`}
+    >
       <a href={wa.url} className="flex items-center gap-2">
         <Phone />
         {contact}
