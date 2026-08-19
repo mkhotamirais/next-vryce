@@ -29,6 +29,16 @@ export const talentPeoples = [
   { name: "Ota", role: "Web Developer | & Tech Lead", image: "/images/talent/talent-5-ota.jpg" },
 ];
 
-export const serviceKeys = ["service_1", "service_2", "service_3", "service_4", "service_5", "service_6"];
+export const serviceKeys = [
+  "service_1",
+  "service_2",
+  "service_3",
+  "service_4",
+  "service_5",
+  "service_6",
+  "service_7",
+  "service_8",
+  "service_9",
+];
 export const serviceThreeKeys = ["service_1", "service_2", "service_3"];
-export const serviceDigitalKeys = ["service_4", "service_5"];
+export const serviceDigitalKeys = ["service_5", "service_6"];

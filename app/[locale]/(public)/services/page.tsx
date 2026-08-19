@@ -42,7 +42,7 @@ export default function Services({ params }: Props) {
     <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
       <section className="py-16 bg-white">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
           {serviceKeys.map((key) => {
             const serviceData = {
               title: t(`${key}.title`),
