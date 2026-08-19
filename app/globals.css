@@ -148,6 +148,6 @@
   }
 
   .h2 {
-    @apply text-[28px] lg:text-4xl font-semibold mb-4 leading-12 tracking-tight;
+    @apply text-2xl lg:text-4xl font-semibold mb-4 leading-tight tracking-tight;
   }
 }

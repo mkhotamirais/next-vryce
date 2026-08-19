@@ -37,14 +37,14 @@ export default function HomeContact() {
                 <br />
               </span>
               {titleSplit[2]} <br /> */}
-              <span className="inline md:hidden">{title}</span>
-              <span className="hidden md:inline">
+              {/* <span className="inline md:hidden">{title}</span> */}
+              <span className="">
                 {title.split(",")[0]},
                 <br />
                 {title.split(",")[1]}
               </span>
             </h2>
-            <p className="mb-8 leading-relaxed text-gray-600 text-left sm:text-center text-lg max-w-3xl mx-0 md:mx-auto">
+            <p className="mb-8 leading-relaxed text-gray-600 text-left sm:text-center text-base md:text-lg max-w-3xl mx-0 md:mx-auto">
               <span className="hidden md:block">{description.split("?")[0]}?</span>
               <span className="">{description.split("?")[1]}</span>
               {/* {cWa}{" "}
