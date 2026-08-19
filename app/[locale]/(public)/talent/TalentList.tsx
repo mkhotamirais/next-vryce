@@ -21,7 +21,7 @@ export default function TalentList({ className, title }: { className?: string; t
           {title ?? sub_title_3}
         </m.h2>
         {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-8"> */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 max-w-6xl mx-auto gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-4xl mx-auto gap-8">
           {talentPeoples.map((item, i) => (
             <TalentCard key={i} talent={item} />
           ))}

@@ -76,7 +76,7 @@ export default function Talent({ params }: Props) {
             className="w-full md:w-1/3 order-2 md:order-1 h-110"
           >
             <Image
-              src="/images/talent/catalog-1-iqbal-on-transparent.png"
+              src="/images/vryce-team.png"
               alt="vryce talent"
               width={500}
               height={500}

@@ -35,7 +35,7 @@ export default function HomeTalent() {
             className="w-full h-126 lg:w-1/3 order-2 lg:order-1 rounded-xl overflow-hidden border border-primary/5"
           >
             <Image
-              src="/images/talent/catalog-1-iqbal-on-transparent.png"
+              src="/images/vryce-team.png"
               alt="vryce talent"
               width={500}
               height={500}

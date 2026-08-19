@@ -26,7 +26,6 @@ export const talentPeoples = [
   { name: "Aldi", role: "Head of | Business Operations", image: "" },
   { name: "Wahyu", role: "Legal, Partnership | & Talent Lead", image: "/images/talent/talent-3-wahyusntsoo.jpeg" },
   { name: "Rivan", role: "Creative | Director", image: "" },
-  { name: "Iqbal", role: "Social Media | & Operations Executive", image: "/images/talent/talent-1-iqbal.jpeg" },
   { name: "Ota", role: "Web Developer | & Tech Lead", image: "/images/talent/talent-5-ota.jpg" },
 ];
 

@@ -43,7 +43,7 @@ export default function About({ params }: Props) {
   return (
     <div className="scroll-mt-12 md:scroll-mt-16">
       {/* <HeroWrapper title={title} headline={headline} /> */}
-      <section className="h-100 py-20 bg-[url('/images/talent/talent-1-iqbal.jpeg')] bg-blend-saturation bg-black/60 grayscale bg-cover bg-center w-full">
+      <section className="h-100 py-20 bg-[url('/images/vryce-about-bg.jpg')] bg-blend-saturation bg-black/60 grayscale bg-cover bg-center w-full">
         {/* <div className="container flex items-center justify-center h-full"> */}
         <div className="container flex items-end justify-start h-full">
           <h1 className="text-5xl md:text-7xl font-bold text-left sm:text-center leading-tight text-white">{title}</h1>
@@ -54,11 +54,11 @@ export default function About({ params }: Props) {
         <div className="container flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="w-full h-120 lg:w-1/2 order-2 lg:order-1">
             <Image
-              src="/images/talent/talent-1-iqbal.jpeg"
+              src="/images/vryce-about.png"
               alt="About Us"
               width={800}
               height={600}
-              className="rounded-lg object-cover w-full h-full"
+              className="rounded-lg object-contain w-full h-full"
             />
           </div>
           <div className="w-full lg:w-1/2 leading-loose order-1 lg:order-2">
