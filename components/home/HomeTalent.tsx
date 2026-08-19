@@ -61,7 +61,7 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="text-gray-600 text-left text-lg"
+                className="text-gray-600 text-left text-base md:text-lg"
               >
                 {/* {description.split(/optimized for:|yang dioptimalkan/i)[0]}
                 <span className="hidden md:inline">

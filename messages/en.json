@@ -161,72 +161,72 @@
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pengelolaan media sosial menyeluruh: strategi, perencanaan, produksi foto dan video, publikasi, monitoring, hingga evaluasi performa.",
-      "benefits": "Produksi konten (foto dan video) sesuai paket yang dipilih | Konsep kreatif, visual treatment, perencanaan pra-produksi & shot list | Strategi konten media sosial & perencanaan konten bulanan | Caption, tagar & pembuatan teks iklan (copywriting) | Pengelolaan Instagram, Facebook & TikTok sesuai cakupan yang disepakati | Penjadwalan & publikasi konten di berbagai platform | Pemantauan komentar & pesan langsung (DM) tingkat dasar | Dukungan dari Spesialis Media Sosial | Audit & optimasi lead-funnel media sosial | Landing page sederhana untuk pengumpulan prospek (lead-generation) | Laporan performa bulanan atau per kampanye"
+      "purpose": "Comprehensive social media management: strategy, planning, photo and video production, publishing, monitoring, and performance evaluation.",
+      "benefits": "Content production (photo and video) based on the selected package | Creative concept, visual treatment, pre-production planning & shot list | Social media content strategy & monthly content planning | Caption, hashtag & copywriting | Instagram, Facebook & TikTok management based on the agreed scope | Multiplatform content scheduling & publishing | Basic comment & DM monitoring | Social Media Specialist support | Social media lead-funnel audit & optimization | Simple lead-generation landing page | Monthly or campaign performance report"
     },
     "service_2": {
       "title": "Vryce Influencer & UGC Marketing",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pengelolaan campaign bersama influencer dan UGC creator untuk membangun awareness, kepercayaan, engagement, dan konten promosi yang relevan dengan target pasar client.",
-      "benefits": "Pengembangan tujuan kampanye, konsep, target audiens & KPI | Kriteria influencer atau pembuat konten UGC | Pencarian, penyaringan & pembuatan daftar singkat pembuat konten | Jangkauan (outreach) & koordinasi tarif | Brief kampanye, pesan utama & persyaratan konten | Koordinasi produk dan jadwal produksi | Pemantauan pembuatan dan pengumpulan konten | Peninjauan, revisi & persetujuan konten sebelum dipublikasikan | Pemantauan jadwal unggah & hasil kerja | Rekapitulasi konten seluruh kampanye | Laporan performa kampanye | Rekomendasi untuk kampanye berikutnya"
+      "purpose": "Campaign management with influencers and UGC creators to build awareness, trust, engagement, and promotional content relevant to the target market.",
+      "benefits": "Campaign objective, concept, target audience & KPI development | Influencer or UGC creator criteria | Creator sourcing, screening & shortlist | Outreach & rate coordination | Campaign brief, key message & content requirements | Product and production-schedule coordination | Content creation and collection monitoring | Content review, revision & approval before publication | Posting schedule & deliverables monitoring | Full-campaign content recap | Campaign performance report | Recommendations for the next campaign"
     },
     "service_3": {
       "title": "Vryce Performance Marketing",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pengelolaan iklan digital yang terstruktur dan berbasis data untuk menghasilkan traffic, leads, acquisition, dan conversion sesuai objective bisnis client.",
-      "benefits": "Audit akun, kampanye & riwayat performa | Peninjauan Pixel, GA4, Google Tag Manager & pelacakan konversi | Pengembangan tujuan kampanye, funnel, KPI & rencana media | Riset audiens, minat, kata kunci & peluang kampanye | Penataan kampanye, ad set, audiens, penempatan & anggaran | Pembuatan teks iklan & adaptasi kreatif dari aset klien | Pengujian audiens, materi kreatif, teks iklan, penempatan & tujuan | Optimasi anggaran, penawaran (bidding) & performa iklan | Rekomendasi landing page atau alur konversi | Dasbor atau laporan performa | Evaluasi kampanye secara berkala | Rekomendasi peningkatan skala (scaling) berdasarkan hasil kampanye"
+      "purpose": "Structured and data-driven digital ad management to generate traffic, leads, acquisition, and conversions aligned with the business objectives.",
+      "benefits": "Account, campaign & historical performance audit | Pixel, GA4, Google Tag Manager & conversion-tracking review | Campaign objective, funnel, KPI & media-plan development | Audience, interest, keyword & campaign-opportunity research | Campaign, ad set, audience, placement & budget setup | Ad copywriting & creative adaptation from client assets | Audience, creative, copy, placement & objective testing | Budget, bidding & advertising-performance optimization | Landing-page or conversion-flow recommendations | Dashboard or performance report | Periodic campaign evaluation | Scaling recommendations based on campaign results"
     },
     "service_4": {
       "title": "Vryce E-Commerce Performance Marketing",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pengelolaan iklan di dalam marketplace untuk meningkatkan traffic produk, penjualan, GMV, dan ROAS.",
-      "benefits": "Audit toko, produk, kampanye & riwayat performa | Pemilihan produk unggulan dan prioritas | Analisis harga, margin, stok, konversi & target penjualan | Pengembangan strategi periklanan marketplace | Penataan kampanye, kata kunci, target produk, penawaran & anggaran | Pengelolaan periklanan marketplace | Penyelarasan iklan dengan kalender promosi toko | Pemantauan GMV, ROAS, tingkat konversi, CPC & biaya per pesanan | Optimasi kata kunci, penawaran, produk & anggaran | Penghentian kampanye yang tidak efisien & peningkatan anggaran kampanye yang berhasil | Laporan performa & rekomendasi penjualan marketplace"
+      "purpose": "In-marketplace ad management to boost product traffic, sales, GMV, and ROAS.",
+      "benefits": "Store, product, campaign & historical-performance audit | Hero and priority-product selection | Price, margin, stock, conversion & sales-target analysis | Marketplace advertising strategy development | Campaign, keyword, product-targeting, bidding & budget setup | Marketplace advertising management | Advertising alignment with the store promotion calendar | GMV, ROAS, conversion rate, CPC & cost-per-order monitoring | Keyword, bidding, product & budget optimization | Inefficient-campaign pausing & winning-campaign budget scaling | Performance report & marketplace sales recommendations"
     },
     "service_5": {
       "title": "Vryce Search Engine Optimization (SEO)",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Optimasi website untuk meningkatkan visibilitas di Google, memperbaiki ranking keyword relevan, dan membangun pertumbuhan traffic organik secara bertahap.",
-      "benefits": "Audit kondisi website, pengindeksan, halaman, lalu lintas, peringkat & peluang organik | Riset niat pencarian (search intent), kata kunci prioritas, kompetisi & pemetaan kata kunci | Analisis kata kunci pesaing, struktur halaman, kesenjangan konten & peluang pertumbuhan | Optimasi judul, deskripsi meta, heading, struktur konten, tautan internal & kemudahan membaca | Pemeriksaan pengindeksan, sitemap, robots.txt, canonical, kemampuan perayapan & kecepatan dasar halaman | Implementasi teknis melalui CMS jika memungkinkan | Perencanaan pilar konten SEO, target kata kunci, kerangka, heading & brief artikel | Pengaturan atau peninjauan Google Search Console dan GA4 | Pemantauan kata kunci, pengindeksan, lalu lintas & landing page | Laporan SEO bulanan & rekomendasi"
+      "purpose": "Website optimization to improve Google visibility, rank relevant keywords, and drive gradual organic traffic growth.",
+      "benefits": "Website condition, indexing, page, traffic, ranking & organic-opportunity audit | Search-intent, priority-keyword, competition & keyword-mapping research | Competitor keyword, page structure, content gap & growth-opportunity analysis | Title, meta description, heading, content structure, internal-link & readability optimization | Indexing, sitemap, robots.txt, canonical, crawlability & basic page-speed checks | Technical implementation through the CMS where possible | SEO content pillar, keyword target, outline, heading & article-brief planning | Google Search Console and GA4 setup or review | Keyword, indexing, traffic & landing-page monitoring | Monthly SEO report & recommendations"
     },
     "service_6": {
       "title": "Vryce Web & Landing Page Development",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Website dan landing page yang responsif, mudah digunakan, dan dirancang untuk mendukung informasi, leads, serta penjualan.",
-      "benefits": "Eksplorasi tujuan bisnis, audiens, kebutuhan fungsional & kriteria keberhasilan | Struktur peta situs (sitemap), arsitektur informasi, alur konten & arahan teks | Pengembangan kerangka kawat (wireframe) | Desain UI/UX khusus yang disesuaikan dengan identitas merek | Pengembangan tampilan desktop dan seluler yang responsif, CMS & komponen utama | Pengaturan formulir pertanyaan, CTA WhatsApp & tindakan konversi utama | Integrasi dasar email atau CRM sesuai cakupan yang disepakati | Pengaturan GA4, Meta Pixel & pelacakan acara (event tracking) | SEO dasar ditambah pengujian fungsi, peramban & kecepatan | Bantuan peluncuran, panduan serah terima, revisi & dukungan perbaikan kutu (bug) sesuai paket"
+      "purpose": "Responsive, user-friendly websites and landing pages designed to drive information, leads, and sales.",
+      "benefits": "Business objective, audience, functional requirement & success-criteria discovery | Sitemap, information architecture, content flow & copy direction | Wireframe development | Custom UI/UX design aligned with the brand identity | Responsive desktop and mobile development, CMS & core components | Inquiry form, WhatsApp CTA & primary conversion-action setup | Basic email or CRM integration based on the agreed scope | GA4, Meta Pixel & event-tracking setup | Basic SEO plus function, browser & speed testing | Launch assistance, handover guide, revisions & bug support based on the package"
     },
     "service_7": {
       "title": "Vryce Affiliate Marketing",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pengembangan dan pengelolaan program affiliate untuk meningkatkan penjualan melalui affiliate creator dan partner berbasis komisi.",
-      "benefits": "Audit program afiliasi yang sudah ada | Pengembangan struktur program, target & mekanisme komisi | Pengembangan kriteria pembuat konten dan mitra afiliasi | Pencarian, pemilihan & perekrutan afiliasi | Orientasi (onboarding) & edukasi produk untuk afiliasi | Penyiapan brief kampanye, materi promosi, tautan & kode penjualan | Program aktivasi afiliasi | Koordinasi voucher, promosi & produk prioritas | Pemantauan klik, pesanan, konversi & penjualan | Identifikasi & reaktivasi afiliasi berpotensi tinggi | Rekapitulasi aktivitas & komisi afiliasi | Laporan performa & rekomendasi program"
+      "purpose": "Development and management of affiliate programs to boost sales through commission-based affiliate creators and partners.",
+      "benefits": "Existing affiliate program audit | Program structure, target & commission mechanism development | Affiliate creator and partner criteria development | Affiliate sourcing, selection & recruitment | Affiliate onboarding & product education | Campaign brief, promotional materials, links & sales-code preparation | Affiliate activation program | Voucher, promotion & priority-product coordination | Click, order, conversion & sales monitoring | High-potential affiliate identification & reactivation | Affiliate activity & commission recap | Performance report & program recommendations"
     },
     "service_8": {
       "title": "Vryce E-Commerce Management",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pengelolaan operasional dan tampilan toko marketplace agar katalog lebih rapi, promosi terencana, dan halaman produk lebih mudah menghasilkan penjualan.",
-      "benefits": "Audit toko marketplace | Pengaturan profil toko, informasi, kategori & navigasi | Pengaturan halaman depan toko, banner & produk unggulan | Unggah & pembaruan daftar produk | Optimasi judul produk, deskripsi, kategori, atribut & informasi | Penyusunan gambar produk dan aset promosi dari klien | Pengaturan harga, voucher, paket bundel & promosi toko | Pendaftaran produk untuk kampanye marketplace | Pengembangan kalender promosi bulanan | Pemantauan status stok, status produk & kendala pendaftaran | Optimasi halaman detail produk berdasarkan lalu lintas dan konversi | Laporan performa toko & rekomendasi"
+      "purpose": "Operational and storefront management for marketplaces to organize catalogs, plan promotions, and drive sales from product pages.",
+      "benefits": "Marketplace store audit | Store profile, information, category & navigation setup | Storefront, banner & featured-product setup | Product listing upload & update | Product title, description, category, attribute & information optimization | Client-supplied product image and promotional-asset arrangement | Pricing, voucher, bundling & store-promotion setup | Product registration for marketplace campaigns | Monthly promotion-calendar development | Stock status, product status & listing-issue monitoring | Product-detail-page optimization based on traffic and conversion | Store performance report & recommendations"
     },
     "service_9": {
       "title": "Vryce Marketing Automation & AI",
       "price": "",
       "priceFor": "",
       "priceNote": "",
-      "purpose": "Pembuatan sistem otomatis untuk menghubungkan CRM, data leads, chatbot, komunikasi, dan proses kerja yang sebelumnya dilakukan secara manual.",
-      "benefits": "Eksplorasi proses bisnis & pemetaan proses | Identifikasi tugas manual, hambatan (bottleneck) & peluang otomatisasi | Diagram alur kerja & desain sistem otomatisasi | Pengaturan CRM, alur prospek (pipeline), properti kontak & basis data prospek | Integrasi formulir website | Alur kerja otomatis untuk tindak lanjut, notifikasi, pengarahan prospek & pembaruan data | Otomatisasi email, WhatsApp & komunikasi internal | Pengaturan chatbot untuk FAQ, pengumpulan data & kualifikasi prospek | Pengembangan asisten AI khusus untuk tugas tertentu | Integrasi aplikasi klien | Pengujian pemicu (trigger), tindakan, kondisi & hasil | Penanganan kesalahan dasar & pencegahan data ganda | Dokumentasi, pelatihan & serah terima | Revisi & dukungan sesuai cakupan yang disepakati"
+      "purpose": "Automated system setup to connect CRM, lead data, chatbots, communications, and previously manual workflows.",
+      "benefits": "Business-process discovery & process mapping | Manual task, bottleneck & automation-opportunity identification | Workflow diagram & automation-system design | CRM, pipeline, contact properties & lead-database setup | Website-form integration | Automated follow-up, notification, lead-routing & data-update workflows | Email, WhatsApp & internal-communication automation | FAQ, data-collection & lead-qualification chatbot setup | Task-specific AI assistant development | Client-application integration | Trigger, action, condition & result testing | Basic error handling & duplicate-data prevention | Documentation, training & handover | Revisions & support based on the agreed scope"
     }
   },
   "not_found": {
