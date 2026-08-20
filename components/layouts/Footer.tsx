@@ -1,5 +1,5 @@
 import Logo from "../Logo";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram } from "react-icons/fa6";
 import { address, links as l } from "@/lib/common";
@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   const f = useTranslations("footer");
+  const locale = useLocale();
 
   const tagline = f("tagline");
 
@@ -41,7 +42,7 @@ export default function Footer() {
           <div>
             <p className="font-semibold text-xl mb-4">{title3}</p>
             <div className="flex flex-col items-start">
-              <Link href="/#contact" className="pb-2 flex text-gray-400 hover:underline items-center gap-2">
+              <Link href={`/${locale}#contact`} className="pb-2 flex text-gray-400 hover:underline items-center gap-2">
                 <Mail className="size-5" />
                 {l.email.label}
               </Link>
