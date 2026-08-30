@@ -17,7 +17,7 @@ import { Send } from "lucide-react";
 
 type inferContactSchema = z.infer<typeof contactSchema>;
 
-export default function HomeContactForm() {
+export default function ContactForm() {
   const t = useTranslations("validate");
   const l = useTranslations("labels");
   const c = useTranslations("home.contact");

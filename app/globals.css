@@ -150,4 +150,8 @@
   .h2 {
     @apply text-2xl lg:text-4xl font-semibold mb-4 leading-tight tracking-tight;
   }
+
+  .grid-services {
+    @apply grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4;
+  }
 }

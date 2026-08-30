@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
-export default function HomeHero() {
+export default function Hero() {
   const t = useTranslations("home.hero");
   const b = useTranslations("buttons");
 
@@ -35,8 +35,8 @@ export default function HomeHero() {
             animate={"show"}
             className="space-y-4"
           >
-            <p className="text-xl md:text-2xl font-medium text-primary">{tagline}</p>
-            <p className="text-base lg:text-lg text-gray-600 leading-relaxed">{description}</p>
+            <p className="text-lg md:text-xl font-medium text-primary">{tagline}</p>
+            <p className="text-sm lg:text-base text-gray-600 leading-relaxed">{description}</p>
           </m.div>
           <m.div variants={fades} custom={{ delay: 0.2 }} initial="hide" animate="show" className="flex gap-2">
             <Button size={"lg"} className="w-46 py-7 px-12 text-lg rounded-xl" asChild>

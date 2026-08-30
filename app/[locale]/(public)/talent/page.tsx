@@ -9,7 +9,7 @@ import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 import { smartTrim } from "@/lib/utils";
 import TalentList from "./TalentList";
-import HomeContact from "@/components/home/HomeContact";
+import HomeContact from "@/components/sections/Contact";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -99,13 +99,13 @@ export default function Talent({ params }: Props) {
               custom={{ delay: 0.2 }}
               initial="hide"
               animate="show"
-              className="text-muted-foreground space-y-4"
+              className="text-gray-600 space-y-4 text-sm md:text-base leading-loose"
             >
               <p>{talent_paragraph_1}</p>
               <p>{talent_paragraph_2}</p>
               <ul className=" space-y-2">
                 {p2list.map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 font-medium text-gray-600">
+                  <li key={i} className="flex items-center gap-2 text-gray-600">
                     {item.icon} {item.label}
                   </li>
                 ))}

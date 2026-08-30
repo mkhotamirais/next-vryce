@@ -9,7 +9,7 @@ const clientListUrl = [
   { alt: "Kamirelawan", src: "/images/clients/logo-kamirelawan.png" },
 ];
 
-export default function HomeOurClients({ withTitle = true }: { withTitle?: boolean }) {
+export default function OurClients({ withTitle = true }: { withTitle?: boolean }) {
   const t = useTranslations("home.our_clients");
   const title = t("title");
   const description = t("description");
@@ -28,7 +28,7 @@ export default function HomeOurClients({ withTitle = true }: { withTitle?: boole
               initial="hide"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-gray-600 text-center text-base md:text-lg"
+              className="text-gray-600 text-center text-sm md:text-base"
             >
               {description.split(";")[0]}
               <br />

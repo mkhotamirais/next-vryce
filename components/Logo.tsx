@@ -12,7 +12,7 @@ export default function Logo({ variant = "default" }: { variant?: "default" | "d
             alt="Vryce Logo"
             width={100}
             height={27}
-            className="w-30"
+            className="w-24"
           />
         ) : (
           <Image

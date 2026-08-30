@@ -1,12 +1,12 @@
 import { useTranslations } from "next-intl";
+import ContactForm from "./ContactForm";
 // import { Button } from "../ui/button";
 // import { FaWhatsapp } from "react-icons/fa6";
 // import { links } from "@/lib/common";
-import HomeContactForm from "./HomeContactForm";
 
 // const wa = links.wa;
 
-export default function HomeContact() {
+export default function Contact() {
   const t = useTranslations("home.contact");
   // const c = useTranslations("contact");
   // const b = useTranslations("buttons");
@@ -44,7 +44,7 @@ export default function HomeContact() {
                 {title.split(",")[1]}
               </span>
             </h2>
-            <p className="mb-8 leading-relaxed text-gray-600 text-left sm:text-center text-base md:text-lg max-w-3xl mx-0 md:mx-auto">
+            <p className="mb-8 leading-relaxed text-gray-600 text-left sm:text-center max-w-3xl mx-0 md:mx-auto text-sm md:text-base">
               <span className="hidden md:block">{description.split("?")[0]}?</span>
               <span className="">{description.split("?")[1]}</span>
               {/* {cWa}{" "}
@@ -65,7 +65,7 @@ export default function HomeContact() {
             </a>
           </Button> */}
           <div>
-            <HomeContactForm />
+            <ContactForm />
           </div>
         </div>
       </div>

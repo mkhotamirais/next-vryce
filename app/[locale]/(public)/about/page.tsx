@@ -1,5 +1,5 @@
 // import HeroWrapper from "@/components/HeroWrapper";
-import HomeOurClients from "@/components/home/HomeOurClients";
+import HomeOurClients from "@/components/sections/OurClients";
 import { smartTrim } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -56,14 +56,15 @@ export default function About({ params }: Props) {
             <Image
               src="/images/vryce-about.png"
               alt="About Us"
-              width={800}
-              height={600}
+              width={500}
+              height={500}
               className="rounded-lg object-contain object-center w-full h-full"
+              priority
             />
           </div>
           <div className="w-full lg:w-2/3 leading-loose order-1 lg:order-2">
             <h2 className="h2 mb-8!">Vryce Digital Marketing Agency</h2>
-            <article className="text-muted-foreground space-y-4 leading-loose">
+            <article className="text-muted-foreground space-y-4 leading-loose text-sm md:text-base">
               <p>{paragraph_1}</p>
               <p>{paragraph_2}</p>
               {/* <p>{paragraph_3}</p> */}

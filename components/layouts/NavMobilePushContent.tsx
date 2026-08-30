@@ -5,7 +5,7 @@ import { useMobileMenu } from "@/hooks/zustand-hooks/useMobileMenu";
 import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import ContactButton from "../ContactButton";
+import ContactButton from "../buttons/ContactButton";
 
 export default function NavMobilePushContent() {
   const { open, setOpen } = useMobileMenu();

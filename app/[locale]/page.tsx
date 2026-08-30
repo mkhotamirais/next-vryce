@@ -1,12 +1,12 @@
-import HomeHero from "@/components/home/HomeHero";
 import { use } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeOurClients from "@/components/home/HomeOurClients";
-import HomeServices from "@/components/home/HomeServices";
-import HomeTalent from "@/components/home/HomeTalent";
-import HomeWhyVrice from "@/components/home/HomeWhyVrice";
+import HomeOurClients from "@/components/sections/OurClients";
 import { smartTrim } from "@/lib/utils";
-import HomeContact from "@/components/home/HomeContact";
+import HomeContact from "@/components/sections/Contact";
+import Hero from "@/components/sections/Hero";
+import Why from "@/components/sections/Why";
+import Services from "@/components/sections/Services";
+import Talent from "@/components/sections/Talent";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -33,10 +33,10 @@ export default function Home({ params }: Props) {
   setRequestLocale(locale);
   return (
     <div className="scroll-mt-12 md:scroll-mt-16">
-      <HomeHero />
-      <HomeWhyVrice />
-      <HomeServices />
-      <HomeTalent />
+      <Hero />
+      <Why />
+      <Services />
+      <Talent />
       <HomeOurClients />
       <HomeContact />
     </div>

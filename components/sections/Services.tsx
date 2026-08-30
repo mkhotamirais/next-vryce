@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 import ServiceCard from "../cards/ServiceCard";
 import { Link } from "@/i18n/navigation";
-import { serviceThreeKeys } from "@/lib/common";
+import { serviceFourKeys, serviceThreeKeys } from "@/lib/common";
 
-export default function HomeServices() {
+export default function Services() {
   const t = useTranslations("home");
   const b = useTranslations("buttons");
   const s = useTranslations("services");
@@ -18,8 +18,23 @@ export default function HomeServices() {
 
   return (
     <SectionWrapper id="services" tagline={tagline} title={title} description={description} className="">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid-services lg:hidden 2xl:grid">
         {serviceThreeKeys.map((key) => {
+          const serviceData = {
+            title: s(`${key}.title`),
+            purpose: s(`${key}.purpose`),
+            benefits: s(`${key}.benefits`),
+            price: s(`${key}.price`),
+            priceFor: s(`${key}.priceFor`),
+            priceNote: s(`${key}.priceNote`),
+          };
+
+          return <ServiceCard key={key} service={serviceData} />;
+        })}
+      </div>
+
+      <div className="grid-services hidden lg:grid 2xl:hidden">
+        {serviceFourKeys.map((key) => {
           const serviceData = {
             title: s(`${key}.title`),
             purpose: s(`${key}.purpose`),

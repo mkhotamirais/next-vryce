@@ -7,7 +7,7 @@ import { CheckCircle } from "lucide-react";
 import * as m from "motion/react-m";
 import { varContainer, varItemSlideLeft } from "@/lib/animations";
 
-export default function HomeWhyVrice() {
+export default function Why() {
   const t = useTranslations("home.why");
 
   const title = t("title");
@@ -28,7 +28,11 @@ export default function HomeWhyVrice() {
               className="leading-relaxed space-y-4 text-gray-600"
             >
               {points.map((item, i) => (
-                <m.li key={i} variants={varItemSlideLeft} className="flex items-center gap-2 font-medium">
+                <m.li
+                  key={i}
+                  variants={varItemSlideLeft}
+                  className="flex items-center gap-2 text-gray-600 text-sm md:text-base"
+                >
                   <CheckCircle className="text-primary min-w-5 w-5" />
                   {item}
                 </m.li>

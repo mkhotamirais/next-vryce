@@ -10,7 +10,7 @@ import Link from "next/link";
 import * as m from "motion/react-m";
 import { fades } from "@/lib/animations";
 
-export default function HomeTalent() {
+export default function Talent() {
   // const t = useTranslations("talent");
   const b = useTranslations("buttons");
   const ht = useTranslations("home.talent");
@@ -61,7 +61,7 @@ export default function HomeTalent() {
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="text-gray-600 text-left text-base md:text-lg"
+                className="text-gray-600 text-lef text-sm md:text-base"
               >
                 {/* {description.split(/optimized for:|yang dioptimalkan/i)[0]}
                 <span className="hidden md:inline">
@@ -89,7 +89,7 @@ export default function HomeTalent() {
                   </Link>
                 </Button>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 xl:gap-4">
                 {talentPeoples.slice(0, 4).map((talent, index) => (
                   <TalentCard key={index} talent={talent} />
                 ))}

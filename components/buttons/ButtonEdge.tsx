@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { FaChevronUp, FaWhatsapp } from "react-icons/fa6";
 import { links as l } from "@/lib/common";
 

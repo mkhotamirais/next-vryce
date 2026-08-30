@@ -5,7 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { smartTrim } from "@/lib/utils";
 import { serviceKeys } from "@/lib/common";
-import HomeContact from "@/components/home/HomeContact";
+import HomeContact from "@/components/sections/Contact";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -41,8 +41,8 @@ export default function Services({ params }: Props) {
   return (
     <div className="scroll-mt-12 md:scroll-mt-16">
       <HeroWrapper title={title} headline={headline} />
-      <section className="py-16 bg-white">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+      <section className="container py-16 bg-white">
+        <div className="grid-services">
           {serviceKeys.map((key) => {
             const serviceData = {
               title: t(`${key}.title`),
